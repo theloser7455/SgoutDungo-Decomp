@@ -1,0 +1,14 @@
+maxspeed = 2.5;
+hitboxcreate = 0;
+image_speed = 0;
+depth = -5;
+attackcooldown = 100;
+attack = "idk";
+attacking = 0;
+getbacktoworkin = 0;
+shake = 0;
+dashamounts = 3;
+evilcharge = 0;
+beamshot = 0;
+previousattack = "beam";
+coilangle = 0;

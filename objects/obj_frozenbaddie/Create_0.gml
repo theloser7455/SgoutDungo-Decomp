@@ -1,0 +1,9 @@
+hsp = 0;
+vsp = 0;
+grav = 0.5;
+thrownhsp = 25;
+thrownvertically = 0;
+thrownvsp = 25;
+thrown = 0;
+image_speed = 0;
+image_blend = make_colour_rgb(0, 219, 255);

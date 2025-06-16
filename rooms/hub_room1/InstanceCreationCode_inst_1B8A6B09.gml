@@ -1,0 +1,2 @@
+targetRoom = cowboytask;
+visible = false;
