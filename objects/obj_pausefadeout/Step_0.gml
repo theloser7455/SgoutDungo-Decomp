@@ -18,7 +18,6 @@ if (fadealpha > 1 && fadein == 0)
         obj_pause.pause = 1;
         instance_deactivate_all(true);
         instance_activate_object(obj_pause);
-		instance_activate_object(obj_virtual_controller)
     }
     
     fadein = 1;
