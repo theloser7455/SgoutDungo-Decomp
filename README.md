@@ -6,4 +6,4 @@ Basically a decomp of you know what.
 # Issues? Problems?
 if you find a problem or a issue with the decomp for this,
 Please let me know by make a PR or a Issue from the github.
-(also theres no enums and it isnt organized sorry!!!!)
+(also theres no enums sorry!!!!)
