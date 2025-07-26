@@ -275,7 +275,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "The Ancient Cheese (Ruin)",
+    "path": "folders/Rooms/Levels & Boss/The Ancient Cheese (Ruin).yy",
   },
 }

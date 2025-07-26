@@ -17,7 +17,7 @@
   "soundFile": "thebeatthatnoisedoesNOTgoontoatfriday12pm.wav",
   "duration": 12.019,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

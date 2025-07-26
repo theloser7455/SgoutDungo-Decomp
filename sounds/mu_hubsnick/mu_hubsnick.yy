@@ -17,7 +17,7 @@
   "soundFile": "mu_hubsnick.wav",
   "duration": 75.441,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

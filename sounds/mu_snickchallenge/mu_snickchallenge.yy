@@ -17,7 +17,7 @@
   "soundFile": "mu_snickchallenge",
   "duration": 166.958,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

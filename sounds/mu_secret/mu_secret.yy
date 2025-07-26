@@ -17,7 +17,7 @@
   "soundFile": "mu_secret",
   "duration": 71.507,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

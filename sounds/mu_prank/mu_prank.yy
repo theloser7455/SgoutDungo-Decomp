@@ -17,7 +17,7 @@
   "soundFile": "mu_prank.wav",
   "duration": 14.677,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "mu_medieval",
   "duration": 169.164,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

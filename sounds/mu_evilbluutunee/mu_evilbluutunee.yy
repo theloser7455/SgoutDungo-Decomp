@@ -17,7 +17,7 @@
   "soundFile": "mu_evilbluutunee.wav",
   "duration": 9.615,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

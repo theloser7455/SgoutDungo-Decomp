@@ -61,7 +61,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Credits & Content Unlocked",
+    "path": "folders/Rooms/Hub/Credits & Content Unlocked.yy",
   },
 }

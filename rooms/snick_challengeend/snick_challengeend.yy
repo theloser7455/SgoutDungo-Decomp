@@ -69,7 +69,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "\"Snick's Challenge\"",
+    "path": "folders/Rooms/Levels & Boss/\"Snick's Challenge\".yy",
   },
 }

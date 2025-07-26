@@ -17,7 +17,7 @@
   "soundFile": "mu_medievalremix",
   "duration": 176.002,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

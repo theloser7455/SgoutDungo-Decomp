@@ -17,7 +17,7 @@
   "soundFile": "mu_tutorial",
   "duration": 380.604,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_thenoisesextremebeatthathegoonstoeveryfridayat12pm.wav",
-  "duration": 7.236,
+  "duration": 7.236848,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

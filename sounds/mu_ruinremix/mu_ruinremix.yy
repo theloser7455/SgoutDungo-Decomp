@@ -17,7 +17,7 @@
   "soundFile": "mu_ruinremix",
   "duration": 245.918,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

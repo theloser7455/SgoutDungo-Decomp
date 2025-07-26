@@ -2772,7 +2772,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "\"Floor\" Rooms",
+    "path": "folders/Rooms/Unused/\"Floor\" Rooms.yy",
   },
 }

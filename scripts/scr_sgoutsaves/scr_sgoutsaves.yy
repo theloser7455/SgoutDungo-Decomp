@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": true,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "scripts that arent related to sage",
+    "path": "folders/Scripts/scripts that arent related to sage.yy",
   },
 }

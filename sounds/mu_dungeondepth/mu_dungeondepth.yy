@@ -17,7 +17,7 @@
   "soundFile": "mu_dungeondepth",
   "duration": 51.479,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

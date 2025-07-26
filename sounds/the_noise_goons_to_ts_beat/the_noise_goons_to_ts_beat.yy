@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "the noise goons to ts beat.wav",
-  "duration": 7.758,
+  "soundFile": "the_noise_goons_to_ts_beat.wav",
+  "duration": 7.758458,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

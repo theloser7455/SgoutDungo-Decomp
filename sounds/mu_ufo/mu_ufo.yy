@@ -17,7 +17,7 @@
   "soundFile": "mu_ufo",
   "duration": 225.287,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

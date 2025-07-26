@@ -17,7 +17,7 @@
   "soundFile": "mu_imtoolazytotypeallatitsthenoisebreakdancemusic.wav",
   "duration": 18.019,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

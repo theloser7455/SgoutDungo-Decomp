@@ -17,7 +17,7 @@
   "soundFile": "mu_entrance",
   "duration": 68.649,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

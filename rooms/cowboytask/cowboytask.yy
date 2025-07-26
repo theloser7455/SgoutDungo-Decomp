@@ -95,7 +95,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Unused Hub Room",
+    "path": "folders/Rooms/Hub/Unused Hub Room.yy",
   },
 }

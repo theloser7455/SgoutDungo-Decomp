@@ -17,7 +17,7 @@
   "soundFile": "mu_pizzatime",
   "duration": 231.632,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

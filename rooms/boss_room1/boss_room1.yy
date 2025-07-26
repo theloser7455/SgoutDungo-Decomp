@@ -72,7 +72,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Pepperman (boss_room1)",
+    "path": "folders/Rooms/Levels & Boss/Pepperman (boss_room1).yy",
   },
 }
