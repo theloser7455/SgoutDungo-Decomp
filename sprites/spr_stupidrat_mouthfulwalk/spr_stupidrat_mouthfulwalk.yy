@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"868311c5-cfbb-4e10-8d45-e0bc6f846059",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"48c3e430-3e0c-47fa-9a42-cffc3db21711",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"392bffe1-5b5f-4cc8-9a4a-9e059828c86c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2438b85d-df84-4205-b83b-bde5df1913e6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d4ea819-5b61-49e6-ad40-d048d51f8e08",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c47343b3-eb5a-4e29-be80-163577e2f121",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"79dcbd8d-0952-43e0-87d0-280b29a4c869",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59fa1c41-9666-483f-baf2-e8a962d7ddc6",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ab6b9130-1af0-42f3-acd6-275b088ff272","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"868311c5-cfbb-4e10-8d45-e0bc6f846059","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"18cf54ac-4398-470b-a2ab-8bdca545d49e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48c3e430-3e0c-47fa-9a42-cffc3db21711","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"61b9f53b-4d2e-4318-8bd1-713332beb0ab","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"392bffe1-5b5f-4cc8-9a4a-9e059828c86c","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a4665842-2e53-4db6-8633-a9564ecde363","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2438b85d-df84-4205-b83b-bde5df1913e6","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"225b3d82-fc21-4a23-b2a7-c568bcf98d2b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d4ea819-5b61-49e6-ad40-d048d51f8e08","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1405000f-21bd-494d-83e1-cdea0c7d4d5c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c47343b3-eb5a-4e29-be80-163577e2f121","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"454bfaec-b0c5-451b-89d5-e8ef4bd3da7e","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"79dcbd8d-0952-43e0-87d0-280b29a4c869","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"56f1b029-da98-417f-a76f-7ef6c06f9425","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59fa1c41-9666-483f-baf2-e8a962d7ddc6","path":"sprites/spr_stupidrat_mouthfulwalk/spr_stupidrat_mouthfulwalk.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"441f90cf-9df7-43b4-a001-f44c347c79f5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87ac2cff-e949-42db-bfed-ed9f95c30303","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

@@ -6,23 +6,29 @@ if (instance_exists(baddieID))
     x = baddieID.x;
     y = baddieID.y;
     image_xscale = baddieID.image_xscale;
+    
+    if (baddieID.state == states.enemystun && baddieID.thrown == 1)
+    {
+        with (instance_place(x, y, obj_destructibles))
+            instance_destroy();
+    }
 }
 
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != 6)
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != states.firemouth)
 {
-    if (baddieID.state != 107)
+    if (baddieID.state != states.enemygrabbed)
     {
         with (obj_player1)
         {
             if (instakillmove == 1 || character == "TERRENCE")
             {
-                if (state == 89 && sprite_index != spr_mach3hit && sprite_index != spr_SjumpcancelPEAKend)
+                if (state == states.mach3 && sprite_index != spr_mach3hit && sprite_index != spr_SjumpcancelPEAKend)
                 {
                     sprite_index = spr_mach3hit;
                     image_index = 0;
                 }
                 
-                if (state == 69 && grounded)
+                if (state == states.mach2 && grounded)
                 {
                     machpunchAnim = 1;
                     image_index = 0;
@@ -30,6 +36,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 
                 scr_soundeffect(sfx_punch);
                 other.baddieID.hp -= 1;
+                
+                if ((paletteselect == 17 && !global.lamepalettes) && character == "P")
+                    scr_soundeffect(sfx_pursuerhit);
                 
                 with (instance_create(other.baddieID.x, other.baddieID.y, obj_bangeffect))
                     sprite_index = spr_parryeffect;
@@ -46,9 +55,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 global.hit += 1;
                 global.combotime = 100;
                 
-                if (!grounded && state != 73 && state != 603 && key_jump2)
+                if (!grounded && state != states.freefall && state != states.playerpeppermangroundpound && key_jump2)
                 {
-                    if (state == 69 || state == 89 || (state == 36 && sprite_index == spr_dive))
+                    if (state == states.mach2 || state == states.mach3 || (state == states.machroll && sprite_index == spr_dive))
                     {
                         sprite_index = spr_mach2jump;
                         mach2jumpguy = 1;
@@ -66,11 +75,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     tauntstoredstate = state;
                     tauntstoredvsp = vsp;
                     tauntstoredhsp = hsp;
-                    state = 9360;
+                    state = states.hitstun;
                 }
             }
             
-            if (instance_exists(other.baddieID) && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == 57 || state == 68 || state == 45) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
+            if (instance_exists(other.baddieID) && y < other.baddieID.y && attacking == 0 && sprite_index != spr_player_mach2jump && (state == states.jump || state == states.mach1 || state == states.grab) && vsp > 0 && other.baddieID.vsp >= 0 && sprite_index != spr_stompprep)
             {
                 scr_soundeffect(sfx_stompenemy);
                 
@@ -78,7 +87,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.image_xscale = -sign(other.baddieID.x - x);
                 
                 image_index = 0;
-                other.baddieID.state = 104;
+                other.baddieID.state = states.enemystun;
+                other.baddieID.xscaleplus = 1.5;
                 
                 if (x != other.baddieID.x)
                     other.baddieID.image_xscale = -sign(other.baddieID.x - x);
@@ -96,7 +106,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.image_index = 0;
                     vsp = -14;
                     
-                    if (state != 45)
+                    if (state != states.grab)
                         sprite_index = spr_stompprep;
                 }
                 else
@@ -106,14 +116,14 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     other.baddieID.image_index = 0;
                     vsp = -9;
                     
-                    if (state != 45)
+                    if (state != states.grab)
                         sprite_index = spr_stompprep;
                 }
             }
             
-            if (instance_exists(other.baddieID) && y < other.baddieID.y && state == 99)
+            if (instance_exists(other.baddieID) && y < other.baddieID.y && state == states.stupidratjelly)
             {
-                state = 99;
+                state = states.stupidratjelly;
                 sprite_index = spr_stupidrat_jelly;
                 vsp = -20;
                 scr_soundeffect(jellywiggle);
@@ -122,6 +132,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     instance_create(x, y, obj_jellyjunk);
                 
                 other.baddieID.hp -= 1;
+                
+                if ((paletteselect == 17 && !global.lamepalettes) && character == "P")
+                    scr_soundeffect(sfx_pursuerhit);
                 
                 with (instance_create(other.baddieID.x, other.baddieID.y, obj_bangeffect))
                     sprite_index = spr_parryeffect;
@@ -136,12 +149,15 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }
             }
             
-            if (instance_exists(other.baddieID) && y < other.baddieID.y && state == 9090 && (sprite_index == spr_player_chainsawpogobounce || sprite_index == spr_player_chainsawpogo2))
+            if (instance_exists(other.baddieID) && y < other.baddieID.y && state == states.NEWchainsaw && (sprite_index == spr_player_chainsawpogobounce || sprite_index == spr_player_chainsawpogo2))
             {
                 vsp = -15;
                 sprite_index = spr_player_chainsawpogobounce;
                 image_index = 0;
                 other.baddieID.hp -= 1;
+                
+                if ((paletteselect == 17 && !global.lamepalettes) && character == "P")
+                    scr_soundeffect(sfx_pursuerhit);
                 
                 with (instance_create(other.baddieID.x, other.baddieID.y, obj_bangeffect))
                     sprite_index = spr_parryeffect;
@@ -158,14 +174,17 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 scr_soundeffect(sfx_bam);
             }
             
-            if (instance_exists(other.baddieID) && (state == 42 || state == 73))
+            if (instance_exists(other.baddieID) && (state == states.superslam || state == states.freefall))
             {
                 scr_soundeffect(sfx_hitenemy);
                 global.combotime = 100;
                 instance_create(other.baddieID.x, other.baddieID.y, obj_baddiegibs);
                 other.baddieID.flash = 1;
-                other.baddieID.state = 104;
+                other.baddieID.state = states.enemystun;
                 other.baddieID.hp -= 1;
+                
+                if ((paletteselect == 17 && !global.lamepalettes) && character == "P")
+                    scr_soundeffect(sfx_pursuerhit);
                 
                 with (instance_create(other.baddieID.x, other.baddieID.y, obj_bangeffect))
                     sprite_index = spr_parryeffect;
@@ -181,27 +200,34 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 if (other.baddieID.hp <= 0)
                 {
                     other.baddieID.stunned = 200;
-                    other.baddieID.state = 104;
+                    other.baddieID.state = states.enemystun;
                 }
                 
                 vsp = -7;
-                state = 0;
+                state = states.normal;
                 other.baddieID.vsp = -4;
                 other.baddieID.hsp = xscale * 5;
             }
             
-            if (instance_exists(other.baddieID) && state == 21 && character != "S")
+            if (instance_exists(other.baddieID) && state == states.handstandjump && character != "S" && character != "V")
             {
                 if (shotgunAnim == 0)
                 {
                     image_index = 0;
                     sprite_index = spr_haulingstart;
-                    state = 45;
-                    other.baddieID.state = 107;
+                    state = states.grab;
+                    other.baddieID.state = states.enemygrabbed;
+                    
+                    with (instance_create(x, y, obj_noisetornadoeffect))
+                    {
+                        xx = 0;
+                        yy = 0;
+                        sprite_index = spr_grabhangeffect;
+                    }
                 }
                 else
                 {
-                    state = 37;
+                    state = states.shotgun;
                     
                     with (instance_create(x, y, obj_pistoleffect))
                         image_xscale = other.image_xscale;
@@ -217,6 +243,9 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                         spdh = -4;
                     
                     other.baddieID.hp -= 1;
+                    
+                    if ((paletteselect == 17 && !global.lamepalettes) && character == "P")
+                        scr_soundeffect(sfx_pursuerhit);
                     
                     with (instance_create(other.baddieID.x, other.baddieID.y, obj_bangeffect))
                         sprite_index = spr_parryeffect;
@@ -235,19 +264,19 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 }
             }
             
-            if (instance_exists(other.baddieID) && state == 46)
+            if (instance_exists(other.baddieID) && state == states.punch)
             {
                 if (!key_attack)
                 {
-                    sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch);
+                    sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
                     image_index = 0;
-                    state = 56;
+                    state = states.tackle;
                     movespeed = 3;
                     vsp = -3;
                 }
                 else
                 {
-                    state = 69;
+                    state = states.mach2;
                     sprite_index = choose(spr_machpunch1, spr_machpunch2);
                     image_index = 0;
                     
@@ -263,12 +292,13 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 with (instance_create(x + (32 * xscale), y, obj_bangeffect))
                 {
                     sprite_index = spr_kungfueffect;
-                    image_xscale = 1.5;
+                    image_xscale = 2;
                     image_yscale = image_xscale;
                 }
                 
                 other.baddieID.throwhsp = (xscale * 25) + (movespeed * xscale);
                 other.baddieID.throwup = 0;
+                other.baddieID.shoulderbashed = 1;
                 var bou = 0;
                 
                 if (character == "N")
@@ -306,7 +336,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                         stunned = 1000;
                         thrown = 1;
                         upthrow = 0;
-                        state = 104;
+                        state = states.enemystun;
                         
                         if (bou)
                             bounce = 1;
@@ -324,12 +354,17 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     image_index = 6;
                 }
                 
+                if (movespeed < 48)
+                    movespeed *= 1.25;
+                else
+                    movespeed = 48;
+                
                 scr_soundeffect(sfx_hitsound);
             }
             
-            if (instance_exists(other.baddieID) && state == 95)
+            if (instance_exists(other.baddieID) && state == states.stupidratroll)
             {
-                state = 56;
+                state = states.tackle;
                 vsp = -3;
                 hsp *= -1;
                 instance_create(x, y, obj_bangeffect);
@@ -373,7 +408,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                         alarm[1] = 5;
                         stunned = 1000;
                         thrown = 1;
-                        state = 104;
+                        state = states.enemystun;
                     }
                 }
                 

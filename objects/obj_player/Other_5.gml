@@ -13,5 +13,5 @@ if (instance_exists(obj_pizzakinsausage) && global.sausagefollow == 1)
 if (instance_exists(obj_pizzakinpineapple) && global.pineapplefollow == 1)
     instance_destroy(obj_pizzakinpineapple);
 
-if (state == 9457)
-    state = 0;
+if (state == states.stopvspNhsp)
+    state = states.normal;

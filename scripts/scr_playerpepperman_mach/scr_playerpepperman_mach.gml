@@ -37,52 +37,69 @@ function scr_playerpepperman_mach()
 	{
 	    scr_soundeffect(machslidesound);
 	    image_index = 0;
-	    state = 70;
+	    state = states.machslide;
 	    sprite_index = spr_Pturn;
 	}
 	
 	if (!key_attack && grounded)
 	{
 	    image_index = 0;
-	    state = 70;
+	    state = states.machslide;
 	    scr_soundeffect(machturnsound);
 	    sprite_index = spr_Pstop;
 	}
 	
+	var a = 0;
+	
+	if (!scr_solid(x + sign(hsp), y - 32))
+	{
+	    a = 1;
+	    
+	    if (scr_solid(x + sign(hsp), y - 33))
+	        a = 0;
+	}
+	
 	if ((scr_solid(x + sign(hsp), y) && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x + sign(hsp), y, obj_destructibles) && !place_meeting(x + sign(hsp), y, obj_metalblock) && movespeed <= 20) || (scr_solid(x + sign(hsp), y) && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x + sign(hsp), y, obj_destructibles) && !place_meeting(x + sign(hsp), y, obj_metalblock) && !place_meeting(x + sign(hsp), y, obj_heavyblock) && movespeed > 20))
 	{
-	    sprite_index = spr_Pmachhitwall;
-	    scr_soundeffect(sfx_groundpound);
-	    scr_soundeffect(sfx_bumpwall);
-	    
-	    with (obj_camera)
+	    if (!a)
 	    {
-	        shake_mag = 20;
-	        shake_mag_acc = 40 / room_speed;
-	    }
-	    
-	    hsp = 0;
-	    image_speed = 0.35;
-	    
-	    with (obj_baddie)
-	    {
-	        if (point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), __view_get(0, 0) + __view_get(2, 0), __view_get(1, 0) + __view_get(3, 0)))
+	        sprite_index = spr_Pmachhitwall;
+	        scr_soundeffect(sfx_groundpound);
+	        scr_soundeffect(sfx_bumpwall);
+	        
+	        with (obj_camera)
 	        {
-	            stun = 1;
-	            alarm[0] = 200;
-	            ministun = 0;
-	            vsp = -5;
-	            hsp = 0;
+	            shake_mag = 20;
+	            shake_mag_acc = 40 / room_speed;
 	        }
+	        
+	        hsp = 0;
+	        image_speed = 0.35;
+	        
+	        with (obj_baddie)
+	        {
+	            if (point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), __view_get(0, 0) + __view_get(2, 0), __view_get(1, 0) + __view_get(3, 0)))
+	            {
+	                stun = 1;
+	                alarm[0] = 200;
+	                ministun = 0;
+	                vsp = -5;
+	                hsp = 0;
+	            }
+	        }
+	        
+	        flash = 0;
+	        state = states.bump;
+	        hsp = -2.5 * xscale;
+	        vsp = -3;
+	        mach2 = 0;
+	        image_index = 0;
+	        instance_create(x + 10, y + 10, obj_bumpeffect);
 	    }
-	    
-	    flash = 0;
-	    state = 71;
-	    hsp = -2.5 * xscale;
-	    vsp = -3;
-	    mach2 = 0;
-	    image_index = 0;
-	    instance_create(x + 10, y + 10, obj_bumpeffect);
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_Pmachstart)
@@ -96,7 +113,7 @@ function scr_playerpepperman_mach()
 	
 	if (key_down && !grounded)
 	{
-	    state = 603;
+	    state = states.playerpeppermangroundpound;
 	    image_index = 0;
 	    sprite_index = spr_Pslamstart;
 	    vsp = -5;

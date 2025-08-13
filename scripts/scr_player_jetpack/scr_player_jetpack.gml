@@ -27,6 +27,7 @@ function scr_player_jetpack()
 	    instance_create(x + (dir * 32), y, obj_bangeffect);
 	    scr_soundeffect(sfx_groundpound);
 	    sprite_index = spr_playerN_noisebombspinjump;
+	    xscaleplus = -0.5;
 	}
 	
 	switch (sprite_index)
@@ -54,13 +55,13 @@ function scr_player_jetpack()
 	        
 	        if (grounded && vsp > 0)
 	        {
-	            state = 0;
+	            state = states.normal;
 	            xscale = dir;
 	        }
 	        
 	        if (key_slap2 && !key_up)
 	        {
-	            state = 69;
+	            state = states.mach2;
 	            sprite_index = spr_playerN_sidewayspin;
 	            scr_soundeffect(sfx_airspinstart);
 	            image_index = 0;
@@ -79,7 +80,7 @@ function scr_player_jetpack()
 	        
 	        if (character == "N" && key_jump && key_up && !grounded)
 	        {
-	            state = 4719;
+	            state = states.Ncrusher;
 	            sprite_index = spr_playerN_noisecrusherstart;
 	            image_index = 0;
 	            vsp = -16;
@@ -92,7 +93,7 @@ function scr_player_jetpack()
 	            sprite_index = spr_superjumpland;
 	            scr_soundeffect(sfx_groundpound);
 	            image_index = 0;
-	            state = 91;
+	            state = states.Sjumpland;
 	            machhitAnim = 0;
 	        }
 	        
@@ -121,6 +122,25 @@ function scr_player_jetpack()
 	        
 	        if ((!key_down || !grounded) && !scr_solid(x + 27, y - 32) && !scr_solid(x - 27, y - 32) && !scr_solid(x, y - 32) && !scr_solid(x, y - 16) && sprite_index == spr_playerN_jetpackslide)
 	            sprite_index = spr_playerN_jetpackboost;
+	        
+	        if (mach4flame <= 0)
+	        {
+	            var m = 0;
+	            
+	            if (mask_index == spr_crouchmask)
+	                m = 16;
+	            
+	            with (instance_create(x + (xscale * -32), y + 8 + m, obj_bangeffect))
+	            {
+	                sprite_index = spr_flamecloud;
+	                image_angle = 90;
+	                
+	                if (other.xscale == -1)
+	                    image_angle = -90;
+	            }
+	            
+	            mach4flame = 2;
+	        }
 	        
 	        break;
 	}

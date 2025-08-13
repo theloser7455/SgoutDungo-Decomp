@@ -4,6 +4,12 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
     
     if (corpse)
     {
+        if (obj_player.paletteselect == 14 && obj_player.character == "P")
+        {
+            obj_player.image_blend = c_red;
+            obj_player.spr_palette = spr_peppaletteRED;
+        }
+        
         var i = random_range(0, 100);
         
         if (i >= 95)
@@ -33,6 +39,8 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
             {
                 sprite_index = other.spr_dead;
                 image_blend = other.image_blend;
+                spr_palette = other.spr_palette;
+                paletteselect = other.paletteselect;
             }
         }
         
@@ -65,8 +73,19 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
                     number = "10";
             }
             
-            if (global.combo == 10 && obj_player.character == "N" && obj_player.paletteselect == 6)
+            if ((global.combo == 10 && obj_player.character == "N" && obj_player.paletteselect == 6) && !global.lamepalettes)
                 scr_soundeffect(sfx_bluu2);
+            
+            if (instance_exists(obj_tv))
+            {
+                with (obj_tv)
+                {
+                    shakething += 5;
+                    
+                    if (shakething >= 20)
+                        shakething = 20;
+                }
+            }
         }
         
         global.combotime = 100;

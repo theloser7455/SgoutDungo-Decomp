@@ -7,3 +7,5 @@ movespeed = 3;
 panic = 0;
 throwable = 0;
 throwed = 0;
+thing = image_xscale * 32;
+taunt = 0;

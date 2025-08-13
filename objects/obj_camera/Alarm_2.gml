@@ -1,12 +1,21 @@
 if (global.seconds == 0 && global.minutes == 0 && obj_player.character != "TERRENCE")
 {
-    instance_create(x, y, obj_bossdefeatflash);
+    if (global.snickchallenge || global.deathmode)
+    {
+        instance_create(x, y, obj_bossdefeatflash);
+        
+        if (instance_exists(obj_baddie))
+            instance_destroy(obj_baddie);
+        
+        scr_gameover_setup();
+        scr_soundeffect(sfx_killenemy);
+    }
+    else
+    {
+        scr_soundeffect(sfx_bellofdoom);
+    }
     
-    if (instance_exists(obj_baddie))
-        instance_destroy(obj_baddie);
-    
-    scr_gameover_setup();
-    scr_soundeffect(sfx_killenemy);
+    alarm[1] = -1;
 }
 
 if (global.collect > 0)
@@ -19,7 +28,7 @@ if (global.snickchallenge == 1 && global.collect == 0)
 {
     with (obj_player)
     {
-        state = 54;
+        state = states.gameover;
         sprite_index = spr_deathstart;
         image_index = 0;
         audio_stop_all();

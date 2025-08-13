@@ -17,7 +17,7 @@
   "soundFile": "sfx_airspinstart.wav",
   "duration": 0.48,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

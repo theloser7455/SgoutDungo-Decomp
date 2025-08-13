@@ -28,11 +28,11 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c413469a-bf4a-47fd-b513-ffb439a38483",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5a5968c4-996e-4242-ab94-83b752406ea0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ad557b1-bdec-426c-adbf-9e74cf5d74ca",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7f89ff0-3760-4e9e-a371-369f56115dc2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4168f687-5e1e-4201-8bcc-01c814d43f61",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"843021c2-4780-4807-a68d-84a2f24228bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc095319-ce49-4f11-80da-30a212057ba7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ffbb05a-999c-4f12-a569-abca6455cd65",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a00f48d8-bc02-4729-9968-547e8aac4b69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f708a83-52c7-4d66-af61-56bdc02b703c",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -49,11 +49,11 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f6ced0d8-98da-4b92-a314-2b4b0f499e10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c413469a-bf4a-47fd-b513-ffb439a38483","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a250a773-95ea-428a-a3eb-054ddab09ca9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5a5968c4-996e-4242-ab94-83b752406ea0","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a72c8981-bd5b-422c-b031-a64ad9f2a542","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ad557b1-bdec-426c-adbf-9e74cf5d74ca","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"0b476ea9-b8cc-47c5-988c-d0501d1458f9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7f89ff0-3760-4e9e-a371-369f56115dc2","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"a6fb3245-7b2b-41db-af43-28db068317a7","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4168f687-5e1e-4201-8bcc-01c814d43f61","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8d0ab1ed-eafb-42cf-be16-dc1c353040b4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"843021c2-4780-4807-a68d-84a2f24228bc","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e87909d-fe5c-4c88-8279-eb20b4449cea","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc095319-ce49-4f11-80da-30a212057ba7","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4a9e02b1-6c0f-4531-ae2c-9a24eb4ac9de","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ffbb05a-999c-4f12-a569-abca6455cd65","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2f4883db-7cbe-49b2-8d3b-ceb2325623b4","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a00f48d8-bc02-4729-9968-547e8aac4b69","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0095dd56-1d65-4414-9700-533ce44a7057","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f708a83-52c7-4d66-af61-56bdc02b703c","path":"sprites/spr_dashcloud/spr_dashcloud.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -72,11 +72,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0564031e-8183-4c24-91e2-7d9a3b013833","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"80f87b7c-849c-4258-b1d1-bbc876494c44","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

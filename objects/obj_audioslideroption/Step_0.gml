@@ -2,7 +2,7 @@ scr_getinput();
 
 if (key_down2)
 {
-    if (selected < 2)
+    if (selected < 3)
         selected += 1;
 }
 
@@ -45,17 +45,37 @@ switch (selected)
             global.audiomusvol -= 0.01;
         
         break;
+    
+    case 3:
+        if (key_right && global.audiomusbreakdancevol < 1)
+        {
+            global.audiomusbreakdancevol += 0.01;
+            audio_stop_sound(sfx_bumpwall);
+            scr_soundeffect(sfx_bumpwall);
+            audio_sound_gain(sfx_bumpwall, global.audiomusbreakdancevol, 0.1);
+        }
+        
+        if (-key_left && global.audiomusbreakdancevol > 0)
+        {
+            global.audiomusbreakdancevol -= 0.01;
+            audio_stop_sound(sfx_bumpwall);
+            scr_soundeffect(sfx_bumpwall);
+            audio_sound_gain(sfx_bumpwall, global.audiomusbreakdancevol, 0.1);
+        }
+        
+        break;
 }
 
-if (audio_is_playing(mu_medieval))
-    audio_sound_gain(mu_medieval, global.audiomusvol, 10);
+if (audio_is_playing(mu_pausemenu))
+    audio_sound_gain(mu_pausemenu, global.audiomusvol, 10);
 
 if (audio_is_playing(mu_title))
     audio_sound_gain(mu_title, global.audiomusvol, 10);
 
-ini_open("SGOUTDATA.ini");
+ini_open("SGOUTDATA new.ini");
 ini_write_real("the 🎶", "sfx", global.audiosfxvol);
 ini_write_real("the 🎶", "mus", global.audiomusvol);
+ini_write_real("the 🎶", "musbreakdance", global.audiomusbreakdancevol);
 ini_close();
 
 if (!instance_exists(obj_option))

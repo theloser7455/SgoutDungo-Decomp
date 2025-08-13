@@ -1,6 +1,6 @@
 function scr_sgoutsaves()
 {
-	ini_open("SGOUTDATA.ini");
+	ini_open("SGOUTDATA new.ini");
 	
 	if (!ini_section_exists("general"))
 	{

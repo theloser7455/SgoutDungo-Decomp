@@ -2,12 +2,18 @@ function scr_gameover_setup()
 {
 	with (obj_player)
 	{
-	    state = 54;
+	    state = states.gameover;
 	    sprite_index = spr_deathstart;
 	    image_index = image_number - 1;
-	    audio_stop_all();
-	    scr_soundeffect(mu_timesup);
-	    global.deathmode = 0;
+	    
+	    if (!global.instantR)
+	    {
+	        audio_stop_all();
+	        global.deathmode = 0;
+	        global.draintime = 0;
+	    }
+	    
+	    instance_create(x, y, obj_gameoverrestart);
 	}
 	
 	if (instance_exists(obj_sigmaface))
@@ -27,5 +33,4 @@ function scr_gameover_setup()
 	
 	global.panic = 0;
 	global.snickchallenge = 0;
-	global.draintime = 0;
 }

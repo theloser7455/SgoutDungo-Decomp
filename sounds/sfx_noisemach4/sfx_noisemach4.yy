@@ -17,7 +17,7 @@
   "soundFile": "sfx_noisemach4.wav",
   "duration": 10.089,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

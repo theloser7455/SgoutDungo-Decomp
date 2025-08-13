@@ -1,10 +1,15 @@
 image_speed = 0.35;
 font = 0;
 global.holiday = "none";
+global.jason = 0;
 secondtitle = 1162;
 var date = date_current_datetime();
 var month = date_get_month(date);
 var day = date_get_day(date);
+var weekday = current_weekday;
+
+if (weekday == 5 && date == 13)
+    global.jason = 1;
 
 if (month == 12)
 {
@@ -53,5 +58,3 @@ if (month == 3 && day == 17)
     global.holiday = "PATRICK";
     secondtitle = 1520;
 }
-
-scr_soundeffect(sfx_whatsapp);

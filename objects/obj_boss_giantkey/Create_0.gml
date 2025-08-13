@@ -1,0 +1,11 @@
+hsp = 0;
+vsp = 0;
+grav = 0;
+jump = 1;
+collectable = 0;
+grounded = 0;
+teleported = 0;
+alarm[1] = 10;
+depth = 2;
+boing = 0;
+gpeffect = 0;

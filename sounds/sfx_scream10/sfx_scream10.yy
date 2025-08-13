@@ -17,7 +17,7 @@
   "soundFile": "sfx_scream10",
   "duration": 0.905,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

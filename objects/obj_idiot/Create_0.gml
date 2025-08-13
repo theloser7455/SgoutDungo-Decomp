@@ -1,0 +1,12 @@
+attackin = 50;
+hp = 8;
+maxhp = 8;
+attack = "S";
+phase2transitionsound = sfx_pepperman_scared;
+xscale = -1;
+spr_thrown = spr_idiot_dead;
+spr_stunned = spr_idiot_hurt;
+spr_idle = spr_angelkin;
+spr_die = spr_idiot;
+hpicon = 1746;
+idiotcooldown = 0;

@@ -1,3 +1,5 @@
+thingy--;
+
 if (!instance_exists(obj_keyconfig))
 {
     if (-obj_player.key_left2 && optionselected > 0)
@@ -15,11 +17,11 @@ if (!instance_exists(obj_keyconfig))
 
 if (optionselected == 1 && obj_player.key_jump)
 {
-    file_delete("saveData.ini");
-    file_delete("SGOUTDATA.ini");
+    file_delete("SGOUTsaveData.ini");
+    file_delete("SGOUTDATA new.ini");
     scr_initinput();
     scr_soundeffect(sfx_breakblock1);
-    ini_open("saveData.ini");
+    ini_open("SGOUTsaveData.ini");
     
     if (!ini_section_exists("SAGE2019"))
     {
@@ -48,6 +50,8 @@ if (optionselected == 1 && obj_player.key_jump)
     global.SAGEknighttaken = 0;
     global.SAGEtoppin = 0;
     global.SAGEtreasure = 0;
+    global.SAGEoverkill = 0;
+    global.SAGE12uniques = 0;
     
     with (obj_SAGE2019achievementmarker)
     {
@@ -63,6 +67,7 @@ if (optionselected == 1 && obj_player.key_jump)
     }
     
     obj_mainmenuselect.selected = 0;
+    obj_player.key_jump = 0;
     instance_destroy();
 }
 
@@ -70,5 +75,8 @@ if (obj_player.key_slap2 || (optionselected == 0 && obj_player.key_jump) || obj_
 {
     scr_soundeffect(sfx_enemyprojectile);
     obj_mainmenuselect.selected = 0;
+    obj_player.key_slap2 = 0;
+    obj_player.key_jump = 0;
+    obj_player.state = 0;
     instance_destroy();
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_machpunch",
   "duration": 0.383,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

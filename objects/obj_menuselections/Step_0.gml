@@ -3,7 +3,7 @@ if (instance_exists(obj_keyconfig))
 else
     visible = true;
 
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 global.key_up = ini_read_string("ControlsKeys", "up", 38);
 global.key_right = ini_read_string("ControlsKeys", "right", 39);
 global.key_left = ini_read_string("ControlsKeys", "left", 37);

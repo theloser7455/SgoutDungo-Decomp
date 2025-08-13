@@ -20,18 +20,19 @@ function scr_boss_stun()
 	{
 	    if (ball && stunned <= 120 && sprite_index == spr_pepperman_groundpoundland)
 	    {
-	        state = 22;
+	        state = states.gottreasure;
 	        vsp = -15;
 	        
 	        if (x != obj_player.x)
 	            image_xscale = -sign(x - obj_player.x);
 	        
 	        sprite_index = spr_pepperman_rolling;
+	        scr_soundeffect(sfx_pepperman_jump);
 	    }
 	}
 	
 	if (stunned <= 0)
-	    state = 0;
+	    state = states.normal;
 	
 	if (scr_solid(x + hsp, y))
 	    hsp *= -1;

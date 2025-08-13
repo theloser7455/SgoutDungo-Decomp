@@ -1,1 +1,1 @@
-baddieID = obj_slope;
+baddieID = 0;

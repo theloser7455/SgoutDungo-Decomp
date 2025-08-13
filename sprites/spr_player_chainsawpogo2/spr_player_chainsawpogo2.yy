@@ -28,9 +28,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"be830b10-9e2d-4bb5-8b91-c7a1555aef79",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ca11f65-a943-4e80-83ca-7058916576cf",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d5f3d581-813b-4107-a59d-848b0935aa9b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c510d01e-8792-470b-b78f-9a0f54608383",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"408d5c3d-13c6-41b8-9b2f-0d5ff62896ac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6f5d4576-cc24-4902-a8ec-f0a0d679a02f",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4ad4ea91-d321-42de-af23-76a4fd2357ca","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be830b10-9e2d-4bb5-8b91-c7a1555aef79","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"87e99cbf-487f-4438-8366-b2235b3583d4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ca11f65-a943-4e80-83ca-7058916576cf","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c3991a59-9e4c-45a1-8ba3-f229b35aa393","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d5f3d581-813b-4107-a59d-848b0935aa9b","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a332ecaa-14b6-4dd6-8d4d-5fff20e61d32","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c510d01e-8792-470b-b78f-9a0f54608383","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a0e5c818-4032-491a-8feb-41b473c7b6f1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"408d5c3d-13c6-41b8-9b2f-0d5ff62896ac","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70d7cff9-d178-4f76-9100-446fc479e88f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f5d4576-cc24-4902-a8ec-f0a0d679a02f","path":"sprites/spr_player_chainsawpogo2/spr_player_chainsawpogo2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,11 +68,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5331df7-44f1-435c-8edc-6ff23f1e1c31","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05f73adf-e0cd-46d9-bc1a-c610254ace5e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

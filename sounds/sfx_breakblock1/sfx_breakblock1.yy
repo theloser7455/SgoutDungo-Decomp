@@ -17,7 +17,7 @@
   "soundFile": "sfx_breakblock1",
   "duration": 1.8280001,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

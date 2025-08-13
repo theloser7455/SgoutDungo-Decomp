@@ -13,4 +13,7 @@ function scr_bossphasechange()
 	    layer_background_visible(bg1, false);
 	    layer_background_visible(bg2, false);
 	}
+	
+	if (audio_is_playing(mu_peppermanboss) && obj_music.pausedmusic == 174)
+	    audio_sound_set_track_position(obj_music.pausedmusic, 70);
 }

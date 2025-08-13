@@ -1,8 +1,8 @@
-if (floor(image_index) == (image_number - 1) && obj_player.state != 77)
+if (floor(image_index) == (image_number - 1) && obj_player.state != states.door)
 {
     with (obj_player)
     {
-        state = 77;
+        state = states.door;
         sprite_index = spr_snick_victory;
         
         if (character != "S")

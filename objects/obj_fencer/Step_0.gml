@@ -1,43 +1,43 @@
 switch (state)
 {
-    case 92:
+    case states.snickmachstart:
         scr_enemy_idle();
         break;
     
-    case 94:
+    case states.breakdanceattack:
         scr_enemy_charge();
         break;
     
-    case 96:
+    case states.stupidratstoproll:
         scr_enemy_turn();
         break;
     
-    case 100:
+    case states.uppercut:
         scr_enemy_walk();
         break;
     
-    case 102:
+    case states.enemyland:
         scr_enemy_land();
         break;
     
-    case 103:
+    case states.enemyhit:
         scr_enemy_hit();
         break;
     
-    case 104:
+    case states.enemystun:
         scr_enemy_stun();
         break;
     
-    case 95:
+    case states.stupidratroll:
         scr_pizzagoblin_throw();
         break;
     
-    case 107:
+    case states.enemygrabbed:
         scr_enemy_grabbed();
         break;
 }
 
-if (state == 104 && stunned > 100 && birdcreated == 0)
+if (state == states.enemystun && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1;
     
@@ -45,7 +45,7 @@ if (state == 104 && stunned > 100 && birdcreated == 0)
         ID = other.id;
 }
 
-if (state != 104)
+if (state != states.enemystun)
     birdcreated = 0;
 
 scr_enemy_scarescript();
@@ -54,13 +54,13 @@ if (x != obj_player.x && grounded)
 {
     if (obj_player.x > (x - 400) && obj_player.x < (x + 400) && y <= (obj_player.y + 20) && y >= (obj_player.y - 20))
     {
-        if (state == 100 && charging == 0)
+        if (state == states.uppercut && charging == 0)
         {
             with (instance_create(x, y, obj_forkhitbox))
                 ID = other.id;
             
             charging = 1;
-            state = 94;
+            state = states.breakdanceattack;
             movespeed = 5;
             vsp = -7;
             sprite_index = spr_fencer_chargestart;
@@ -68,7 +68,7 @@ if (x != obj_player.x && grounded)
     }
 }
 
-if (state == 104 || state == 100)
+if (state == states.enemystun || state == states.uppercut)
 {
     charging = 0;
     movespeed = 0;
@@ -80,7 +80,7 @@ if (sprite_index == spr_fencer_chargestart && floor(image_index) == (image_numbe
 if (flash == 1 && alarm[2] <= 0)
     alarm[2] = 0.15 * room_speed;
 
-if (hitboxcreate == 0 && state == 100)
+if (hitboxcreate == 0 && state == states.uppercut)
 {
     hitboxcreate = 1;
     
@@ -88,10 +88,10 @@ if (hitboxcreate == 0 && state == 100)
         ID = other.id;
 }
 
-if (state != 107)
+if (state != states.enemygrabbed)
     depth = 0;
 
-if (state != 104)
+if (state != states.enemystun)
     thrown = 0;
 
 if (boundbox == 0)

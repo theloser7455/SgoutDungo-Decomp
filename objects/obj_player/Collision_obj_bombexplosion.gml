@@ -1,6 +1,6 @@
-if (hurted == 0 && cutscene == 0 && state != 26 && sprite_index != spr_bombpep_end && state != 62 && state != 64 && other.player == obj_slope)
+if (hurted == 0 && cutscene == 0 && state != states.bombpep && sprite_index != spr_bombpep_end && state != states.Sjump && state != states.Sjumpprep && other.player == 0)
 {
-    if (state == 23 || state == 24)
+    if (state == states.knightpep || state == states.knightpepattack)
     {
         scr_soundeffect(sfx_loseknight);
         
@@ -30,6 +30,6 @@ if (hurted == 0 && cutscene == 0 && state != 26 && sprite_index != spr_bombpep_e
     hurted = 1;
     vsp = -4;
     sprite_index = spr_bombpepend;
-    state = 26;
+    state = states.bombpep;
     bombpeptimer = 0;
 }

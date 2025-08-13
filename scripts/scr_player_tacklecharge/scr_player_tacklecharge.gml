@@ -20,7 +20,7 @@ function scr_player_tacklecharge()
 	
 	if (key_slap2)
 	{
-	    state = 46;
+	    state = states.punch;
 	    image_index = 1;
 	    image_speed = 0.35;
 	}
@@ -66,7 +66,7 @@ function scr_player_tacklecharge()
 	        thrown = 1;
 	        x = obj_player.x;
 	        y = obj_player.y;
-	        state = 104;
+	        state = states.enemystun;
 	        hsp = -image_xscale * 10;
 	        vsp = -10;
 	        
@@ -78,7 +78,7 @@ function scr_player_tacklecharge()
 	    }
 	    
 	    movespeed = 0;
-	    state = 71;
+	    state = states.bump;
 	    hsp = -2.5;
 	    vsp = -3;
 	    mach2 = 0;
@@ -107,7 +107,7 @@ function scr_player_tacklecharge()
 	        thrown = 1;
 	        x = obj_player.x;
 	        y = obj_player.y;
-	        state = 104;
+	        state = states.enemystun;
 	        hsp = -image_xscale * 10;
 	        vsp = -10;
 	        
@@ -119,7 +119,7 @@ function scr_player_tacklecharge()
 	    }
 	    
 	    movespeed = 0;
-	    state = 71;
+	    state = states.bump;
 	    hsp = 2.5;
 	    vsp = -3;
 	    mach2 = 0;
@@ -137,13 +137,13 @@ function scr_player_tacklecharge()
 	    if (character == "P")
 	        machhitAnim = 0;
 	    
-	    state = 67;
+	    state = states.crouchslide;
 	}
 	
 	if (!key_attack && move != xscale && grounded)
 	{
 	    image_index = 0;
-	    state = 70;
+	    state = states.machslide;
 	    scr_soundeffect(sfx_machslide);
 	    sprite_index = spr_machslidestart;
 	}
@@ -151,7 +151,7 @@ function scr_player_tacklecharge()
 	if (move == -xscale && grounded)
 	{
 	    image_index = 0;
-	    state = 70;
+	    state = states.machslide;
 	    sprite_index = spr_machslideboost;
 	}
 	

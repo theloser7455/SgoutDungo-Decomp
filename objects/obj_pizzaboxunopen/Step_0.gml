@@ -1,13 +1,29 @@
-if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
+var evilvariable3 = 0;
+
+with (instance_place(x, y, obj_baddie))
+    evilvariable3 = thrown;
+
+if ((place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen) || evilvariable3)
 {
-    if (!audio_is_playing(sfx_collecttoppin))
-        scr_soundeffect(sfx_collecttoppin);
+    scr_soundeffect(sfx_collecttoppin);
+    global.uniquecollects += 1;
+    
+    if (instance_exists(obj_tv))
+    {
+        with (obj_tv)
+        {
+            shakething += 10;
+            
+            if (shakething >= 20)
+                shakething = 20;
+        }
+    }
     
     if (content == obj_noisebomb)
     {
         with (obj_player)
         {
-            state = 50;
+            state = states.backbreaker;
             sprite_index = spr_player_bossintro;
             image_index = 0;
         }
@@ -181,8 +197,38 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         global.pineapplefollow = 1;
     }
     
-    sprite_index = spr_pizzaboxopen;
+    sprite_index = spr_cagedebris;
+    
+    for (var i = 0; i < (image_number - 1); i++)
+    {
+        with (instance_create(x, y, obj_baddiegibs))
+        {
+            sprite_index = other.sprite_index;
+            image_index = i;
+        }
+    }
+    
+    if (evilvariable3)
+    {
+        with (instance_create(x, y, obj_explosioneffect))
+            sprite_index = spr_bombexplosion;
+        
+        scr_soundeffect(sfx_explosion);
+    }
+    
+    instance_destroy();
 }
 
-if (sprite_index == spr_pizzaboxopen && floor(image_index) == 16)
-    instance_destroy();
+if (floor(image_index) == 26 && helpme == 0)
+{
+    with (instance_create(x, y - 64, obj_bangeffect))
+    {
+        sprite_index = spr_toppinhelp;
+        image_speed = other.image_speed;
+    }
+    
+    helpme = 1;
+}
+
+if (floor(image_index) != 26 && helpme == 1)
+    helpme = 0;

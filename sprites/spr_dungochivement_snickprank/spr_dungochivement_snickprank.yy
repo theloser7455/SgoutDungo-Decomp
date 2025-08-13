@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3fce508d-c944-4b50-a221-3ee5b7392ed2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9a6d048-d4fb-48d3-ad65-55025eefe46f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3524df4-705d-4ae3-8744-538d68e63d96",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27ee0cb4-3dce-448e-bc05-5546aa71e00c",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8c78959c-0a7f-4a1d-a720-e8d8f66343e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3fce508d-c944-4b50-a221-3ee5b7392ed2","path":"sprites/spr_dungochivement_snickprank/spr_dungochivement_snickprank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d62229c4-64fd-48d5-9258-f6ea976caff9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9a6d048-d4fb-48d3-ad65-55025eefe46f","path":"sprites/spr_dungochivement_snickprank/spr_dungochivement_snickprank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2660951b-992f-4b6f-bdae-8b2a53b8a6b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3524df4-705d-4ae3-8744-538d68e63d96","path":"sprites/spr_dungochivement_snickprank/spr_dungochivement_snickprank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e4b22800-89aa-45f2-9994-f03239f0854b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27ee0cb4-3dce-448e-bc05-5546aa71e00c","path":"sprites/spr_dungochivement_snickprank/spr_dungochivement_snickprank.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,11 +66,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c13101a0-8ec7-4870-9130-d6af9789187a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a42e0a0a-f38f-4014-82fb-0f0f68abc7aa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

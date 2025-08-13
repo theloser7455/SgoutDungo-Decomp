@@ -62,4 +62,25 @@ with (obj_tv)
         showtext = 1;
         alarm[0] = 2;
     }
+    
+    if (other.sprite_index == bg_SAGEoverkill)
+    {
+        message = "PILEDRIVE AND THEN THROW UR ENEMY";
+        showtext = 1;
+        alarm[0] = 2;
+    }
+    
+    if (other.sprite_index == bg_sgout12collects)
+    {
+        message = "GET 12 UNIQUE COLLECTS IN ELITE MODE";
+        showtext = 1;
+        alarm[0] = 2;
+    }
+    
+    if (other.sprite_index == bg_sgoutbully)
+    {
+        message = "PARRY PIZZAFACE 5 TIMES IN A ROOM";
+        showtext = 1;
+        alarm[0] = 2;
+    }
 }

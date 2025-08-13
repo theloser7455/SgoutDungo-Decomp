@@ -8,6 +8,7 @@ direction = point_direction(x, y, obj_player.x, obj_player.y);
 
 if (place_meeting(x, y, obj_player))
 {
+    instance_create(xstart, ystart, object_index);
     instance_destroy();
     
     with (instance_create(x, y, obj_sausageman_dead))

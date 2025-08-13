@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"861ba16d-ab14-4447-b76c-b522e0bf39d3",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b013add3-dd74-4429-a3db-bcb3d592b408",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"521560cd-ed22-4f0c-902b-72014ef54a5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"56a1aebc-5b46-4595-8d70-7e309e091e8a",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5f01506d-fc85-4779-a24e-218ad2434523","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"861ba16d-ab14-4447-b76c-b522e0bf39d3","path":"sprites/spr_stupidrat_mouthfuljump/spr_stupidrat_mouthfuljump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1c7ae413-81c6-494e-b60f-96e0b3d609a3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b013add3-dd74-4429-a3db-bcb3d592b408","path":"sprites/spr_stupidrat_mouthfuljump/spr_stupidrat_mouthfuljump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b2577385-ffa2-4b19-8503-d45c1704156e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"521560cd-ed22-4f0c-902b-72014ef54a5f","path":"sprites/spr_stupidrat_mouthfuljump/spr_stupidrat_mouthfuljump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2d0c2298-9c7a-489a-a277-fc0ada9ec570","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"56a1aebc-5b46-4595-8d70-7e309e091e8a","path":"sprites/spr_stupidrat_mouthfuljump/spr_stupidrat_mouthfuljump.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,11 +66,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ac6cfab9-7907-4a85-a098-1e9825688917","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"48af162a-0dab-47d1-924a-af7bd9ebf249","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

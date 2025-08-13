@@ -17,7 +17,7 @@
   "soundFile": "sfx_fireass.wav",
   "duration": 2.192,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

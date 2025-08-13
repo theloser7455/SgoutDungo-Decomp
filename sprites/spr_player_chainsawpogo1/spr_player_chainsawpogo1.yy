@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92df07b8-1f4c-4c7a-9c7b-6d7843eb7216",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bc1d0d3b-e535-44bd-87c5-835d1fbb130b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"044307af-7f97-42d8-b435-3db37487acc5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"67592979-4f5c-461b-9198-fc631362c072",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d34d8f6a-94ac-44a8-99ba-18d52d9df531",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f30cb8ad-5eea-4bf6-a9d2-e36f1432c372",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0033a9c-a379-4951-a107-1273ef4a3e70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18248dac-24f2-42ee-b024-9d9fae6af2ce",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fabdd646-1bf2-4ab6-818e-b94ad5f73507","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92df07b8-1f4c-4c7a-9c7b-6d7843eb7216","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"4b01d7ab-b913-4c0b-be8d-1e5f5bd36a4d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bc1d0d3b-e535-44bd-87c5-835d1fbb130b","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1b2d2196-ca5c-40c6-b815-43c3f322c437","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"044307af-7f97-42d8-b435-3db37487acc5","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1ea1f2b3-1bb2-4478-bb4a-f814aad4f1fe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"67592979-4f5c-461b-9198-fc631362c072","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"633f5aad-50ed-4d0e-aeea-e820189106b7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d34d8f6a-94ac-44a8-99ba-18d52d9df531","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"382d2543-de2d-4b56-bb74-19ea7527be44","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f30cb8ad-5eea-4bf6-a9d2-e36f1432c372","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a29653a9-8207-4af4-8ce5-0defb576dec0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a0033a9c-a379-4951-a107-1273ef4a3e70","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f50a87f9-594d-4038-b220-aefe611c7729","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18248dac-24f2-42ee-b024-9d9fae6af2ce","path":"sprites/spr_player_chainsawpogo1/spr_player_chainsawpogo1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"382e3bae-0d68-4662-bf35-122e4c0cc1d1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ea738e32-72c7-4382-aa45-4df61c759c1b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

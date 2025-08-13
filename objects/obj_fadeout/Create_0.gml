@@ -4,3 +4,5 @@ gotonoplayer = 0;
 
 if (instance_exists(obj_pausefadeout))
     instance_destroy(obj_pausefadeout);
+
+startingsgout = 0;

@@ -1,0 +1,15 @@
+bossid = obj_strongbaddie.id;
+bosshp = bossid.hp;
+bossmaxhp = bossid.maxhp;
+playerhealth = 8;
+playerhealthmax = 8;
+hpicon = 976;
+image_speed = 0.35;
+prevhpB = bossid.hp;
+prevhpP = 8;
+paletteselect = 1162;
+spr_palette = spr_cheeseblob;
+pitch = 1;
+playerhealthframe = 0;
+phaseeeeeeee = 0;
+idiotrot = 0;

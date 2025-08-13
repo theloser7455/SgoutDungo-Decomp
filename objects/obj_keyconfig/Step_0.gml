@@ -8,7 +8,7 @@ if (selecting == -1)
         scr_soundeffect(sfx_step);
     }
     
-    if (key_down2 && key_select < 9)
+    if (key_down2 && key_select < 10)
     {
         key_select += 1;
         scr_soundeffect(sfx_step);
@@ -21,7 +21,7 @@ if (selecting == -1)
 if (key_jump2 && selecting == -1 && key_select == -1)
 {
     scr_soundeffect(sfx_enemyprojectile);
-    ini_open("saveData.ini");
+    ini_open("SGOUTsaveData.ini");
     ini_write_string("ControlsKeys", "up", global.key_up);
     ini_write_string("ControlsKeys", "right", global.key_right);
     ini_write_string("ControlsKeys", "left", global.key_left);
@@ -32,6 +32,7 @@ if (key_jump2 && selecting == -1 && key_select == -1)
     ini_write_string("ControlsKeys", "taunt", global.key_taunt);
     ini_write_string("ControlsKeys", "start", global.key_start);
     ini_write_string("ControlsKeys", "punch", global.key_punch);
+    ini_write_string("ControlsKeys", "punch2", global.key_punch2);
     ini_close();
     instance_destroy();
 }
@@ -184,4 +185,19 @@ if (key_select == 9 && key_jump && selecting == -1)
 {
     selecting = key_select;
     global.key_punch = -1;
+}
+
+if (selecting == 10)
+{
+    if (keyboard_check_pressed(vk_anykey))
+    {
+        global.key_punch2 = keyboard_key;
+        selecting = -1;
+    }
+}
+
+if (key_select == 10 && key_jump && selecting == -1)
+{
+    selecting = key_select;
+    global.key_punch2 = -1;
 }

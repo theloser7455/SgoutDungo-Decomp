@@ -19,10 +19,16 @@ function scr_player_Sjump()
 	
 	if (sprite_index == spr_superjump)
 	{
-	    vsp = -15;
+	    vsp = -15 - ervilvariable;
+	    
+	    if (character == "N")
+	        ervilvariable += 0.25;
 	    
 	    if (character == "R")
 	        vsp = -20;
+	    
+	    if (character == "S")
+	        vsp = -30;
 	}
 	
 	if (sprite_index == spr_player_supersidejump)
@@ -73,7 +79,7 @@ function scr_player_Sjump()
 	        scr_soundeffect(cheesestomp);
 	    
 	    image_index = 0;
-	    state = 91;
+	    state = states.Sjumpland;
 	    machhitAnim = 0;
 	}
 	
@@ -86,7 +92,7 @@ function scr_player_Sjump()
 	        
 	        movespeed = 12;
 	        machhitAnim = 0;
-	        state = 89;
+	        state = states.mach3;
 	        
 	        if (character != "N")
 	            flash = 1;
@@ -96,7 +102,7 @@ function scr_player_Sjump()
 	        
 	        if (character == "R")
 	        {
-	            state = 95;
+	            state = states.stupidratroll;
 	            scr_soundeffect(turnintoball);
 	        }
 	        
@@ -105,7 +111,7 @@ function scr_player_Sjump()
 	            if (move != 0)
 	                xscale = move;
 	            
-	            state = 69;
+	            state = states.mach2;
 	            sprite_index = spr_playerN_sidewayspin;
 	            scr_soundeffect(sfx_airspinstart);
 	            image_index = 0;
@@ -116,6 +122,28 @@ function scr_player_Sjump()
 	            
 	            with (instance_create(x, y, obj_crazyrunothereffect))
 	                image_xscale = other.xscale;
+	        }
+	        
+	        if (character == "S")
+	        {
+	            scr_soundeffect(choose(sfx_snickglitchnew, sfx_snickglitchnew2, sfx_snickglitchnew3, sfx_snickglitchnew4));
+	            
+	            if (movespeed < 12)
+	                movespeed = 12;
+	            
+	            tauntstoredvsp = hsp;
+	            tauntstoredhsp = vsp;
+	            hsp = 0;
+	            vsp = 0;
+	            tpcd = 0;
+	            tph = 60 * xscale;
+	            tpv = 0;
+	            tptimes = 4;
+	            tauntstoredstate = state;
+	            tauntstoredsprite = sprite_index;
+	            tauntstoredmovespeed = movespeed + 4;
+	            sprite_index = spr_secondjump2;
+	            state = states.snicktp;
 	        }
 	    }
 	    else
@@ -138,7 +166,7 @@ function scr_player_Sjump()
 	    {
 	        movespeed = 12;
 	        machhitAnim = 0;
-	        state = 89;
+	        state = states.mach3;
 	        flash = 1;
 	        vsp = -5;
 	        jumpstop = 0;
@@ -156,7 +184,7 @@ function scr_player_Sjump()
 	    {
 	        movespeed = 12;
 	        machhitAnim = 0;
-	        state = 89;
+	        state = states.mach3;
 	        flash = 1;
 	        vsp = -5;
 	        jumpstop = 0;

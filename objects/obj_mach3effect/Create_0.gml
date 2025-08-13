@@ -3,7 +3,7 @@ image_index = obj_player.image_index - 1;
 alarm[0] = 15;
 image_xscale = obj_player.xscale;
 sprite_index = obj_player.sprite_index;
-ini_open("SGOUTDATA.ini");
+ini_open("SGOUTDATA new.ini");
 var a = make_color_rgb(ini_read_real("afterimages", "mach1 R", 1), ini_read_real("afterimages", "mach1 G", 1), ini_read_real("afterimages", "mach1 B", 1));
 var b = make_color_rgb(ini_read_real("afterimages", "mach2 R", 1), ini_read_real("afterimages", "mach2 G", 1), ini_read_real("afterimages", "mach2 B", 1));
 randomize();

@@ -17,7 +17,7 @@
   "soundFile": "sfx_pizzacoin",
   "duration": 1.548,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

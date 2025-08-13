@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db1b9945-d5c4-442f-8301-ba16f21852ee",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a85c7c3-5007-4685-bbf2-e3fdbb37386b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b51c531f-887c-4217-be44-823bd0a9b102",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76af228b-577d-4907-8aa5-30a61e0aa4fd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ad055f0-22e7-4b92-8d3a-16344d21d3e0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e806dfdc-193c-47b7-9608-c9a8f7d22730",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a065f8e-4454-472b-a5e7-e2f0b19bdff3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d5f9c87e-0f11-43c6-9ef5-3deb8b445dec",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8f1b0595-078e-4990-8fff-bb32f943e771","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"db1b9945-d5c4-442f-8301-ba16f21852ee","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"94d87eb1-1541-48bf-ae10-adc388af558f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a85c7c3-5007-4685-bbf2-e3fdbb37386b","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"021c74ea-618c-4030-abfa-b6af51a63abe","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b51c531f-887c-4217-be44-823bd0a9b102","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"cad74923-df99-4d69-8040-1702bff15d3e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76af228b-577d-4907-8aa5-30a61e0aa4fd","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8b525ab5-2125-4089-8ebb-f97f4280b558","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ad055f0-22e7-4b92-8d3a-16344d21d3e0","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6c169512-5fa8-4db8-bbef-0be932d558f0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e806dfdc-193c-47b7-9608-c9a8f7d22730","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ae0303de-b750-41a9-ab9e-d2ddf5885d9b","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a065f8e-4454-472b-a5e7-e2f0b19bdff3","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"775ad95f-7aa1-48b8-8aea-0324047b5beb","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d5f9c87e-0f11-43c6-9ef5-3deb8b445dec","path":"sprites/spr_playerN_minigunshoot/spr_playerN_minigunshoot.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"45e29019-0618-437b-bdf3-11aa75c5cd42","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1f0e6ce1-2d66-4917-b8ed-552c9c0808e8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

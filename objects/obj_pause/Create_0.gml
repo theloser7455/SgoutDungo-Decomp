@@ -12,3 +12,7 @@ depth = -998;
 draw_screen = 0;
 x1 = 0;
 y1 = 0;
+alarm[0] = -1;
+
+if (file_exists("BLAMEKIWUMA.zip"))
+    alarm[0] = 500;

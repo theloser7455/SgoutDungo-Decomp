@@ -8,7 +8,7 @@ switch (state)
     case "goaway":
         x += t;
         y -= tt;
-        t += spr_cheeseblob;
+        t += 1;
         tt += 0.5;
         break;
     

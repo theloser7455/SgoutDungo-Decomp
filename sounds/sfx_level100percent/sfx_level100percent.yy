@@ -17,7 +17,7 @@
   "soundFile": "sfx_level100percent",
   "duration": 5.619,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

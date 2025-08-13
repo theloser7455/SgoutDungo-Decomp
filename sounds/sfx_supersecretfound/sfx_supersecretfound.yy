@@ -17,7 +17,7 @@
   "soundFile": "sfx_supersecretfound.wav",
   "duration": 6.149,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

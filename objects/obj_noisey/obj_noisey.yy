@@ -14,7 +14,10 @@
     "path": "sprites/spr_player_mask/spr_player_mask.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_baddie",
+    "path": "objects/obj_baddie/obj_baddie.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 0,

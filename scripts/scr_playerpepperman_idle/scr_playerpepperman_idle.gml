@@ -33,20 +33,20 @@ function scr_playerpepperman_idle()
 	        image_xscale = other.xscale;
 	    
 	    vsp = -11;
-	    state = 601;
+	    state = states.playerpeppermanfall;
 	    image_index = 0;
 	}
 	
 	if (!grounded)
 	{
 	    sprite_index = spr_Pjump;
-	    state = 601;
+	    state = states.playerpeppermanfall;
 	    image_index = image_number - 1;
 	}
 	
 	if (key_attack)
 	{
-	    state = 602;
+	    state = states.playerpeppermanmach;
 	    sprite_index = spr_Pmachstart;
 	    image_index = 0;
 	    movespeed = 12;

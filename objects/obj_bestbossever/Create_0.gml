@@ -1,0 +1,14 @@
+scr_soundeffect(sfx_devilkinintro);
+attackin = 200;
+turns = 0;
+hp = 2;
+maxhp = 2;
+attack = "none";
+ball = 0;
+flame = 0;
+spr_thrown = spr_thedevilkin;
+spr_stunned = spr_thedevilkin;
+spr_idle = spr_thedevilkin;
+spr_die = spr_thedevilkin;
+hpicon = 1629;
+phase2transitionsound = sfx_scream7;

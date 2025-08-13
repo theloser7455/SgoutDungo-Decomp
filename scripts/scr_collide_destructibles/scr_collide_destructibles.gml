@@ -2,14 +2,14 @@ function scr_collide_destructibles()
 {
 	var markiplier = 15;
 	
-	if (state == 69 || state == 100 || state == 99 || state == 9090 || state == 95 || state == 94 || state == 46 || state == 89 || state == 36 || state == 17 || state == 1 || state == 8 || character == "TERRENCE" || state == 307 || state == 308 || state == 67 || state == 9890 || state == 4719 || state == 9459 || state == 602)
+	if (state == states.mach2 || state == states.uppercut || state == states.stupidratjelly || state == states.NEWchainsaw || state == states.stupidratroll || state == states.breakdanceattack || state == states.punch || state == states.mach3 || state == states.machroll || state == states.knightpepslopes || state == states.tumble || state == states.hookshot || character == "TERRENCE" || state == states.kungfu || state == states.jetpack || state == states.crouchslide || state == states.wallbounce || state == states.Ncrusher || state == states.Nfork || state == states.playerpeppermanmach)
 	{
 	    if (place_meeting(x + hsp, y, obj_destructibles))
 	    {
 	        with (instance_place(x + hsp, y, obj_destructibles))
 	            instance_destroy();
 	        
-	        if (state == 69)
+	        if (state == states.mach2)
 	            machpunchAnim = 1;
 	    }
 	    
@@ -18,12 +18,12 @@ function scr_collide_destructibles()
 	        with (instance_place(x + hsp, y, obj_destructibles))
 	            instance_destroy();
 	        
-	        if (state == 69)
+	        if (state == states.mach2)
 	            machpunchAnim = 1;
 	    }
 	}
 	
-	if ((state == 23 || state == 42 || state == 8) && vsp > 0)
+	if ((state == states.knightpep || state == states.superslam || state == states.hookshot) && vsp > 0)
 	{
 	    if (place_meeting(x, y + 1, obj_destructibles))
 	    {
@@ -32,7 +32,7 @@ function scr_collide_destructibles()
 	    }
 	}
 	
-	if (character == "TERRENCE" || state == 100 || state == 99 || state == 9890 || state == 4719 || state == 308 || state == 9459 || state == 603)
+	if (character == "TERRENCE" || state == states.uppercut || state == states.stupidratjelly || state == states.wallbounce || state == states.Ncrusher || state == states.jetpack || state == states.Nfork || state == states.playerpeppermangroundpound)
 	{
 	    with (instance_place(x, y + vsp, obj_destructibles))
 	        instance_destroy();
@@ -58,7 +58,7 @@ function scr_collide_destructibles()
 	    }
 	}
 	
-	if (vsp <= 0.5 && (state == 57 || state == 16 || state == 5 || state == 62 || state == 69 || state == 89))
+	if (vsp <= 0.5 && (state == states.jump || state == states.climbwall || state == states.fireass || state == states.Sjump || state == states.mach2 || state == states.mach3))
 	{
 	    if (place_meeting(x, y - 1, obj_destructibles))
 	    {
@@ -68,14 +68,14 @@ function scr_collide_destructibles()
 	            
 	            with (other.id)
 	            {
-	                if (state != 62 && state != 16)
+	                if (state != states.Sjump && state != states.climbwall)
 	                    vsp = 0;
 	            }
 	        }
 	    }
 	}
 	
-	if (vsp >= 0 && (state == 73 || state == 98 || state == 99 || state == 100 || state == 76))
+	if (vsp >= 0 && (state == states.freefall || state == states.stupidratcheeseslam || state == states.stupidratjelly || state == states.uppercut || state == states.freefallland))
 	{
 	    if (place_meeting(x, y + vsp + 2, obj_destructibles))
 	    {
@@ -84,7 +84,7 @@ function scr_collide_destructibles()
 	    }
 	}
 	
-	if (state == 73 || state == 76)
+	if (state == states.freefall || state == states.freefallland)
 	{
 	    if (place_meeting(x, y + 1, obj_metalblock) && freefallsmash > 10)
 	    {
@@ -93,7 +93,7 @@ function scr_collide_destructibles()
 	    }
 	}
 	
-	if (state == 21)
+	if (state == states.handstandjump)
 	{
 	    with (obj_destructibles)
 	    {

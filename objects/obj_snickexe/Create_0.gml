@@ -12,3 +12,7 @@ evilcharge = 0;
 beamshot = 0;
 previousattack = "beam";
 coilangle = 0;
+mivespid = 0;
+stater = "normal";
+tpcooldown = 500;
+alarm[3] = 5;

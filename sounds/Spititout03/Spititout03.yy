@@ -17,7 +17,7 @@
   "soundFile": "Spititout03.ogg",
   "duration": 0.454,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

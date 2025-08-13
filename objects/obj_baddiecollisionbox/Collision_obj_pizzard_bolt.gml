@@ -7,7 +7,7 @@ if (instance_exists(baddieID) && other.team)
     instance_create(baddieID.x, baddieID.y, obj_slapstar);
     instance_create(baddieID.x, baddieID.y, obj_baddiegibs);
     baddieID.flash = 1;
-    baddieID.state = 104;
+    baddieID.state = states.enemystun;
     
     if (baddieID.stunned < 100)
         baddieID.stunned = 100;

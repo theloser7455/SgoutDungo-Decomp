@@ -15,6 +15,9 @@ if (refresh <= 0)
             
             if (object_index == obj_baddie)
                 status = other.contentstatus;
+            
+            if (object_index == obj_pizzagoblinbomb)
+                timergooff = 0;
         }
         
         refresh = 100;

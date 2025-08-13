@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b96e199-c9c0-4928-8646-8cdd765a3486",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"68436f02-9de3-4350-8531-96ced7bda78e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92c719b5-4b7a-4228-bcf1-b42b5087773b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aae9e142-0c1e-40df-ba9b-462f6e26c048",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f6b8f39e-04cb-4138-a4ea-6de3887eeec0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc5cb036-e387-4bbe-a7e9-e0c42158cf70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e0dc750d-2b3f-4eab-8034-7bcb1e0ef062",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"31799802-8155-4467-90ef-c2a236f31155",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e0259040-b538-4d50-aedf-5ae1d6761d32","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b96e199-c9c0-4928-8646-8cdd765a3486","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"55c615d3-5dd5-4094-b55f-75389595fad4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68436f02-9de3-4350-8531-96ced7bda78e","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ae432f0e-e7b4-4e52-8d80-9d67cd6f02b6","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92c719b5-4b7a-4228-bcf1-b42b5087773b","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f4cbb194-572c-4900-a755-7035edd45a90","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aae9e142-0c1e-40df-ba9b-462f6e26c048","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c6475521-274c-4ac4-b8f3-d36e36fad65a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6b8f39e-04cb-4138-a4ea-6de3887eeec0","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2f5d9827-4bd7-49c8-b8c1-3eac3e99ca1e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc5cb036-e387-4bbe-a7e9-e0c42158cf70","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9bacc879-7b38-4120-a73d-1097ebed5aa2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e0dc750d-2b3f-4eab-8034-7bcb1e0ef062","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c4fabeee-e4ec-4949-95e3-2e821a287cea","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31799802-8155-4467-90ef-c2a236f31155","path":"sprites/spr_snick_climbwall/spr_snick_climbwall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e5965b1-fbaa-498d-b590-e67e890910e7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fd32e2ba-ff99-451f-b1c4-0e7cf7d6739f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

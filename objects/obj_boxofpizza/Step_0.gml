@@ -2,7 +2,7 @@ with (obj_player)
 {
     if (other.image_yscale == 1)
     {
-        if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == 65 || character == "S" || character == "TERRENCE" || state == 36 || squished)) || ((state == 67 || state == 73 || state == 76 || state == 9890) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != 77 && state != 60)
+        if (((key_down && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id) && (state == states.crouch || character == "S" || character == "TERRENCE" || state == states.machroll || squished)) || ((state == states.crouchslide || state == states.freefall || state == states.freefallland || state == states.wallbounce) && !place_meeting(x, y + 1, obj_destructibles) && place_meeting(x, y + 1, other.id))) && !instance_exists(obj_fadeout) && state != states.door && state != states.comingoutdoor)
         {
             other.depth = -10;
             scr_soundeffect(sfx_box);
@@ -21,13 +21,13 @@ with (obj_player)
             
             sprite_index = spr_downpizzabox;
             image_index = 0;
-            state = 77;
+            state = states.door;
         }
     }
     
     if (other.image_yscale == -1)
     {
-        if (((key_up && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id) && (state == 0 || state == 57 || state == 68 || state == 69 || state == 89 || state == 64)) || ((state == 62 || state == 9890 || state == 91 || state == 100 || state == 99) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id))) && !instance_exists(obj_fadeout) && state != 77 && state != 60)
+        if (((key_up && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id) && (state == 0 || state == states.jump || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.Sjumpprep)) || ((state == states.Sjump || state == states.wallbounce || state == states.Sjumpland || state == states.uppercut || state == states.stupidratjelly) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other.id))) && !instance_exists(obj_fadeout) && state != states.door && state != states.comingoutdoor)
         {
             scr_soundeffect(sfx_box);
             other.depth = -10;
@@ -47,7 +47,7 @@ with (obj_player)
             
             sprite_index = spr_uppizzabox;
             image_index = 0;
-            state = 77;
+            state = states.door;
         }
     }
 }

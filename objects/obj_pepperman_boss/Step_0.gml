@@ -2,7 +2,7 @@ var thing = phase * 4;
 
 switch (state)
 {
-    case 0:
+    case states.normal:
         image_speed = 0.35;
         
         if (hp > 8)
@@ -33,7 +33,7 @@ switch (state)
                 if (x != obj_player.x)
                     xscale = -sign(x - obj_player.x);
                 
-                state = 19;
+                state = states.secondjump;
                 attackin = 50;
                 flash = 1;
                 sprite_index = spr_pepperman_shoulderstart;
@@ -45,11 +45,12 @@ switch (state)
             if (attack == "GP")
             {
                 attackin = 50;
+                scr_soundeffect(sfx_pepperman_jump);
                 
                 if (x != obj_player.x)
                     xscale = -sign(x - obj_player.x);
                 
-                state = 20;
+                state = states.chainsawbump;
                 sprite_index = spr_pepperman_jump;
                 image_speed = 0.35;
                 image_index = 0;
@@ -62,19 +63,19 @@ switch (state)
         
         break;
     
-    case 30:
+    case states.stunned:
         scr_boss_stun();
         break;
     
-    case 693:
+    case states.bossStun:
         scr_boss_stun();
         break;
     
-    case 18:
+    case states.portal:
         scr_boss_thrown();
         break;
     
-    case 19:
+    case states.secondjump:
         image_speed = 0.35;
         
         if (sprite_index != spr_pepperman_shoulderstart)
@@ -92,12 +93,17 @@ switch (state)
         if (scr_solid(x + xscale, y))
         {
             stunned = 100;
-            stunned -= (25 * phase);
-            state = 30;
+            
+            if (phase < 3)
+                stunned -= (25 * phase);
+            else
+                stunned -= 50;
+            
+            state = states.stunned;
             
             if (hp < 3)
             {
-                state = 693;
+                state = states.bossStun;
                 stunned = 50;
             }
             
@@ -110,7 +116,7 @@ switch (state)
         
         if (-sign(x - obj_player.x) == -xscale && turns > 0)
         {
-            state = 90;
+            state = states.freefallprep;
             turns--;
             sprite_index = spr_pepperman_shoulderturn;
             image_index = 0;
@@ -119,13 +125,13 @@ switch (state)
         
         break;
     
-    case 90:
+    case states.freefallprep:
         hsp = Approach(hsp, 0, 0.5);
         image_speed = 0.35;
         
         if (floor(image_index) == (image_number - 1))
         {
-            state = 19;
+            state = states.secondjump;
             xscale *= -1;
             movespeed = 18 + thing;
             sprite_index = spr_pepperman_shoulderloop;
@@ -136,7 +142,7 @@ switch (state)
         
         break;
     
-    case 20:
+    case states.chainsawbump:
         hsp = Approach(hsp, 0, 0.5);
         
         if (vsp > 0)
@@ -147,7 +153,8 @@ switch (state)
         
         if (hsp == 0 && floor(vsp) == 0)
         {
-            state = 21;
+            state = states.handstandjump;
+            scr_soundeffect(sfx_pepperman_jump);
             sprite_index = spr_pepperman_groundpoundstart;
             image_index = 0;
             vsp = -10;
@@ -155,7 +162,7 @@ switch (state)
         
         break;
     
-    case 21:
+    case states.handstandjump:
         image_speed = 0.35;
         
         if (floor(image_index) == (image_number - 1) && sprite_index == spr_pepperman_groundpoundstart)
@@ -167,7 +174,7 @@ switch (state)
         if (grounded)
         {
             scr_soundeffect(sfx_groundpound);
-            state = 30;
+            state = states.stunned;
             stunned = 200;
             stunned += (25 * phase);
             sprite_index = spr_pepperman_groundpoundland;
@@ -188,7 +195,7 @@ switch (state)
         
         break;
     
-    case 22:
+    case states.gottreasure:
         hsp = xscale * 10;
         
         if (place_meeting(x + xscale, y, obj_solid))
@@ -198,38 +205,68 @@ switch (state)
         }
         
         if (grounded && vsp > 0)
-            state = 0;
+            state = states.normal;
         
+        break;
+    
+    case states.bossphase2transition:
+        scr_boss_phase2transition();
         break;
 }
 
-if (instance_exists(obj_peppermanmarbleblockboss))
+if (instance_exists(obj_peppermanmarbleblockboss) && state != states.bossphase2transition)
 {
     if (obj_peppermanmarbleblockboss.hp <= 0)
     {
-        if (distance_to_object(obj_peppermanmarbleblockboss) <= 160)
+        if (distance_to_object(obj_peppermanmarbleblockboss) <= 64)
         {
-            state = 30;
+            if (state != states.stunned)
+            {
+                flash = 1;
+                scr_soundeffect(sfx_pepperman_goofysound);
+            }
+            
+            state = states.stunned;
             sprite_index = spr_pepperman_contemplate;
             stunned = 100;
+            hsp = 0;
         }
     }
 }
 
-if (state == 19 && !audio_is_playing(sfx_machroll))
+if (state == states.secondjump && !audio_is_playing(sfx_machroll))
     scr_soundeffect(sfx_machroll);
 
-if (state != 19 && audio_is_playing(sfx_machroll))
+if (state != states.secondjump && audio_is_playing(sfx_machroll))
     audio_stop_sound(sfx_machroll);
 
-if ((state == 19 || state == 90) && hurting == 0)
+if ((state == states.secondjump || state == states.freefallprep) && hurting == 0)
     hurting = 1;
 
-if (state != 19 && state != 90 && hurting == 1)
+if (state != states.secondjump && state != states.freefallprep && hurting == 1)
     hurting = 0;
 
-if (state == 22 && hurtandhitable == 0)
+if (state == states.gottreasure && hurtandhitable == 0)
     hurtandhitable = 1;
 
-if (state != 22 && hurtandhitable == 1)
+if (state != states.gottreasure && hurtandhitable == 1)
     hurtandhitable = 0;
+
+if (object_index == obj_pepperman_boss_butwith50phases)
+{
+    trail--;
+    
+    if (trail <= 0)
+    {
+        with (instance_create(x, y, obj_afterimog))
+        {
+            sprite_index = other.sprite_index;
+            image_index = other.image_index;
+            image_blend = c_red;
+            image_xscale = other.xscale * abs(other.image_xscale);
+            image_yscale = other.image_yscale;
+        }
+        
+        trail = 2.5;
+    }
+}

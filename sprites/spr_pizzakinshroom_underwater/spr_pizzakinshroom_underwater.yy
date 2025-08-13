@@ -28,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb8a9ed8-b858-4bd9-b6e2-39ce547dc2d5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"987fceef-c22c-4f9d-8626-a7ba14343e0e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"38d175e8-2ce5-4d81-ab16-674584a5b4df",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58ac88b9-c503-4c49-a24e-85d2ed44ecc8",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69578e88-a5b0-49cc-a822-ec8bb6ec7fb9",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"317f6b5c-727c-4cad-a07f-248c4e7853d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc7e2a69-5f6d-44ee-9404-dd8aeffb7329",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d459a9f4-6b3f-4979-a4af-b665e51408fd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aac026f8-8d22-4563-9407-1081267d5dfd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15e66215-70f0-44b1-a903-394dfb0c9160",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f676fa11-9a60-4bd5-8b26-fd6c025eca40",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81b10b3f-5fa5-4bf1-952e-f929c9632307",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -50,12 +50,12 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d1b0e038-f655-4e32-b0a7-91184e05ad7c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb8a9ed8-b858-4bd9-b6e2-39ce547dc2d5","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"4f9fbb4e-dee5-45c6-85c0-01e98890362f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"987fceef-c22c-4f9d-8626-a7ba14343e0e","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"3f0401aa-0676-4a97-89f2-bd955075bb60","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38d175e8-2ce5-4d81-ab16-674584a5b4df","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1f57c027-8374-4833-ade1-2f08b96b4488","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58ac88b9-c503-4c49-a24e-85d2ed44ecc8","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"e7aad8d9-604f-4816-b40d-c53c836c2e3e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69578e88-a5b0-49cc-a822-ec8bb6ec7fb9","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8c19708c-524b-41a3-9e0d-c8e0ec21a915","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"317f6b5c-727c-4cad-a07f-248c4e7853d3","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"28c73d50-d1cd-42f6-8d08-4722ba568cf2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc7e2a69-5f6d-44ee-9404-dd8aeffb7329","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4731d281-a916-4b5f-9cfe-b112b40158df","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d459a9f4-6b3f-4979-a4af-b665e51408fd","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8e651b17-9714-4e97-9ee1-208f32ef9929","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aac026f8-8d22-4563-9407-1081267d5dfd","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1684c8f4-ccc7-47f6-97f6-daa4b7e44b0b","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15e66215-70f0-44b1-a903-394dfb0c9160","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"036d1f73-6c89-4356-9900-5d85aba99ca3","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f676fa11-9a60-4bd5-8b26-fd6c025eca40","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"258ee4f2-c1ac-4c76-84de-971e3373ec5e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"81b10b3f-5fa5-4bf1-952e-f929c9632307","path":"sprites/spr_pizzakinshroom_underwater/spr_pizzakinshroom_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -74,11 +74,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a8ad879-29ba-4196-a312-b8c72534086f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7c545e55-68bb-4f95-91f2-da7469f4a765","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

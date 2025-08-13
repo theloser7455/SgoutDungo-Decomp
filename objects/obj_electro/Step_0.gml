@@ -21,7 +21,7 @@ if (immunityframes <= 0)
 {
     with (instance_place(x, y, obj_player))
     {
-        if (instakillmove || state == 21 || state == 46)
+        if (instakillmove || state == states.handstandjump || state == states.punch)
         {
             other.vsp = -5 + vsp;
             other.hsp = hsp;

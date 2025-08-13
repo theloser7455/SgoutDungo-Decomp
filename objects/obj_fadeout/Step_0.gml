@@ -22,6 +22,27 @@ if (fadealpha > 1)
                 room_goto(obj_player2.targetRoom);
         }
     }
+    
+    if (startingsgout)
+    {
+        with (obj_player)
+        {
+            if (paletteselect == 17 && character == "P" && !global.lamepalettes)
+                scr_soundeffect(sfx_pursuerlevelstart);
+        }
+        
+        with (obj_music)
+        {
+            var chancee = round(random_range(20, 0));
+            
+            if (chancee == 20)
+                obj_music.sonec = 1;
+            else
+                obj_music.sonec = 0;
+        }
+    }
+    
+    obj_music.shutup = 0;
 }
 
 if (fadein == 0)

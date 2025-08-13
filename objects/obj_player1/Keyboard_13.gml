@@ -32,7 +32,7 @@ switch (cheat_code)
     
     case "terrence":
         character = "TERRENCE";
-        state = 0;
+        state = states.normal;
         break;
     
     case "freeze":

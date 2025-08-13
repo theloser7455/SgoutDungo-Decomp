@@ -18,3 +18,9 @@ if (personality == 2)
     image_blend = c_blue;
     name = "LOBOTOZELLE 2";
 }
+
+weaponized = 0;
+weapon = "";
+b = " thge weapons are gun, whip, dagger, bomb";
+state = "chase";
+timer = 0;

@@ -64,6 +64,7 @@ with (obj_player)
         
         state = 77;
         instance_create(x, y, obj_fadeout);
+        scr_soundeffect(sfx_door);
     }
 }
 
@@ -84,7 +85,10 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
         }
         
         if (!instance_exists(obj_fadeout))
+        {
             instance_create(x, y, obj_fadeout);
+            scr_soundeffect(sfx_door);
+        }
     }
 }
 

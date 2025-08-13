@@ -17,7 +17,7 @@
   "soundFile": "skateboardjump.wav",
   "duration": 1.308,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

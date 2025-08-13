@@ -1,9 +1,9 @@
 if (pause == 1)
 {
     draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0);
-    font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
+    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
     draw_set_alpha(0.5);
-    draw_sprite_tiled(spr_stupidahhfuckingbg, -1, x1, y1);
+    draw_sprite_tiled(bg_pausemenubg, -1, x1, y1);
     draw_set_alpha(1);
     draw_set_font(font);
     draw_set_halign(fa_center);
@@ -45,10 +45,16 @@ if (pause == 1)
     if (room != Scootertransition && room != hub_room1 && room != cowboytask && room != Titlescreen && room != hub_roomextra && string_letters(room_get_name(room)) != "PProom")
     {
         draw_text_colour(10, 50, "SECRETS FOUND: " + string(global.secretfound) + "\nTREASURE STATUS: " + tr + "\nTOPPINS COLLECTED:", c_white, c_white, c_white, c_white, 1);
-        draw_sprite_ext(spr_pizzakinshroom, -1, 30, 100, 1, 1, 0, c_white, global.shroomfollow + 0.25);
-        draw_sprite_ext(spr_pizzakincheese, -1, 62, 100, 1, 1, 0, c_white, global.cheesefollow + 0.25);
-        draw_sprite_ext(spr_pizzakintomato, -1, 94, 100, 1, 1, 0, c_white, global.tomatofollow + 0.25);
-        draw_sprite_ext(spr_pizzakinsausage, -1, 126, 100, 1, 1, 0, c_white, global.sausagefollow + 0.25);
-        draw_sprite_ext(spr_pizzakinpineapple, -1, 158, 100, 1, 1, 0, c_white, global.pineapplefollow + 0.25);
+        draw_sprite_ext(spr_toppinshroom, -1, 30, 100, 1, 1, 0, c_white, global.shroomfollow + 0.25);
+        draw_sprite_ext(spr_toppincheese, -1, 62, 100, 1, 1, 0, c_white, global.cheesefollow + 0.25);
+        draw_sprite_ext(spr_toppintomato, -1, 94, 100, 1, 1, 0, c_white, global.tomatofollow + 0.25);
+        draw_sprite_ext(spr_toppinsausage, -1, 126, 100, 1, 1, 0, c_white, global.sausagefollow + 0.25);
+        draw_sprite_ext(spr_toppinpineapple, -1, 158, 100, 1, 1, 0, c_white, global.pineapplefollow + 0.25);
+        
+        if (global.deathmode)
+            draw_text_colour(10, 150, "TOTAL UNIQUE COLLECTS:" + string(global.uniquecollects), c_white, c_white, c_white, c_white, 1);
+        
+        if (global.levelrestartamount > 0)
+            draw_text_colour(10, 175, "LEVEL RESTARTS:" + string(global.levelrestartamount), c_white, c_white, c_white, c_white, 1);
     }
 }

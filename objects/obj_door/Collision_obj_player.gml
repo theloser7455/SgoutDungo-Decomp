@@ -1,6 +1,6 @@
 with (other.id)
 {
-    if (key_up && (state == 0 || state == 68 || state == 69 || state == 89 || state == 64) && y == (other.y + 50) && !instance_exists(obj_noisesatellite) && !instance_exists(obj_fadeout) && state != 77 && state != 60)
+    if (key_up && (state == 0 || state == states.mach1 || state == states.mach2 || state == states.mach3 || state == states.Sjumpprep) && y == (other.y + 50) && !instance_exists(obj_noisesatellite) && !instance_exists(obj_fadeout) && state != states.door && state != states.comingoutdoor)
     {
         lastroom_x = other.x;
         lastroom_y = other.y;
@@ -12,7 +12,7 @@ with (other.id)
         obj_player1.targetDoor = other.targetDoor;
         obj_player1.targetRoom = other.targetRoom;
         obj_player1.image_index = 0;
-        obj_player1.state = 77;
+        obj_player1.state = states.door;
         obj_player1.mach2 = 0;
         
         if (room == PP_room14)
@@ -36,7 +36,7 @@ with (other.id)
             obj_player2.targetDoor = other.targetDoor;
             obj_player2.targetRoom = other.targetRoom;
             obj_player2.image_index = 0;
-            obj_player2.state = 77;
+            obj_player2.state = states.door;
             obj_player2.mach2 = 0;
         }
         

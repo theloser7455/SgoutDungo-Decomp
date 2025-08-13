@@ -7,14 +7,14 @@ function scr_player_mach1()
 	if (scr_solid(x + 1, y) && xscale == 1 && !place_meeting(x + 1, y, obj_slope))
 	{
 	    mach2 = 0;
-	    state = 0;
+	    state = states.normal;
 	    movespeed = 0;
 	}
 	
 	if (scr_solid(x - 1, y) && xscale == -1 && !place_meeting(x - 1, y, obj_slope))
 	{
 	    mach2 = 0;
-	    state = 0;
+	    state = states.normal;
 	    movespeed = 0;
 	}
 	
@@ -54,7 +54,7 @@ function scr_player_mach1()
 	    
 	    if (movespeed >= 8)
 	    {
-	        state = 69;
+	        state = states.mach2;
 	        
 	        with (instance_create(x, y, obj_jumpdust))
 	            image_xscale = other.xscale;
@@ -69,7 +69,7 @@ function scr_player_mach1()
 	
 	if (!key_attack && character == "P")
 	{
-	    state = 0;
+	    state = states.normal;
 	    image_index = 0;
 	}
 	
@@ -85,7 +85,7 @@ function scr_player_mach1()
 	if (place_meeting(x + xscale, y, obj_solid) && !place_meeting(x + sign(hsp), y, obj_slope))
 	{
 	    movespeed = 0;
-	    state = 0;
+	    state = states.normal;
 	}
 	
 	image_speed = 0.5;
@@ -99,7 +99,7 @@ function scr_player_mach1()
 	if (key_slap2 && key_down)
 	{
 	    image_index = 0;
-	    state = 90;
+	    state = states.freefallprep;
 	    vsp = -4;
 	}
 	
@@ -122,7 +122,7 @@ function scr_player_mach1()
 	
 	if (key_attack && !place_meeting(x + xscale, y, obj_solid) && character == "S" && grounded)
 	{
-	    state = 21;
+	    state = states.handstandjump;
 	    movespeed = 0;
 	}
 	
@@ -131,14 +131,14 @@ function scr_player_mach1()
 	    if (shotgunAnim == 0)
 	    {
 	        image_index = 0;
-	        state = 90;
+	        state = states.freefallprep;
 	        sprite_index = spr_bodyslamstart;
 	        vsp = -5;
 	    }
 	    else
 	    {
 	        image_index = 0;
-	        state = 90;
+	        state = states.freefallprep;
 	        sprite_index = spr_player_shotgunjump1;
 	        vsp = -5;
 	        

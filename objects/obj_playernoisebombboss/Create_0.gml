@@ -4,3 +4,6 @@ vsp = 0;
 grav = 0.5;
 grounded = 0;
 splode = 1;
+vegetable = 0;
+fling = 0;
+chaseboss = 0;

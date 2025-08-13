@@ -11,6 +11,46 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
     
     var roomname = room_get_name(room);
     
+    if (room == boss_room1 || room == boss_room1butevil || room == boss_greaterman)
+    {
+        if (!audio_is_playing(mu_peppermanboss))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_peppermanboss);
+            pausedmusic = mu_peppermanboss;
+        }
+    }
+    
+    if (room == boss_devilkin)
+    {
+        if (!audio_is_playing(mu_devilkinfight))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_devilkinfight);
+            pausedmusic = mu_devilkinfight;
+        }
+    }
+    
+    if (room == boss_angelkin)
+    {
+        if (!audio_is_playing(mu_angelkin))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_angelkin);
+            pausedmusic = 184;
+        }
+    }
+    
+    if (room == boss_idiot)
+    {
+        if (!audio_is_playing(mu_idiot))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_idiot);
+            pausedmusic = mu_idiot;
+        }
+    }
+    
     if (string_letters(roomname) == "Realtitlescreen" || string_letters(roomname) == "Realtitlescreen")
     {
         if (!audio_is_playing(mu_title))
@@ -21,13 +61,23 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
         }
     }
     
-    if (string_letters(roomname) == "hubroom")
+    if (string_letters(roomname) == "hubroom" || room == cowboytask)
     {
         if (!audio_is_playing(mu_hubsnick))
         {
             audio_stop_sound(pausedmusic);
             scr_sound(mu_hubsnick);
             pausedmusic = mu_hubsnick;
+        }
+    }
+    
+    if (room == hub_roomextra)
+    {
+        if (!audio_is_playing(mu_dissapointing))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_dissapointing);
+            pausedmusic = mu_dissapointing;
         }
     }
     
@@ -57,22 +107,32 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
         {
             if ((roomname == ("dungeon_" + string(i)) && i <= 8) || room == dungeon_5b)
             {
-                if (!audio_is_playing(mu_dungeon))
+                if (!sonec)
+                {
+                    if (!audio_is_playing(mu_dungeon))
+                    {
+                        audio_stop_sound(pausedmusic);
+                        scr_sound(mu_dungeon);
+                        audio_sound_set_track_position(global.music, fadeoff);
+                        pausedmusic = mu_dungeon;
+                    }
+                }
+                else if (!audio_is_playing(mu_dungeonsonic))
                 {
                     audio_stop_sound(pausedmusic);
-                    scr_sound(mu_dungeon);
+                    scr_sound(mu_dungeonsonic);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = mu_dungeon;
+                    pausedmusic = mu_dungeonsonic;
                 }
             }
             else if (roomname == ("dungeon_" + string(i)) && i > 8)
             {
-                if (!audio_is_playing(mu_dungeondepth))
+                if (!audio_is_playing(mu_dungeondepthholder))
                 {
                     audio_stop_sound(pausedmusic);
-                    scr_sound(mu_dungeondepth);
+                    scr_sound(mu_dungeondepthholder);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = mu_dungeondepth;
+                    pausedmusic = mu_dungeondepthholder;
                 }
             }
         }
@@ -126,7 +186,7 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
         }
     }
     
-    if (string_letters(roomname) == "medievalsecret" || string_letters(roomname) == "ruinsecret" || string_letters(roomname) == "dungeonsecret")
+    if (string_letters(roomname) == "medievalsecret")
     {
         if (!audio_is_playing(mu_secret))
         {
@@ -134,6 +194,28 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
             scr_sound(mu_secret);
             audio_sound_set_track_position(global.music, fadeoff);
             pausedmusic = mu_secret;
+        }
+    }
+    
+    if (string_letters(roomname) == "ruinsecret")
+    {
+        if (!audio_is_playing(mu_secretruin))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_secretruin);
+            audio_sound_set_track_position(global.music, fadeoff);
+            pausedmusic = mu_secretruin;
+        }
+    }
+    
+    if (string_letters(roomname) == "dungeonsecret")
+    {
+        if (!audio_is_playing(mu_secretdungeon))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_secretdungeon);
+            audio_sound_set_track_position(global.music, fadeoff);
+            pausedmusic = mu_secretdungeon;
         }
     }
     

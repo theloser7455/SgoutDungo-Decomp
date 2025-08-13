@@ -17,7 +17,7 @@
   "soundFile": "sfx_uppercut.wav",
   "duration": 1.605,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

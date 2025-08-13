@@ -1,35 +1,92 @@
 function scr_hurttheplayer()
 {
-	if ((state == 23 || state == 24 || state == 17) && cutscene == 0)
+	if ((state == states.knightpep || state == states.knightpepattack || state == states.knightpepslopes) && cutscene == 0)
 	{
 	}
-	
-	if (character == "TERRENCE")
+	else if (character == "TERRENCE")
+	{
+	}
+	else if (state == states.phase2transition)
+	{
+	}
+	else if (state == states.punch && other.object_index == obj_forkhitbox)
 	{
 	}
 	else if (instance_exists(obj_fadeout))
 	{
 	}
-	else if (state == 26 && hurted == 0)
+	else if (state == states.bombpep && hurted == 0)
 	{
 	}
-	else if (state == 14)
+	else if (state == states.door)
 	{
 	}
-	else if (state == 1)
+	else if (state == states.boxxedpep)
 	{
 	}
-	else if (place_meeting(x, y, obj_parryhitbox))
+	else if (state == states.tumble)
 	{
 	}
-	else if (state == 1670 && sprite_index != spr_playerN_noisebombkick)
+	else if (place_meeting(x, y, obj_parryhitbox) && other.parryable)
 	{
 	}
-	else if (state == 12 || state == 13)
+	else if (state == states.parryshit && sprite_index != spr_playerN_noisebombkick)
 	{
 	}
-	else if (state != 72 && hurted == 0 && cutscene == 0 && state != 71)
+	else if (state == states.cheesepep || state == states.cheesepepstick)
 	{
+	}
+	else if (state != states.hurt && hurted == 0 && cutscene == 0 && state != states.bump && !other.team)
+	{
+	    if (instance_exists(obj_bosscontrol))
+	    {
+	        obj_bosscontrol.playerhealth -= other.dmg;
+	        global.hurttimes += 1;
+	    }
+	    
+	    if (other.object_index == obj_forkhitbox)
+	    {
+	        with (other)
+	        {
+	            if (ID.object_index == obj_snickexe)
+	            {
+	                if (instance_exists(obj_snickexecrosshair))
+	                    instance_destroy(obj_snickexecrosshair);
+	            }
+	        }
+	    }
+	    
+	    if (instance_exists(obj_tv))
+	    {
+	        with (obj_tv)
+	        {
+	            shakethingv += 15;
+	            
+	            if (shakethingv >= 20)
+	                shakethingv = 20;
+	        }
+	    }
+	    
+	    if (other.object_index == obj_forkhitbox)
+	    {
+	        with (other)
+	        {
+	            if (ID.object_index == obj_snickexe)
+	            {
+	                with (ID)
+	                {
+	                    with (instance_create(x, y, obj_bangeffect))
+	                        sprite_index = spr_genericpoofeffect;
+	                    
+	                    scr_soundeffect(sfx_poof);
+	                    x = room_width / 2;
+	                    y = -100;
+	                    mivspid = 0;
+	                }
+	            }
+	        }
+	    }
+	    
 	    with (other)
 	    {
 	        if (object_index == obj_littlenoisegremlin)
@@ -53,10 +110,13 @@ function scr_hurttheplayer()
 	        scr_soundeffect(hurtsound);
 	    }
 	    
-	    if (character == "N" && paletteselect == 6)
+	    if ((character == "N" && paletteselect == 6) && !global.lamepalettes)
 	        scr_soundeffect(sfx_bluu3);
 	    
-	    alarm[8] = 60;
+	    if (character == "P" && paletteselect == 17 && !global.lamepalettes)
+	        scr_soundeffect(sfx_pursuerhurt);
+	    
+	    alarm[8] = 100;
 	    alarm[7] = 120;
 	    hurted = 1;
 	    squished = 0;
@@ -69,11 +129,26 @@ function scr_hurttheplayer()
 	    if (pepperplay)
 	        sprite_index = spr_Phurt;
 	    
-	    movespeed = 8;
-	    vsp = -5;
+	    instance_create(x, y, obj_bangeffect);
+	    
+	    repeat (7)
+	    {
+	        with (instance_create(x, y, obj_baddiegibs))
+	        {
+	            sprite_index = choose(spr_shroomcollect, spr_cheesecollect, spr_sausagecollect, spr_tomatocollect, spr_pineapplecollect);
+	            image_speed = 0.5;
+	            image_angle = 0;
+	        }
+	    }
+	    
+	    repeat (3)
+	        instance_create(x, y, obj_slapstar);
+	    
+	    movespeed = 9;
+	    vsp = -12;
 	    timeuntilhpback = 300;
 	    instance_create(x, y, obj_spikehurteffect);
-	    state = 72;
+	    state = states.hurt;
 	    image_index = 0;
 	    flash = 1;
 	    global.hurtcounter += 1;

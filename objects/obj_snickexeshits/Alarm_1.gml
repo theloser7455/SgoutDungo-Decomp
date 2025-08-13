@@ -6,5 +6,5 @@ with (instance_create(x, y, obj_afterimog))
 
 alarm[1] = 2;
 
-if (obj_player.state == 60 || obj_player.state == 63 || obj_player.state == 55 || obj_player.state == 77)
+if (obj_player.state == states.comingoutdoor || obj_player.state == states.victory || obj_player.state == states.keyget || obj_player.state == states.door)
     instance_destroy();

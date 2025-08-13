@@ -17,7 +17,7 @@
   "soundFile": "sfx_collecttopping",
   "duration": 1.6159999,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

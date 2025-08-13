@@ -11,22 +11,29 @@ function scr_player_freefall()
 	}
 	
 	if (vsp > 0)
-	    vsp += 1;
+	    vsp += 0.5;
 	
 	move = key_left + key_right;
 	
 	if (!grounded)
 	{
-	    if (!momemtum)
+	    if (sprite_index != spr_mach2jump)
 	    {
-	        hsp = Approach(hsp, move * 8, 2);
+	        if (!momemtum)
+	        {
+	            hsp = Approach(hsp, move * 8, 2);
+	        }
+	        else
+	        {
+	            hsp = movespeed * xscale;
+	            
+	            if (scr_solid(x + sign(hsp), y) || move == -xscale)
+	                momemtum = 0;
+	        }
 	    }
 	    else
 	    {
-	        hsp = movespeed * xscale;
-	        
-	        if (scr_solid(x + sign(hsp), y) || move == -xscale)
-	            momemtum = 0;
+	        hsp = 0;
 	    }
 	    
 	    if (move != 0)
@@ -36,8 +43,17 @@ function scr_player_freefall()
 	if (vsp > 0)
 	    freefallsmash += 0.5;
 	
-	if (freefallsmash > 10 && !instance_exists(obj_superslameffect))
-	    instance_create(x, y, obj_superslameffect);
+	if (freefallsmash > 10)
+	{
+	    if (!instance_exists(obj_superslameffect))
+	        instance_create(x, y, obj_superslameffect);
+	    
+	    if (!instance_exists(obj_crazyrunothereffect))
+	    {
+	        with (instance_create(x, y, obj_crazyrunothereffect))
+	            image_angle = 90;
+	    }
+	}
 	
 	if (grounded && !place_meeting(x, y + 1, obj_destructibles) && vsp > 0)
 	{
@@ -46,19 +62,22 @@ function scr_player_freefall()
 	        scr_soundeffect(sfx_groundpound);
 	        freefallsmash = 0;
 	        
-	        if (sprite_index != spr_poundcancel1)
+	        if (sprite_index != spr_mach2jump)
 	        {
-	            if (shotgunAnim == 0)
-	                sprite_index = spr_bodyslamland;
-	            else
-	                sprite_index = spr_player_shotgunjump2;
+	            if (sprite_index != spr_poundcancel1)
+	            {
+	                if (shotgunAnim == 0)
+	                    sprite_index = spr_bodyslamland;
+	                else
+	                    sprite_index = spr_player_shotgunjump2;
+	            }
+	            
+	            if (sprite_index == spr_poundcancel1)
+	                sprite_index = spr_poundcancel2;
 	        }
 	        
-	        if (sprite_index == spr_poundcancel1)
-	            sprite_index = spr_poundcancel2;
-	        
 	        image_index = 0;
-	        state = 76;
+	        state = states.freefallland;
 	        jumpAnim = 1;
 	        jumpstop = 0;
 	        
@@ -80,25 +99,40 @@ function scr_player_freefall()
 	        combo = 0;
 	        bounce = 0;
 	        
-	        with (instance_create(x, y, obj_landcloud))
+	        with (instance_create(x, y + 2, obj_landcloud))
 	            sprite_index = spr_groundpoundeffect;
+	        
+	        with (instance_place(x, y, obj_snick))
+	        {
+	            if (object_index == obj_snick)
+	            {
+	                if (image_xscale > 0)
+	                    image_xscale += 0.5;
+	                else
+	                    image_xscale -= 0.5;
+	            }
+	        }
 	        
 	        freefallstart = 0;
 	    }
 	    else
 	    {
-	        with (instance_place(x, y + 1, obj_slope))
-	            other.xscale = -sign(image_xscale);
+	        if (sprite_index != spr_mach2jump)
+	        {
+	            with (instance_place(x, y + 1, obj_slope))
+	                other.xscale = -sign(image_xscale);
+	        }
 	        
 	        with (instance_create(x, y, obj_dashcloud))
 	            image_xscale = other.xscale;
 	        
-	        sprite_index = spr_crouchslip;
+	        if (sprite_index != spr_mach2jump)
+	            sprite_index = spr_crouchslip;
 	        
 	        if (character == "P")
 	            machhitAnim = 0;
 	        
-	        state = 67;
+	        state = states.crouchslide;
 	        mach2 = 35;
 	        var _speed = 0;
 	        _speed = vsp / 1.5;
@@ -111,6 +145,54 @@ function scr_player_freefall()
 	        
 	        movespeed = _speed;
 	    }
+	    
+	    if (character == "V" && sprite_index == spr_mach2jump)
+	    {
+	        instance_create(x, y, obj_jumpdust);
+	        flash = 0;
+	        state = states.mach2;
+	        
+	        if (!key_down)
+	            vsp = -5;
+	        
+	        jumpstop = 1;
+	        grounded = 0;
+	        hsp = movespeed * xscale;
+	        
+	        with (instance_create(x, y, obj_bangeffect))
+	            sprite_index = spr_bombexplosion;
+	        
+	        scr_soundeffect(sfx_explosion);
+	    }
+	}
+	
+	if (key_slap2 && character == "S")
+	{
+	    scr_soundeffect(choose(sfx_snickglitchnew, sfx_snickglitchnew2, sfx_snickglitchnew3, sfx_snickglitchnew4));
+	    
+	    if (movespeed < 12)
+	        movespeed = 12;
+	    
+	    tauntstoredvsp = hsp;
+	    tauntstoredhsp = vsp;
+	    hsp = 0;
+	    vsp = 0;
+	    tpcd = 0;
+	    tph = 60 * xscale;
+	    tpv = 0;
+	    tptimes = 4;
+	    tauntstoredstate = 0;
+	    tauntstoredsprite = sprite_index;
+	    tauntstoredmovespeed = movespeed + 4;
+	    sprite_index = spr_secondjump2;
+	    
+	    if (key_down)
+	    {
+	        tph = 0;
+	        tpv = 60;
+	    }
+	    
+	    state = states.snicktp;
 	}
 	
 	image_speed = 0.35;

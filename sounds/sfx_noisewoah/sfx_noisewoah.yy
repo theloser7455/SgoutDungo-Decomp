@@ -17,7 +17,7 @@
   "soundFile": "sfx_noisewoah",
   "duration": 1.449,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

@@ -1,4 +1,4 @@
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 snickshotgun = ini_read_string("SAGE2019", "shotgunsnick", 0);
 dungeonbackup = ini_read_string("SAGE2019", "dungeonbackup", 0);
 srank = ini_read_string("SAGE2019", "srank", 0);

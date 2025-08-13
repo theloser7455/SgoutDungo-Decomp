@@ -29,4 +29,9 @@ if (global.keyget == 0 && obj_player.state != 26 && obj_player.state != 23 && ob
     obj_player.state = 55;
     obj_player.image_index = 0;
     global.keyget = 1;
+    
+    with (obj_player)
+        tauntstoredmovespeed = movespeed;
 }
+
+global.combotime = 100;

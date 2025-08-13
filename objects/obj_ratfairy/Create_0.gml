@@ -1,5 +1,5 @@
 image_speed = 0.35;
 state = "";
-t = spr_plug;
+t = 0;
 tt = 0;
 collect = 10;

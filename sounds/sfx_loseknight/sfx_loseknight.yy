@@ -17,7 +17,7 @@
   "soundFile": "sfx_loseknight",
   "duration": 0.911,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

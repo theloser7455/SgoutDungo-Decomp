@@ -28,9 +28,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7c5325e-20f7-4560-be6f-26e4ced33934",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"874401ef-b99e-46b6-8992-838a9bd224e7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0bb31af9-42cc-4dca-8969-621b8db25d9f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"87cc59f7-f2bd-4ffd-821d-27e34fc5b7fc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81710340-ec7e-47a6-b579-ee4c4541fc43",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb42eb49-2f53-4860-b37a-6a91ed396a29",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a966ced8-fbcd-434f-9495-5465c31ea6e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7c5325e-20f7-4560-be6f-26e4ced33934","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5302cc67-17e6-45e2-9eda-34e1f228b12f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"874401ef-b99e-46b6-8992-838a9bd224e7","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f6342f05-f9b7-4efc-aec4-f48d136084b2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0bb31af9-42cc-4dca-8969-621b8db25d9f","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"eaa9833b-cdeb-4e0b-a670-ce9b91e10c03","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"87cc59f7-f2bd-4ffd-821d-27e34fc5b7fc","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"82b4b6a2-3927-4175-a5c7-5b2de60e6216","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"81710340-ec7e-47a6-b579-ee4c4541fc43","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a297c31-26e1-489e-bd63-df64ad385444","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb42eb49-2f53-4860-b37a-6a91ed396a29","path":"sprites/spr_snick_slide/spr_snick_slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,11 +68,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7b403c12-a696-4b66-a9f5-37306aa80943","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"916619a4-e3ad-44b5-b72c-331a7e833e67","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "skibidi vigilante.wav",
   "duration": 25.283,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
 }

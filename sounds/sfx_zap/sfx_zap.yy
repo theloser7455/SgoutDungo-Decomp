@@ -17,7 +17,7 @@
   "soundFile": "sfx_zap.wav",
   "duration": 0.839,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

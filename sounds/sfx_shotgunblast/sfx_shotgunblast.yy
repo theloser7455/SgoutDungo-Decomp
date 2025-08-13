@@ -17,7 +17,7 @@
   "soundFile": "sfx_shotgunblast",
   "duration": 1.458,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

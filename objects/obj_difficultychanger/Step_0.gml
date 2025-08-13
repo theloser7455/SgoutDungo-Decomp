@@ -4,15 +4,24 @@ with (instance_place(x, y, obj_player))
     {
         global.difficulty += 1;
         
-        if (global.difficulty > 2)
-            global.difficulty = 0;
+        if (audio_is_playing(sfx_difficultydown))
+            audio_stop_sound(sfx_difficultydown);
         
-        with (instance_create(x, y, obj_debris))
+        if (audio_is_playing(sfx_difficultyup))
+            audio_stop_sound(sfx_difficultyup);
+        
+        if (global.difficulty > 1)
         {
-            sprite_index = spr_font;
-            image_index = 28 + global.difficulty;
+            global.difficulty = 0;
+            scr_soundeffect(sfx_difficultydown);
+        }
+        else
+        {
+            scr_soundeffect(sfx_difficultyup);
         }
         
         scr_soundeffect(sfx_stompenemy);
     }
 }
+
+rottt = lerp(rottt, 45 + (-90 * global.difficulty), 0.25);

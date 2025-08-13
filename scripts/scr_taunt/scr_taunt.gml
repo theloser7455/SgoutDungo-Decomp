@@ -6,7 +6,7 @@ function scr_taunt()
 	    {
 	        if (distance_to_object(other) <= 320)
 	        {
-	            if (state == 104)
+	            if (state == states.enemystun)
 	                stunned = 0;
 	            
 	            bombreset = 0;
@@ -22,11 +22,76 @@ function scr_taunt()
 	        tauntstoredstate = state;
 	        tauntstoredvsp = vsp;
 	        tauntstoredhsp = hsp;
-	        state = 50;
+	        state = states.backbreaker;
 	        image_index = random_range(0, sprite_get_number(spr_taunt) - 1);
 	        sprite_index = spr_taunt;
 	        instance_create(x, y, obj_taunteffect);
 	        instance_create(x, y, obj_parryhitbox);
+	        
+	        if (instance_exists(obj_pizzakinshroom))
+	        {
+	            obj_pizzakinshroom.taunt = 1;
+	            obj_pizzakinshroom.sprite_index = spr_toppinshroom_taunt;
+	            obj_pizzakinshroom.image_index = choose(0, 1, 2);
+	            
+	            with (instance_create(obj_pizzakinshroom.x, obj_pizzakinshroom.y, obj_bangeffect))
+	            {
+	                sprite_index = spr_tinytaunt;
+	                image_speed = 0.5;
+	            }
+	        }
+	        
+	        if (instance_exists(obj_pizzakincheese))
+	        {
+	            obj_pizzakincheese.taunt = 1;
+	            obj_pizzakincheese.sprite_index = spr_toppincheese_taunt;
+	            obj_pizzakincheese.image_index = choose(0, 1, 2);
+	            
+	            with (instance_create(obj_pizzakincheese.x, obj_pizzakincheese.y, obj_bangeffect))
+	            {
+	                sprite_index = spr_tinytaunt;
+	                image_speed = 0.5;
+	            }
+	        }
+	        
+	        if (instance_exists(obj_pizzakintomato))
+	        {
+	            obj_pizzakintomato.taunt = 1;
+	            obj_pizzakintomato.sprite_index = spr_toppintomato_taunt;
+	            obj_pizzakintomato.image_index = choose(0, 1, 2);
+	            
+	            with (instance_create(obj_pizzakintomato.x, obj_pizzakintomato.y, obj_bangeffect))
+	            {
+	                sprite_index = spr_tinytaunt;
+	                image_speed = 0.5;
+	            }
+	        }
+	        
+	        if (instance_exists(obj_pizzakinsausage))
+	        {
+	            obj_pizzakinsausage.taunt = 1;
+	            obj_pizzakinsausage.sprite_index = spr_toppinsausage_taunt;
+	            obj_pizzakinsausage.image_index = choose(0, 1, 2);
+	            
+	            with (instance_create(obj_pizzakinsausage.x, obj_pizzakinsausage.y, obj_bangeffect))
+	            {
+	                sprite_index = spr_tinytaunt;
+	                image_speed = 0.5;
+	            }
+	        }
+	        
+	        if (instance_exists(obj_pizzakinpineapple))
+	        {
+	            obj_pizzakinpineapple.taunt = 1;
+	            obj_pizzakinpineapple.sprite_index = spr_toppinpineapple_taunt;
+	            obj_pizzakinpineapple.image_index = choose(0, 1, 2);
+	            
+	            with (instance_create(obj_pizzakinpineapple.x, obj_pizzakinpineapple.y, obj_bangeffect))
+	            {
+	                sprite_index = spr_tinytaunt;
+	                image_speed = 0.5;
+	            }
+	        }
 	    }
 	    else
 	    {

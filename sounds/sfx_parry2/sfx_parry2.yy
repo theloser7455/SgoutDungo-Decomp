@@ -17,7 +17,7 @@
   "soundFile": "sfx_parry2.wav",
   "duration": 1.225,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

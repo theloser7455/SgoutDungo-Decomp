@@ -30,6 +30,18 @@ function scr_player_fireass()
 	        movespeed = 6;
 	        sprite_index = spr_fireassground;
 	        image_index = 0;
+	        
+	        with (instance_create(x, y, obj_jumpdust))
+	        {
+	            image_xscale = other.xscale;
+	            var chance = round(random_range(100, 0));
+	            
+	            if (chance == 100)
+	            {
+	                image_blend = c_lime;
+	                scr_soundeffect(fartie);
+	            }
+	        }
 	    }
 	}
 	

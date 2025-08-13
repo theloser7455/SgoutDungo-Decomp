@@ -23,7 +23,7 @@ function scr_player_machslide()
 	    state = 0;
 	    
 	    if (pepperplay)
-	        state = 600;
+	        state = states.playerpeppermanidle;
 	    
 	    image_index = 0;
 	    
@@ -35,10 +35,17 @@ function scr_player_machslide()
 	
 	if (place_meeting(x + xscale, y, obj_solid) && (sprite_index == spr_machslide || sprite_index == spr_machslidestart))
 	{
-	    hsp = -xscale * 2.5;
-	    vsp = -4;
-	    state = 71;
-	    image_index = 4;
+	    scr_soundeffect(sfx_bumpwall);
+	    hsp = 0;
+	    image_speed = 0.35;
+	    flash = 0;
+	    combo = 0;
+	    state = states.bump;
+	    hsp = 0;
+	    vsp = 0;
+	    mach2 = 0;
+	    image_index = 0;
+	    sprite_index = wallsplatspr;
 	}
 	
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_machslideboost)
@@ -53,7 +60,7 @@ function scr_player_machslide()
 	    image_index = 0;
 	    xscale *= -1;
 	    movespeed = 8;
-	    state = 69;
+	    state = states.mach2;
 	}
 	
 	if ((floor(image_index) == (image_number - 1) && sprite_index == spr_machslideboost3 && grounded) || (sprite_index == spr_slidefall3 && grounded))
@@ -63,7 +70,7 @@ function scr_player_machslide()
 	    image_index = 0;
 	    xscale *= -1;
 	    movespeed = 12;
-	    state = 89;
+	    state = states.mach3;
 	}
 	
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_Pturn)
@@ -75,7 +82,7 @@ function scr_player_machslide()
 	        image_index = 0;
 	        xscale *= -1;
 	        movespeed = 12;
-	        state = 602;
+	        state = states.playerpeppermanmach;
 	    }
 	    
 	    image_speed = 0;

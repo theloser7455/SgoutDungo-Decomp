@@ -15,11 +15,11 @@ function scr_playerpepperman_fall()
 	}
 	
 	if (grounded && vsp > 0)
-	    state = 600;
+	    state = states.playerpeppermanidle;
 	
 	if (key_down)
 	{
-	    state = 603;
+	    state = states.playerpeppermangroundpound;
 	    image_index = 0;
 	    sprite_index = spr_Pslamstart;
 	    vsp = -5;

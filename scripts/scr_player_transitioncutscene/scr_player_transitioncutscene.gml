@@ -39,11 +39,11 @@ function scr_player_transitioncutscene()
 	        else
 	            global.rank = "d";
 	        
-	        ini_open("saveData.ini");
+	        ini_open("SGOUTsaveData.ini");
 	        
 	        if (room == floor1_room11)
 	        {
-	            ini_open("saveData.ini");
+	            ini_open("SGOUTsaveData.ini");
 	            
 	            if (global.deserttoppin1 != 1)
 	                ini_write_string("Toppin", "desert1", global.shroomfollow);
@@ -81,7 +81,7 @@ function scr_player_transitioncutscene()
 	        
 	        if (room == floor2_room0)
 	        {
-	            ini_open("saveData.ini");
+	            ini_open("SGOUTsaveData.ini");
 	            
 	            if (global.mansionhighscore < global.collect)
 	                ini_write_string("Highscore", "mansion", global.collect);
@@ -119,7 +119,7 @@ function scr_player_transitioncutscene()
 	        
 	        if (room == floor3_room0)
 	        {
-	            ini_open("saveData.ini");
+	            ini_open("SGOUTsaveData.ini");
 	            
 	            if (global.factoryhighscore < global.collect)
 	                ini_write_string("Highscore", "factory", global.collect);
@@ -157,7 +157,7 @@ function scr_player_transitioncutscene()
 	        
 	        if (room == floor4_room0)
 	        {
-	            ini_open("saveData.ini");
+	            ini_open("SGOUTsaveData.ini");
 	            
 	            if (global.sewerhighscore < global.collect)
 	                ini_write_string("Highscore", "sewer", global.collect);
@@ -213,7 +213,7 @@ function scr_player_transitioncutscene()
 	            if (global.freezertoppin5 != 1)
 	                ini_write_string("Toppin", "freezer5", global.pineapplefollow);
 	            
-	            ini_open("saveData.ini");
+	            ini_open("SGOUTsaveData.ini");
 	            
 	            if (global.rank == "s")
 	                ini_write_string("Ranks", "freezer", global.rank);

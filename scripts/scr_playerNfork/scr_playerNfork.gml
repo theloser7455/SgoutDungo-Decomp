@@ -3,6 +3,7 @@ function scr_playerNfork()
 	sprite_index = spr_bigbreakspritelol;
 	image_speed = movespeed / 20;
 	hsp = movespeed * xscale;
+	xscaleplus = lerp(xscaleplus, 0, 0.0625);
 	var bumpmetal = 0;
 	
 	if (movespeed >= 10)
@@ -17,12 +18,12 @@ function scr_playerNfork()
 	{
 	    instance_create(x, y, obj_jumpdust);
 	    flash = 0;
-	    state = 36;
+	    state = states.machroll;
 	    vsp = 10;
 	    
 	    if (character == "N" && !grounded)
 	    {
-	        state = 9890;
+	        state = states.wallbounce;
 	        sprite_index = spr_playerN_divebombfall;
 	        vsp = 20;
 	    }
@@ -35,9 +36,33 @@ function scr_playerNfork()
 	    
 	    with (instance_create(x, y, obj_bangeffect))
 	        sprite_index = spr_noisewalljumpeffect;
+	    
+	    if (movespeed < 50)
+	        movespeed *= 1.05;
+	    
+	    xscaleplus = movespeed / 20;
+	    
+	    if (movespeed > 20)
+	    {
+	        repeat (round(movespeed / 5))
+	        {
+	            with (instance_create(x, y, obj_slapstar))
+	                hsp = other.xscale * random_range(0, 25);
+	        }
+	        
+	        flash = 1;
+	    }
 	}
 	
-	if (key_punch2 || key_jump || key_slap2 || movespeed <= 0)
+	if (movespeed > 20 && mach4flame <= 0)
+	{
+	    with (instance_create(x, y, obj_bangeffect))
+	        sprite_index = spr_flamecloud;
+	    
+	    mach4flame = 10 / (movespeed / 10);
+	}
+	
+	if (key_punch2 || key_punchtwo2 || key_jump || key_slap2 || movespeed <= 0)
 	{
 	    vsp = -5;
 	    
@@ -53,10 +78,10 @@ function scr_playerNfork()
 	    if (key_slap2)
 	        key_slap2 = 0;
 	    
-	    state = 69;
+	    state = states.mach2;
 	    
 	    if (movespeed == 0)
-	        state = 0;
+	        state = states.normal;
 	}
 	
 	var accelerate = 0;

@@ -1,46 +1,46 @@
 switch (state)
 {
-    case 92:
+    case states.snickmachstart:
         scr_enemy_idle();
         break;
     
-    case 96:
+    case states.stupidratstoproll:
         scr_enemy_turn();
         break;
     
-    case 100:
+    case states.uppercut:
         scr_enemy_walk();
         var x2 = obj_player1.x;
         
         if (x2 < (x + 128) && x2 > (x - 128))
         {
-            state = 21;
+            state = states.handstandjump;
             vsp = -5;
         }
         
         break;
     
-    case 102:
+    case states.enemyland:
         scr_enemy_land();
         break;
     
-    case 103:
+    case states.enemyhit:
         scr_enemy_hit();
         break;
     
-    case 104:
+    case states.enemystun:
         scr_enemy_stun();
         break;
     
-    case 95:
+    case states.stupidratroll:
         scr_pizzagoblin_throw();
         break;
     
-    case 107:
+    case states.enemygrabbed:
         scr_enemy_grabbed();
         break;
     
-    case 21:
+    case states.handstandjump:
         if (vsp > 0)
             vsp += 1;
         
@@ -50,7 +50,7 @@ switch (state)
         break;
 }
 
-if (hitboxcreate == 0 && state == 21)
+if (hitboxcreate == 0 && state == states.handstandjump)
 {
     hitboxcreate = 1;
     
@@ -58,10 +58,10 @@ if (hitboxcreate == 0 && state == 21)
         ID = other.id;
 }
 
-if (state != 21)
+if (state != states.handstandjump)
     hitboxcreate = 0;
 
-if (state == 104 && stunned > 100 && birdcreated == 0)
+if (state == states.enemystun && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1;
     
@@ -69,16 +69,16 @@ if (state == 104 && stunned > 100 && birdcreated == 0)
         ID = other.id;
 }
 
-if (state != 104)
+if (state != states.enemystun)
     birdcreated = 0;
 
 if (flash == 1 && alarm[2] <= 0)
     alarm[2] = 0.15 * room_speed;
 
-if (state != 107)
+if (state != states.enemygrabbed)
     depth = 0;
 
-if (state != 104)
+if (state != states.enemystun)
     thrown = 0;
 
 if (boundbox == 0)

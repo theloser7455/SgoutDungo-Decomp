@@ -23,6 +23,8 @@ function scr_getinput()
 	key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check(0, gp_select);
 	key_punch = keyboard_check(global.key_punch);
 	key_punch2 = keyboard_check_pressed(global.key_punch);
+	key_punchtwo = keyboard_check(global.key_punch2);
+	key_punchtwo2 = keyboard_check_pressed(global.key_punch2);
 	
 	if (gamepad_axis_value(0, gp_axislh) > 0.5 || gamepad_axis_value(0, gp_axislh) < -0.5 || gamepad_axis_value(0, gp_axislv) > 0.5 || gamepad_axis_value(0, gp_axislv) < -0.5)
 	    stickpressed = 1;
@@ -31,7 +33,7 @@ function scr_getinput()
 	
 	if (keyboard_check_pressed(vk_f1))
 	{
-	    ini_open("saveData.ini");
+	    ini_open("SGOUTsaveData.ini");
 	    global.key_up = ini_write_string("ControlsKeys", "up", 38);
 	    global.key_right = ini_write_string("ControlsKeys", "right", 39);
 	    global.key_left = ini_write_string("ControlsKeys", "left", 37);
@@ -71,6 +73,9 @@ function scr_getinput()
 	    global.key_startC = ini_read_string("ControllerButton", "start", 32778);
 	    global.key_punch = ini_read_string("ControlsKeys", "shoot", 65);
 	    global.shoot = ini_read_string("ControlsKeys", "shoot", 65);
+	    global.key_punchC = ini_read_string("ControllerButton", "punch", 32776);
+	    global.key_punch2C = ini_read_string("ControllerButton", "punch2", 32775);
+	    global.key_punch2 = ini_read_string("ControlsKeys", "punch2", 83);
 	    ini_close();
 	    
 	    with (obj_tv)

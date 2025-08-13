@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_medievalsupersecret.wav",
-  "duration": 76.87501,
+  "duration": 76.875,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

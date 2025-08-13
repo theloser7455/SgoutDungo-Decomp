@@ -3,6 +3,10 @@ function scr_playerreset()
 	if (instance_exists(obj_endlevelfade))
 	    instance_destroy(obj_endlevelfade);
 	
+	if (instance_exists(obj_itspizzatime))
+	    instance_destroy(obj_itspizzatime);
+	
+	global.uniquecollects = 0;
 	global.hasthetreasure = 0;
 	global.draintime = 0;
 	global.timeractive = 0;
@@ -15,6 +19,19 @@ function scr_playerreset()
 	global.snickchallenge = 0;
 	global.lowgrav = 0;
 	global.gotsaw = 0;
+	
+	with (obj_camera)
+	{
+	    zooming = 0;
+	    zoomto = 1;
+	    n = 0;
+	    lerpH = 0;
+	    zoom = 0.25;
+	    zoomF = 1;
+	    zoomer = 0;
+	    mouseW = 0;
+	    alarm[1] = 60;
+	}
 	
 	if (instance_exists(obj_littlenoisegremlin))
 	    instance_destroy(obj_littlenoisegremlin);
@@ -31,20 +48,24 @@ function scr_playerreset()
 	
 	global.SAGEshotgunsnicknumber = 0;
 	obj_music.fadeoff = 0;
-	audio_stop_all();
 	
 	if (instance_exists(obj_timesup))
 	    instance_destroy(obj_timesup);
 	
 	global.seconds = 59;
 	global.minutes = 1;
-	obj_player.state = 0;
+	obj_player.state = states.normal;
 	obj_player.visible = true;
 	ds_list_clear(global.saveroom);
 	ds_list_clear(global.baddieroom);
 	
 	with (obj_player1)
 	{
+	    yscale = 1;
+	    xscaleplus = 0;
+	    yscaleplus = 0;
+	    image_yscale = 1;
+	    image_xscale = 1;
 	    alarm[0] = -1;
 	    alarm[1] = -1;
 	    alarm[3] = -1;
@@ -55,7 +76,9 @@ function scr_playerreset()
 	    alarm[8] = -1;
 	    alarm[9] = -1;
 	    alarm[10] = -1;
+	    alarm[11] = -1;
 	    pepperplay = 0;
+	    killstillsuper = 0;
 	    supertaunts = 1;
 	    enemiesswallowed = 0;
 	    squished = 0;
@@ -115,7 +138,7 @@ function scr_playerreset()
 	    global.pizzacoin = 0;
 	    global.toppintotal = 1;
 	    global.hit = 0;
-	    ini_open("saveData.ini");
+	    ini_open("SGOUTsaveData.ini");
 	    global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0);
 	    global.SAGEshotgunsnicknumber = 0;
 	    global.SAGEdungeonbackup = ini_read_string("SAGE2019", "dungeonbackup", 0);
@@ -167,5 +190,6 @@ function scr_playerreset()
 	    timeuntilhpback = 300;
 	    anger = 0;
 	    angry = 0;
+	    ervilvariable = 0;
 	}
 }

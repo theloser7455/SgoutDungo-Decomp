@@ -15,4 +15,15 @@ if (!fuckass)
         global.combotime = 100;
     else
         global.combotime += 10;
+    
+    if (instance_exists(obj_tv))
+    {
+        with (obj_tv)
+        {
+            shakething += 5;
+            
+            if (shakething >= 20)
+                shakething = 20;
+        }
+    }
 }

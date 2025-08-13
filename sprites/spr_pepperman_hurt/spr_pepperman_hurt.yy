@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc69bbb4-4235-4c16-a810-33a235662df6",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1a35baf8-6a89-4f4d-986e-ed2c09de03cf",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19fc975e-c567-4d0f-bb9a-edef0c3415b1",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ad87ec1-6a4e-4ca2-bb63-98e65799bd5f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"60358a78-785c-4e56-af27-07e7111ba65b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"953b8ae5-b47c-4367-a781-82d382f07b70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ca8823ce-8362-4b00-ba2d-1afe9d916383",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"93e5a7a7-09da-479a-9867-f1246ffde3e3",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7cd2e0ba-c7e9-4a96-8301-32604777abdd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc69bbb4-4235-4c16-a810-33a235662df6","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"636fa651-e4d5-4fe8-8b84-60fac47e86c6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1a35baf8-6a89-4f4d-986e-ed2c09de03cf","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c3d557a2-1187-4d3a-979c-c341f5548649","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19fc975e-c567-4d0f-bb9a-edef0c3415b1","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9b113582-b79b-4c9d-9fb8-e326f44b600b","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8ad87ec1-6a4e-4ca2-bb63-98e65799bd5f","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"28b23270-da0d-43f8-b1e2-791bd5404dd1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"60358a78-785c-4e56-af27-07e7111ba65b","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e01ab8df-7e12-4ce3-8e94-73deb9bc3a11","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"953b8ae5-b47c-4367-a781-82d382f07b70","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"de92fa45-b4a4-4265-9675-feab256cc315","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca8823ce-8362-4b00-ba2d-1afe9d916383","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"03d1eae4-7d18-420e-9787-bb4ba488c7b7","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"93e5a7a7-09da-479a-9867-f1246ffde3e3","path":"sprites/spr_pepperman_hurt/spr_pepperman_hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"546acf71-93b5-44cb-b3e0-d6276e57a83f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"55907a73-85b7-4560-b438-d933654929ea","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

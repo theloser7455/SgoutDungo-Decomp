@@ -1,10 +1,20 @@
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 global.entrancerank = ini_read_string("Ranks", "entrance", "none");
 global.medievalrank = ini_read_string("Ranks", "medieval", "none");
 global.ruinrank = ini_read_string("Ranks", "ruin", "none");
 global.dungeonrank = ini_read_string("Ranks", "dungeon", "none");
 global.snickchallengerank = ini_read_string("Ranks", "snickchallenge", "none");
-var rank = ini_read_string("Ranks", levelsign, "none");
+var deth = "";
+
+if (global.difficulty == 1)
+{
+    deth = "DEATH";
+    
+    if (global.pizzafacechasestyle != 0)
+        deth = "DEATH" + string(global.pizzafacechasestyle);
+}
+
+var rank = ini_read_string("Ranks", levelsign + string(obj_player.character) + deth, "none");
 
 if (rank == "none")
     visible = false;
@@ -27,9 +37,9 @@ if (rank == "d")
     image_index = 4;
 
 ini_close();
-ini_open("SGOUTDATA.ini");
+ini_open("SGOUTDATA new.ini");
 
-if (ini_read_string("P Ranks", levelsign, 0) == 1)
+if (ini_read_string("P Ranks", levelsign + string(obj_player.character) + deth, 0) == 1)
     image_index = 10;
 
 ini_close();

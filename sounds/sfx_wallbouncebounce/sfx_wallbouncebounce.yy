@@ -17,7 +17,7 @@
   "soundFile": "sfx_wallbouncebounce.wav",
   "duration": 0.596,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

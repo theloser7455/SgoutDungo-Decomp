@@ -17,7 +17,7 @@
   "soundFile": "sfx_collectgiantpizza",
   "duration": 2.092,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_explosion",
   "duration": 1.155,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

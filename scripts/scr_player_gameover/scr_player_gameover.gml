@@ -7,6 +7,7 @@ function scr_player_gameover()
 	{
 	    vsp = 0;
 	    hsp = 0;
+	    image_index = image_number - 1;
 	}
 	
 	flash = 0;

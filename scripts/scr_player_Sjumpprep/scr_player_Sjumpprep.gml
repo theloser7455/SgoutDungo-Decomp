@@ -86,8 +86,27 @@ function scr_player_Sjumpprep()
 	    scr_soundeffect(superjumpsound);
 	    instance_create(x, y, obj_explosioneffect);
 	    sprite_index = spr_superjump;
-	    state = 62;
+	    state = states.Sjump;
 	    vsp = -15;
+	    
+	    if (character == "S")
+	    {
+	        scr_soundeffect(choose(sfx_snickglitchnew, sfx_snickglitchnew2, sfx_snickglitchnew3, sfx_snickglitchnew4));
+	        
+	        if (movespeed < 12)
+	            movespeed = 12;
+	        
+	        hsp = 0;
+	        vsp = 0;
+	        tpcd = 0;
+	        tph = 0;
+	        tpv = -60;
+	        tptimes = 4;
+	        tauntstoredstate = state;
+	        tauntstoredsprite = sprite_index;
+	        tauntstoredmovespeed = movespeed + 4;
+	        state = states.snicktp;
+	    }
 	}
 	
 	if (!audio_is_playing(superjumpholdsound))

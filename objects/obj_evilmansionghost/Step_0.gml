@@ -17,7 +17,7 @@ with (instance_place(x, y, obj_baddie))
         die = 1;
 }
 
-if ((place_meeting(x, y, obj_player) && (obj_player.instakillmove || obj_player.state == 21)) || (place_meeting(x, y, obj_baddie) && die))
+if ((place_meeting(x, y, obj_player) && (obj_player.instakillmove || obj_player.state == states.handstandjump)) || (place_meeting(x, y, obj_baddie) && die))
 {
     speed = -6;
     

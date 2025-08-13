@@ -20,7 +20,7 @@ function scr_playerN_crusher()
 	    freefallsmash = 0;
 	    sprite_index = spr_playerN_noisecrusherland;
 	    image_index = 0;
-	    state = 76;
+	    state = states.freefallland;
 	    jumpAnim = 1;
 	    jumpstop = 0;
 	    
@@ -41,13 +41,37 @@ function scr_playerN_crusher()
 	    
 	    combo = 0;
 	    bounce = 0;
-	    instance_create(x, y, obj_landcloud);
+	    
+	    with (instance_create(x, y, obj_landcloud))
+	    {
+	        hspeed = 8;
+	        sprite_index = spr_ratdust;
+	        image_xscale = -1;
+	    }
+	    
+	    with (instance_create(x, y, obj_landcloud))
+	    {
+	        hspeed = -8;
+	        sprite_index = spr_ratdust;
+	    }
+	    
 	    freefallstart = 0;
+	    
+	    with (instance_place(x, y, obj_snick))
+	    {
+	        if (object_index == obj_snick)
+	        {
+	            if (image_xscale > 0)
+	                image_xscale += 0.5;
+	            else
+	                image_xscale -= 0.5;
+	        }
+	    }
 	}
 	
 	if ((key_slap2 && !key_up) || key_attack2)
 	{
-	    state = 69;
+	    state = states.mach2;
 	    sprite_index = spr_playerN_sidewayspin;
 	    scr_soundeffect(sfx_airspinstart);
 	    image_index = 0;

@@ -2,13 +2,14 @@ bgalpha = 1;
 bgalpha2 = 1;
 bgalpha3 = 1;
 bgalpha4 = 1;
+stupidandgay = 0;
+var g = round(random_range(0, 10));
+
+if (g == 5)
+    stupidandgay = 1;
+
 level = "none";
 ini_open("saveData.ini");
-global.entrancehighscore = ini_read_string("Highscore", "entrance", 0);
-global.medievalhighscore = ini_read_string("Highscore", "medieval", 0);
-global.ruinhighscore = ini_read_string("Highscore", "ruin", 0);
-global.dungeonhighscore = ini_read_string("Highscore", "dungeon", 0);
-global.snickchallengehighscore = ini_read_string("Highscore", "snickchallenge", 0);
 global.entrancetoppin1 = ini_read_string("Toppin", "entrance1", 0);
 global.entrancetoppin2 = ini_read_string("Toppin", "entrance2", 0);
 global.entrancetoppin3 = ini_read_string("Toppin", "entrance3", 0);

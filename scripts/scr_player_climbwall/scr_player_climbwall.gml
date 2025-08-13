@@ -7,13 +7,22 @@ function scr_player_climbwall()
 	suplexmove = 0;
 	vsp = -wallspeed;
 	
-	if (wallspeed < 24 && move == xscale)
-	    wallspeed += 0.05;
+	for (var i = 0; i < vsp; i++)
+	{
+	    if (!scr_solid(x + xscale, y))
+	    {
+	        y += vsp;
+	        vsp = 0;
+	    }
+	}
+	
+	if (wallspeed < 24)
+	    wallspeed += 0.1;
 	
 	crouchslideAnim = 1;
 	sprite_index = spr_machclimbwall;
 	
-	if ((!key_attack && character == "P") || (move != xscale && character == "S"))
+	if (!key_attack)
 	{
 	    state = 0;
 	    movespeed = 0;
@@ -23,14 +32,23 @@ function scr_player_climbwall()
 	{
 	    instance_create(x, y, obj_jumpdust);
 	    vsp = 0;
+	    movespeed = abs(wallspeed);
 	    
 	    if (movespeed >= 8)
-	        state = 69;
+	        state = states.mach2;
 	    
 	    if (movespeed >= 12)
 	    {
-	        state = 89;
+	        state = states.mach3;
 	        sprite_index = spr_mach4;
+	    }
+	    
+	    x += xscale;
+	    
+	    if (!scr_solid(x + (xscale * 5), y - 5))
+	    {
+	        while (!scr_solid(x + xscale, y + 1))
+	            y += 1;
 	    }
 	}
 	
@@ -38,10 +56,10 @@ function scr_player_climbwall()
 	{
 	    movespeed = wallspeed;
 	    
-	    if (movespeed > 16)
+	    if (movespeed > 16 && character != "S")
 	        movespeed = 16;
 	    
-	    state = 69;
+	    state = states.mach2;
 	    image_index = 0;
 	    sprite_index = spr_walljumpstart;
 	    vsp = -11;
@@ -51,7 +69,7 @@ function scr_player_climbwall()
 	
 	if ((grounded && wallspeed <= 0) || wallspeed <= 0)
 	{
-	    state = 57;
+	    state = states.jump;
 	    sprite_index = spr_fall;
 	}
 	
@@ -62,7 +80,7 @@ function scr_player_climbwall()
 	
 	if (character == "N")
 	{
-	    state = 9890;
+	    state = states.wallbounce;
 	    
 	    with (instance_create(x, y, obj_bangeffect))
 	        sprite_index = spr_noisewalljumpeffect;
@@ -79,7 +97,7 @@ function scr_player_climbwall()
 	    sprite_index = spr_superjumpland;
 	    scr_soundeffect(sfx_groundpound);
 	    image_index = 0;
-	    state = 91;
+	    state = states.Sjumpland;
 	    machhitAnim = 0;
 	}
 }

@@ -1,5 +1,29 @@
 function scr_player_bombpep()
 {
+	if (key_slap2 && sprite_index != spr_bombpepend)
+	{
+	    if (move != 0)
+	        xscale = move;
+	    
+	    sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
+	    image_index = 0;
+	    state = states.tackle;
+	    movespeed = 3;
+	    vsp = -3;
+	    
+	    with (instance_create(x, y, obj_pizzagoblinbomb))
+	    {
+	        hsp = other.xscale * 15;
+	        vsp = -5;
+	        deflected = 1;
+	    }
+	    
+	    hurted = 1;
+	    scr_soundeffect(sfx_punch);
+	    instance_create(x + (xscale * 32), y, obj_bangeffect);
+	    alarm[7] = 60;
+	}
+	
 	if (key_jump)
 	    input_buffer_jump = 0;
 	
@@ -77,14 +101,32 @@ function scr_player_bombpep()
 	
 	if (scr_solid(x + 1, y) && xscale == 1 && hsp != 0 && !place_meeting(x + sign(hsp), y, obj_slope))
 	{
-	    instance_create(x + 10, y + 10, obj_bumpeffect);
-	    xscale *= -1;
+	    var a = 0;
+	    
+	    if (!a)
+	    {
+	        instance_create(x + 10, y + 10, obj_bumpeffect);
+	        xscale *= -1;
+	    }
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (scr_solid(x - 1, y) && xscale == -1 && hsp != 0 && !place_meeting(x + sign(hsp), y, obj_slope))
 	{
-	    instance_create(x - 10, y + 10, obj_bumpeffect);
-	    xscale *= -1;
+	    var a = 0;
+	    
+	    if (!a)
+	    {
+	        instance_create(x - 10, y + 10, obj_bumpeffect);
+	        xscale *= -1;
+	    }
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (input_buffer_jump < 8 && grounded && hsp != 0)

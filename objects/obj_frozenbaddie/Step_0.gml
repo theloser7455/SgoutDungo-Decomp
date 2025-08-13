@@ -22,21 +22,21 @@ if (!thrown)
 {
     with (instance_place(x, y, obj_player))
     {
-        if (state == 21 || state == 46 || instakillmove)
+        if (state == states.handstandjump || state == states.punch || instakillmove)
         {
-            if (state == 21 || state == 46)
+            if (state == states.handstandjump || state == states.punch)
             {
                 if (!key_attack)
                 {
-                    sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch);
+                    sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
                     image_index = 0;
-                    state = 56;
+                    state = states.tackle;
                     movespeed = 3;
                     vsp = -3;
                 }
                 else
                 {
-                    state = 69;
+                    state = states.mach2;
                     sprite_index = choose(spr_machpunch1, spr_machpunch2);
                     image_index = 0;
                     

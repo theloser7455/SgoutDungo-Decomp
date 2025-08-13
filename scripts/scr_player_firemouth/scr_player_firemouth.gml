@@ -77,14 +77,48 @@ function scr_player_firemouth()
 	
 	if (scr_solid(x + 1, y) && xscale == 1 && hsp != 0 && !place_meeting(x + sign(hsp), y, obj_slope))
 	{
-	    instance_create(x + 10, y + 10, obj_bumpeffect);
-	    xscale *= -1;
+	    var a = 0;
+	    
+	    if (!scr_solid(x + sign(hsp), y - 32))
+	    {
+	        a = 1;
+	        
+	        if (scr_solid(x + sign(hsp), y - 33))
+	            a = 0;
+	    }
+	    
+	    if (!a)
+	    {
+	        instance_create(x + 10, y + 10, obj_bumpeffect);
+	        xscale *= -1;
+	    }
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (scr_solid(x - 1, y) && xscale == -1 && hsp != 0 && !place_meeting(x + sign(hsp), y, obj_slope))
 	{
-	    instance_create(x - 10, y + 10, obj_bumpeffect);
-	    xscale *= -1;
+	    var a = 0;
+	    
+	    if (!scr_solid(x + sign(hsp), y - 32))
+	    {
+	        a = 1;
+	        
+	        if (scr_solid(x + sign(hsp), y - 33))
+	            a = 0;
+	    }
+	    
+	    if (!a)
+	    {
+	        instance_create(x - 10, y + 10, obj_bumpeffect);
+	        xscale *= -1;
+	    }
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (input_buffer_jump < 8 && grounded && hsp != 0)

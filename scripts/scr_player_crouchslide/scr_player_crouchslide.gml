@@ -13,6 +13,16 @@ function scr_player_crouchslide()
 	    vsp = 10;
 	}
 	
+	var bumpmetal = 0;
+	
+	if (movespeed >= 12)
+	{
+	    bumpmetal = 1;
+	    
+	    if (!instance_exists(obj_chargeeffect))
+	        instance_create(x, y, obj_chargeeffect);
+	}
+	
 	if (grounded)
 	    sprite_index = spr_crouchslip;
 	
@@ -26,7 +36,7 @@ function scr_player_crouchslide()
 	{
 	    sprite_index = spr_rollgetup;
 	    mach2 = 35;
-	    state = 69;
+	    state = states.mach2;
 	    
 	    if (movespeed < 10)
 	        movespeed = 10;
@@ -34,7 +44,7 @@ function scr_player_crouchslide()
 	    if (movespeed >= 12)
 	    {
 	        machhitAnim = 0;
-	        state = 89;
+	        state = states.mach3;
 	        flash = 1;
 	        
 	        if (sprite_index != spr_rollgetup)
@@ -44,30 +54,36 @@ function scr_player_crouchslide()
 	    }
 	}
 	
-	if (scr_solid(x + 1, y) && xscale == 1 && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x + sign(hsp), y, obj_destructibles))
+	var a = 0;
+	
+	if (!scr_solid(x + sign(hsp), y - 32))
 	{
-	    movespeed = 0;
-	    state = 71;
-	    hsp = -2.5;
-	    vsp = -3;
-	    mach2 = 0;
-	    image_index = 0;
-	    machslideAnim = 1;
-	    machhitAnim = 0;
-	    instance_create(x + 10, y + 10, obj_bumpeffect);
+	    a = 1;
+	    
+	    if (scr_solid(x + sign(hsp), y - 33))
+	        a = 0;
 	}
 	
-	if (scr_solid(x - 1, y) && xscale == -1 && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x + sign(hsp), y, obj_destructibles))
+	if (((scr_solid(x + sign(hsp), y) && !place_meeting(x + sign(hsp), y, obj_metalblock)) || (place_meeting(x + sign(hsp), y, obj_metalblock) && !bumpmetal)) && !place_meeting(x + sign(hsp), y, obj_slope) && !place_meeting(x + sign(hsp), y, obj_destructibles))
 	{
-	    movespeed = 0;
-	    state = 71;
-	    hsp = 2.5;
-	    vsp = -3;
-	    mach2 = 0;
-	    image_index = 0;
-	    machslideAnim = 1;
-	    machhitAnim = 0;
-	    instance_create(x - 10, y + 10, obj_bumpeffect);
+	    if (!a)
+	    {
+	        scr_soundeffect(sfx_bumpwall);
+	        hsp = 0;
+	        image_speed = 0.35;
+	        flash = 0;
+	        combo = 0;
+	        state = states.bump;
+	        hsp = 0;
+	        vsp = 0;
+	        mach2 = 0;
+	        image_index = 0;
+	        sprite_index = wallsplatspr;
+	    }
+	    else
+	    {
+	        y -= 32;
+	    }
 	}
 	
 	if (!instance_exists(obj_slidecloud) && grounded && movespeed > 5)

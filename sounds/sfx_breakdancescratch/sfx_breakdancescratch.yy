@@ -17,7 +17,7 @@
   "soundFile": "sfx_breakdancescratch.wav",
   "duration": 0.697,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

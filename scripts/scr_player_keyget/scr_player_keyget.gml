@@ -19,5 +19,8 @@ function scr_player_keyget()
 	    global.keyget = 0;
 	    state = 0;
 	    image_index = 0;
+	    
+	    if (key_attack)
+	        movespeed = tauntstoredmovespeed;
 	}
 }

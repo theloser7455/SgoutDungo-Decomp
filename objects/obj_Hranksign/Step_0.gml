@@ -1,4 +1,4 @@
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 global.HAT_rank = ini_read_string("Ranks", "Hrank", "none");
 ini_close();
 

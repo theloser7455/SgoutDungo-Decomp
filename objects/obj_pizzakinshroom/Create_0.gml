@@ -5,3 +5,5 @@ vsp = 0;
 grav = 0.23;
 movespeed = 3;
 panic = 0;
+thing = image_xscale * 32;
+taunt = 0;

@@ -27,6 +27,11 @@ if (instance_exists(ID))
         
         if (object_index == obj_snickexe)
         {
+            if (stater == "dash")
+                other.parryable = 0;
+            else
+                other.parryable = 1;
+            
             if (obj_player1.instakillmove == 1 || obj_player1.state == 21)
             {
                 instance_destroy(other.id);
@@ -46,6 +51,15 @@ if (instance_exists(ID))
         if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ninja || object_index == obj_pizzice || object_index == obj_ancho)
         {
             if (state != 94)
+            {
+                hitboxcreate = 0;
+                instance_destroy(other.id);
+            }
+        }
+        
+        if (object_index == obj_pepperman_lesser)
+        {
+            if (state != states.slipnslide)
             {
                 hitboxcreate = 0;
                 instance_destroy(other.id);

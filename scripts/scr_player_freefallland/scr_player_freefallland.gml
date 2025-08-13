@@ -23,7 +23,7 @@ function scr_player_freefallland()
 	    
 	    if (pepperplay)
 	    {
-	        state = 600;
+	        state = states.playerpeppermanidle;
 	        sprite_index = spr_Pidle;
 	    }
 	    
@@ -32,14 +32,14 @@ function scr_player_freefallland()
 	        scr_soundeffect(jellywiggle);
 	        instance_create(x, y, obj_explosioneffect);
 	        sprite_index = spr_superjump;
-	        state = 62;
+	        state = states.Sjump;
 	        vsp = -20;
 	    }
 	}
 	
 	if (floor(image_index) == (image_number - 1) && superslam > 30)
 	{
-	    state = 39;
+	    state = states.machfreefall;
 	    vsp = -7;
 	    
 	    if (character == "R" && key_jump2)
@@ -47,7 +47,7 @@ function scr_player_freefallland()
 	        scr_soundeffect(jellywiggle);
 	        instance_create(x, y, obj_explosioneffect);
 	        sprite_index = spr_superjump;
-	        state = 62;
+	        state = states.Sjump;
 	        vsp = -20;
 	    }
 	}

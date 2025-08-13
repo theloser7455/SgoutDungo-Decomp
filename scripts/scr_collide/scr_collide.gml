@@ -1,6 +1,20 @@
 function scr_collide()
 {
 	grounded = 0;
+	var windx = 0;
+	var windy = 0;
+	
+	with (instance_place(x, y, obj_wind))
+	{
+	    windx = xforce;
+	    windy = yforce;
+	}
+	
+	if (!scr_solid(x, y + windy))
+	    y += windy;
+	
+	if (!scr_solid(x + windx, y))
+	    x += windx;
 	
 	repeat (abs(vsp))
 	{
@@ -34,9 +48,26 @@ function scr_collide()
 	    }
 	}
 	
-	if (vsp < 10)
-	    vsp += grav;
+	var delit = 1;
 	
-	grounded |= scr_solid(x, y + 1);
-	grounded |= (!place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform));
+	if (place_meeting(x, y, obj_water))
+	    delit += 1;
+	
+	if (global.lowgrav)
+	    delit += 1.5;
+	
+	if (vsp < 20)
+	    vsp += (grav / delit);
+	
+	if (grav >= 0)
+	{
+	    grounded |= scr_solid(x, y + 1);
+	    grounded |= (!place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform));
+	}
+	
+	if (grav < 0)
+	{
+	    grounded |= scr_solid(x, y - 1);
+	    grounded |= (!place_meeting(x, y, obj_flippedplatform) && place_meeting(x, y - 1, obj_flippedplatform));
+	}
 }

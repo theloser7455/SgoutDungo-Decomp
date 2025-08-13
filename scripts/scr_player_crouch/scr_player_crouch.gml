@@ -26,7 +26,7 @@ function scr_player_crouch()
 	if (!grounded && !key_jump)
 	{
 	    jumpAnim = 0;
-	    state = 66;
+	    state = states.crouchjump;
 	    movespeed = 4;
 	    crouchAnim = 1;
 	    image_index = 0;
@@ -85,7 +85,7 @@ function scr_player_crouch()
 	{
 	    scr_soundeffect(jumpsound);
 	    vsp = -8;
-	    state = 66;
+	    state = states.crouchjump;
 	    movespeed = 4;
 	    image_index = 0;
 	    crouchAnim = 1;
@@ -100,7 +100,7 @@ function scr_player_crouch()
 	    if (character == "P")
 	        machhitAnim = 0;
 	    
-	    state = 67;
+	    state = states.crouchslide;
 	    mach2 = 0;
 	    movespeed = 15;
 	    scr_soundeffect(sfx_suplexdash2);

@@ -83,6 +83,26 @@ if (targetDoor == "E")
     box = 0;
 }
 
+if (place_meeting(x, y, obj_boxofpizza))
+{
+    with (instance_place(x, y, obj_boxofpizza))
+    {
+        if (image_yscale == -1)
+            other.y += 32;
+    }
+}
+
+if (global.hallucination > 0 && (global.panic || global.snickchallenge))
+{
+    with (instance_create(random_range(room_width, 0), random_range(room_height, obj_slope), obj_hallucination))
+    {
+        type = 2;
+        sprite_index = spr_pizzaface;
+        image_yscale = -1;
+        thing = 100;
+    }
+}
+
 if (global.shroomfollow == 1)
     instance_create(x, y, obj_pizzakinshroom);
 
@@ -100,3 +120,57 @@ if (global.pineapplefollow == 1)
 
 roomstartx = x;
 roomstarty = y;
+
+if (room == Realtitlescreen)
+{
+    if (character != "R")
+    {
+        if (shotgunAnim == 0)
+        {
+            image_index = 0;
+            state = states.freefallprep;
+            sprite_index = spr_bodyslamstart;
+            vsp = -6;
+        }
+        else
+        {
+            scr_soundeffect(sfx_killingblow);
+            image_index = 0;
+            state = states.freefallprep;
+            sprite_index = spr_player_shotgunjump1;
+            vsp = -10;
+            
+            with (instance_create(x + (xscale * 30), y + 60, obj_shotgunbullet))
+            {
+                sprite_index = sprite10391;
+                spdh = -10;
+                spd = 0;
+            }
+            
+            with (instance_create(x + (xscale * 30), y + 60, obj_shotgunbullet))
+            {
+                sprite_index = sprite10391;
+                spdh = -10;
+                spd = 5;
+            }
+            
+            with (instance_create(x + (xscale * 30), y + 60, obj_shotgunbullet))
+            {
+                sprite_index = sprite10391;
+                spdh = -10;
+                spd = -5;
+            }
+        }
+    }
+    else
+    {
+        image_index = 0;
+        state = states.stupidratcheeseslam;
+        sprite_index = spr_bodyslamstart;
+        scr_soundeffect(cheesefall);
+        vsp = -10;
+    }
+    
+    x = 480;
+    y = -160;
+}

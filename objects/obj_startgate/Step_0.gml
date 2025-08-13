@@ -10,7 +10,7 @@ else
     image_index = 0;
 }
 
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0);
 global.SAGEdungeonbackup = ini_read_string("SAGE2019", "dungeonbackup", 0);
 global.SAGEsrank = ini_read_string("SAGE2019", "srank", 0);
@@ -47,14 +47,14 @@ if (global.medievaltreasure == 1 && global.ruintreasure == 1 && global.dungeontr
     ini_write_string("SAGE2019", "treasure", 1);
 
 ini_close();
-ini_open("SGOUTDATA.ini");
+ini_open("SGOUTDATA new.ini");
 
-if (ini_read_string("Treasure status", level, 1))
+if (ini_read_string("Treasure" + string(obj_player.character), level, 0))
     treasure = 1;
 
 ini_close();
 
-if (obj_player.state != 63)
+if (obj_player.state != states.victory)
 {
     if (level == "medieval")
     {
@@ -76,6 +76,10 @@ if (obj_player.state != 63)
             with (obj_tv)
             {
                 message = "THE ANCIENT CHEESE";
+                
+                if (other.stupidandgay)
+                    message = "TEH ANCIENT CHEESE";
+                
                 showtext = 1;
                 alarm[0] = 2;
             }
@@ -115,6 +119,71 @@ if (obj_player.state != 63)
             with (obj_tv)
             {
                 message = "PEPPERMAN FIGHT";
+                showtext = 1;
+                alarm[0] = 2;
+            }
+        }
+    }
+    
+    if (level == "peppermantesty")
+    {
+        if (distance_to_object(obj_player) < 50)
+        {
+            with (obj_tv)
+            {
+                message = "PEPPERMAN FIGHT WITH 50 PHASES";
+                showtext = 1;
+                alarm[0] = 2;
+            }
+        }
+    }
+    
+    if (level == "bestboss")
+    {
+        if (distance_to_object(obj_player) < 50)
+        {
+            with (obj_tv)
+            {
+                message = "DEVILKIN FIGHT";
+                showtext = 1;
+                alarm[0] = 2;
+            }
+        }
+    }
+    
+    if (level == "ppworld")
+    {
+        if (distance_to_object(obj_player) < 50)
+        {
+            with (obj_tv)
+            {
+                message = "PEPPERWORLD";
+                showtext = 1;
+                alarm[0] = 2;
+            }
+        }
+    }
+    
+    if (level == "besterboss")
+    {
+        if (distance_to_object(obj_player) < 50)
+        {
+            with (obj_tv)
+            {
+                message = "ANGELKIN";
+                showtext = 1;
+                alarm[0] = 2;
+            }
+        }
+    }
+    
+    if (level == "idiot")
+    {
+        if (distance_to_object(obj_player) < 50)
+        {
+            with (obj_tv)
+            {
+                message = "IDIOT";
                 showtext = 1;
                 alarm[0] = 2;
             }

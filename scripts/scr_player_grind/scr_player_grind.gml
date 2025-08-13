@@ -12,12 +12,12 @@ function scr_player_grind()
 	    movespeed = 6;
 	
 	if (!grounded || place_meeting(x, y + 1, obj_solid))
-	    state = 69;
+	    state = states.mach2;
 	
 	if (key_jump)
 	{
 	    vsp = -10;
-	    state = 69;
+	    state = states.mach2;
 	    y -= 1;
 	    sprite_index = spr_mach2jump;
 	}

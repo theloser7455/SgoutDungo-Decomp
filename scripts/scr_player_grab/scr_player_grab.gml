@@ -207,7 +207,7 @@ function scr_player_grab()
 	        if (move != 0)
 	            move = xscale;
 	        
-	        state = 2;
+	        state = states.finishingblow;
 	        
 	        if (sprite_index == spr_swingding)
 	            sprite_index = spr_swingdingend;
@@ -221,7 +221,7 @@ function scr_player_grab()
 	    {
 	        instance_destroy(baddiegrabbedID);
 	        enemiesswallowed++;
-	        state = 2;
+	        state = states.finishingblow;
 	        sprite_index = spr_stupidrat_land;
 	        movespeed = -5;
 	    }
@@ -235,7 +235,7 @@ function scr_player_grab()
 	{
 	    sprite_index = spr_piledriver;
 	    vsp = -6;
-	    state = 42;
+	    state = states.superslam;
 	    image_index = 0;
 	    image_speed = 0.35;
 	}
@@ -245,7 +245,7 @@ function scr_player_grab()
 	
 	if (key_down && grounded && character != "R")
 	{
-	    state = 65;
+	    state = states.crouch;
 	    landAnim = 0;
 	    crouchAnim = 1;
 	    image_index = 0;

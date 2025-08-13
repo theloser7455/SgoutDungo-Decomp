@@ -21,12 +21,12 @@ function scr_player_stupidratroll()
 	}
 	else
 	{
-	    state = 96;
+	    state = states.stupidratstoproll;
 	}
 	
 	if (scr_solid(x + xscale, y) && !place_meeting(x + xscale, y, obj_destructibles) && !place_meeting(x + xscale, y, obj_metalblock) && !place_meeting(x + xscale, y, obj_slope))
 	{
-	    state = 96;
+	    state = states.stupidratstoproll;
 	    hsp *= -1;
 	    instance_create(x, y, obj_bangeffect);
 	    scr_soundeffect(ballhit);
@@ -42,12 +42,12 @@ function scr_player_stupidratroll()
 	if (key_down2 && !grounded)
 	{
 	    image_index = 0;
-	    state = 98;
+	    state = states.stupidratcheeseslam;
 	    scr_soundeffect(cheesefall);
 	    sprite_index = spr_bodyslamstart;
 	    vsp = -10;
 	}
 	
 	if (move == -xscale)
-	    state = 97;
+	    state = states.stupidratturnroll;
 }

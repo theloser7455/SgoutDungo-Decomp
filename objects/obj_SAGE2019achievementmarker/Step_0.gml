@@ -24,14 +24,6 @@ if (picy == 640)
         alarm[0] = 250;
         scr_soundeffect(sfx_collectgiantpizza);
     }
-    else if (snicksrank == 0 && global.SAGEsnicksrank == 1)
-    {
-        up = 1;
-        sprite = bg_SAGEsnicksrank;
-        snicksrank = 1;
-        alarm[0] = 250;
-        scr_soundeffect(sfx_collectgiantpizza);
-    }
     else if (combo10 == 0 && global.SAGEcombo10 == 1)
     {
         up = 1;

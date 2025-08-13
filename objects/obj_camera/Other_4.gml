@@ -12,3 +12,5 @@ if ((global.panic == 1 || global.snickchallenge == 1) && global.panicbg)
 
 application_surface_draw_enable(true);
 global.wave = global.maxwave - (((global.minutes * 60) + global.seconds) * 60);
+zoomF = 1;
+lerpH = zoomF * 540;

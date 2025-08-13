@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b4198fce-a67b-46cd-94fa-1b4c890e0d17",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8390e499-ec35-4612-91cb-476a3ea69061",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"298c7045-09f2-44bd-8be4-6bab667bfa5b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e280a0fe-3b2e-42e8-a971-d4d3d11817ad",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"711049e0-c96a-4dce-b092-6bc3aaa94f2a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b4198fce-a67b-46cd-94fa-1b4c890e0d17","path":"sprites/spr_pepperman_smallstatue3/spr_pepperman_smallstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"131db0c8-7f19-4caa-9f91-e15999755da9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8390e499-ec35-4612-91cb-476a3ea69061","path":"sprites/spr_pepperman_smallstatue3/spr_pepperman_smallstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"091f2d81-43b3-4640-9187-73353308c445","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"298c7045-09f2-44bd-8be4-6bab667bfa5b","path":"sprites/spr_pepperman_smallstatue3/spr_pepperman_smallstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"16f9c40d-c14e-4fc9-80ac-19d972de74e4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e280a0fe-3b2e-42e8-a971-d4d3d11817ad","path":"sprites/spr_pepperman_smallstatue3/spr_pepperman_smallstatue3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,11 +66,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"32c85812-ac20-4cb9-89eb-b802bf4932f5","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a383021-8526-41cd-8940-2e6288799396","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

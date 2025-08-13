@@ -109,7 +109,7 @@ function scr_enemy_stun()
 	    
 	    image_index = 0;
 	    sprite_index = walkspr;
-	    state = 100;
+	    state = states.uppercut;
 	    movespeed = 2;
 	}
 }

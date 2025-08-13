@@ -17,7 +17,7 @@
   "soundFile": "sfx_tornadoungroned.wav",
   "duration": 1.461,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

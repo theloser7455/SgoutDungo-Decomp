@@ -28,9 +28,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"58df50c6-8645-42be-b270-c9ee234154f0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5b1e791-536e-4d9c-924d-5b247565ab29",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7680c7f8-def6-48af-ad8d-5aaa4e85f69d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfbba73d-3b61-4972-a69c-73dbdd1a4098",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ce71a943-9442-45e3-8238-e63ba01bfc64",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7526dc05-7156-4277-b508-5cc4170e292a",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"927298ca-61b1-48f5-ba2b-81445a2582a0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"58df50c6-8645-42be-b270-c9ee234154f0","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"2997ca09-3e66-4034-ba80-32e08bb9b4b7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b5b1e791-536e-4d9c-924d-5b247565ab29","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"4bc34405-e8db-44de-a1c6-8d8e9043ca0d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7680c7f8-def6-48af-ad8d-5aaa4e85f69d","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9186365a-b767-40fb-853c-a224245d5e45","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cfbba73d-3b61-4972-a69c-73dbdd1a4098","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d3f7e424-547a-4c42-b3e9-564154f69a3e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ce71a943-9442-45e3-8238-e63ba01bfc64","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c08c6425-cf1b-4428-a2d9-cdaeca62ba87","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7526dc05-7156-4277-b508-5cc4170e292a","path":"sprites/spr_player_ufotransition/spr_player_ufotransition.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,11 +68,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"566828fe-905f-47a8-9fc8-6a98a22f2e33","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"34ea74fc-2462-4763-9264-2b7f81a159e6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

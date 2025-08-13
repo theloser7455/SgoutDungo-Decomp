@@ -1,5 +1,5 @@
 if (obj_player1.character == "S")
-    image_index = 2;
+    image_index = 3;
 
 if (obj_player1.character == "N")
     image_index = 0;

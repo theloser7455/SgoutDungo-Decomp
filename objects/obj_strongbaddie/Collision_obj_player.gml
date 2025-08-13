@@ -2,7 +2,7 @@ var a = 0;
 
 with (obj_player)
 {
-    if (state != 21 && instakillmove != 1 && state != 46 && state != 444)
+    if (state != states.handstandjump && instakillmove != 1 && state != states.punch && state != states.unknown444)
         a = 1;
 }
 

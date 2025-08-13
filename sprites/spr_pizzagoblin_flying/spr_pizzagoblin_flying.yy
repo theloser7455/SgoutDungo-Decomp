@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2bad60f9-513f-4c2e-b787-d6db98d2b19c",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14b597b3-4cc3-438b-8c55-ecca292deabd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"350b72de-622e-4fa6-9d23-85e950a7504a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"817738dc-c365-42bb-87c8-26fb4a9222ae",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d847d39e-3e6d-4e3c-99ad-44c2e4cb68dd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2bad60f9-513f-4c2e-b787-d6db98d2b19c","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9ceff3d2-1929-4b61-9057-2cd60488634e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14b597b3-4cc3-438b-8c55-ecca292deabd","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8c6fce67-b79e-4b3e-bd64-9857b90e29ea","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"350b72de-622e-4fa6-9d23-85e950a7504a","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cbf53dec-80a5-4bfa-854f-56dcd6aad01f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"817738dc-c365-42bb-87c8-26fb4a9222ae","path":"sprites/spr_pizzagoblin_flying/spr_pizzagoblin_flying.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,11 +66,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ca492e3b-c618-4498-8abc-7c6da6139c84","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"346bb477-a150-4e9d-93a4-9ec5f4254988","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

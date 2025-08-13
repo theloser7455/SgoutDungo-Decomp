@@ -17,7 +17,7 @@
   "soundFile": "sfx_shoulderbashhit2.wav",
   "duration": 1.036,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

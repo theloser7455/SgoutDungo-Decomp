@@ -17,7 +17,7 @@
   "soundFile": "sfx_tumble2",
   "duration": 0.625,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

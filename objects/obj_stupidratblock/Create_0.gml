@@ -30,3 +30,5 @@ switch (sprite_index)
         deadspr = spr_ratblock2x2die;
         break;
 }
+
+bomb = 0;

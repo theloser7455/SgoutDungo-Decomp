@@ -1,5 +1,4 @@
-if (global.deathmode)
-{
+if (global.deathmode) {
     with (instance_create(832, 448, obj_sausageman_dead))
         sprite_index = spr_pizzaface_hurt;
     

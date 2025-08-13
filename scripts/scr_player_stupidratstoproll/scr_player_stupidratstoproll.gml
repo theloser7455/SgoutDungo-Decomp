@@ -11,7 +11,7 @@ function scr_player_stupidratstoproll()
 	if (key_down2 && !grounded)
 	{
 	    image_index = 0;
-	    state = 98;
+	    state = states.stupidratcheeseslam;
 	    sprite_index = spr_bodyslamstart;
 	    scr_soundeffect(cheesefall);
 	    vsp = -10;
@@ -26,7 +26,7 @@ function scr_player_stupidratstoproll()
 	{
 	    if (key_attack)
 	    {
-	        state = 95;
+	        state = states.stupidratroll;
 	        scr_soundeffect(turnintoball);
 	        
 	        if (move != 0)
@@ -34,7 +34,7 @@ function scr_player_stupidratstoproll()
 	    }
 	    else
 	    {
-	        state = 0;
+	        state = states.normal;
 	        squished = 0;
 	        movespeed = 0;
 	    }

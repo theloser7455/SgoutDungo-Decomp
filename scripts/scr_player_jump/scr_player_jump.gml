@@ -88,7 +88,7 @@ function scr_player_jump()
 	    if (character == "R")
 	        vsp = -15;
 	    
-	    state = 57;
+	    state = states.jump;
 	    jumpAnim = 1;
 	    jumpstop = 0;
 	    image_index = 0;
@@ -108,7 +108,7 @@ function scr_player_jump()
 	        landAnim = 0;
 	    
 	    input_buffer_secondjump = 0;
-	    state = 0;
+	    state = states.normal;
 	    jumpAnim = 1;
 	    jumpstop = 0;
 	    image_index = 0;
@@ -173,15 +173,17 @@ function scr_player_jump()
 	        if (shotgunAnim == 0)
 	        {
 	            image_index = 0;
-	            state = 90;
+	            scr_soundeffect(sfx_groundpoundstart);
+	            state = states.freefallprep;
 	            sprite_index = spr_bodyslamstart;
 	            vsp = -6;
 	        }
 	        else
 	        {
 	            scr_soundeffect(sfx_killingblow);
+	            scr_soundeffect(sfx_groundpoundstart);
 	            image_index = 0;
-	            state = 90;
+	            state = states.freefallprep;
 	            sprite_index = spr_player_shotgunjump1;
 	            vsp = -10;
 	            
@@ -210,7 +212,7 @@ function scr_player_jump()
 	    else
 	    {
 	        image_index = 0;
-	        state = 98;
+	        state = states.stupidratcheeseslam;
 	        sprite_index = spr_bodyslamstart;
 	        scr_soundeffect(cheesefall);
 	        vsp = -10;
@@ -242,7 +244,7 @@ function scr_player_jump()
 	    scr_soundeffect(sfx_groundpound);
 	    image_index = 0;
 	    sprite_index = spr_player_bodyslamland;
-	    state = 76;
+	    state = states.freefallland;
 	}
 	
 	if (character == "N" && key_jump && sprite_index != spr_playerN_glide)
@@ -252,14 +254,27 @@ function scr_player_jump()
 	    vsp = -11;
 	}
 	
-	if (character == "N" && key_jump && key_up && !grounded)
+	if (key_jump && key_up && !grounded)
 	{
-	    state = 4719;
-	    sprite_index = spr_playerN_noisecrusherstart;
-	    image_index = 0;
-	    vsp = -16;
-	    scr_soundeffect(sfx_noisedoublejumper);
-	    dir = xscale;
+	    if (character == "N")
+	    {
+	        state = states.Ncrusher;
+	        sprite_index = spr_playerN_noisecrusherstart;
+	        image_index = 0;
+	        vsp = -16;
+	        scr_soundeffect(sfx_noisedoublejumper);
+	        dir = xscale;
+	    }
+	    
+	    if (character == "V")
+	    {
+	        state = states.wallbounce;
+	        
+	        with (instance_create(x, y, obj_bangeffect))
+	            sprite_index = spr_noisewalljumpeffect;
+	        
+	        scr_soundeffect(sfx_spin);
+	    }
 	}
 	
 	if (!key_attack || move != xscale)

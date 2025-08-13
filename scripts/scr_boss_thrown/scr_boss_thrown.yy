@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": true,
   "parent": {
-    "name": "boss_states",
-    "path": "folders/Scripts/Boss Releated/boss_states.yy",
+    "name": "Boss",
+    "path": "folders/Scripts/Enemy related/Boss.yy",
   },
 }

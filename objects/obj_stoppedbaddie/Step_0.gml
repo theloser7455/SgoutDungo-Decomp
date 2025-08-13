@@ -10,7 +10,7 @@ if (baddieid != id)
         if (image_blend == c_red)
         {
             with (instance_create(x, y, obj_bombexplosion))
-                player = obj_solid;
+                player = 1;
         }
         
         instance_destroy();

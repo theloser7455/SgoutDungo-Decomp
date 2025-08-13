@@ -17,7 +17,7 @@
   "soundFile": "sfx_suplexdash2.wav",
   "duration": 0.989,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

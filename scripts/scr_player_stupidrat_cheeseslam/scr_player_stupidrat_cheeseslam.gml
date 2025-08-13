@@ -70,7 +70,7 @@ function scr_player_stupidrat_cheeseslam()
 	        sprite_index = spr_player_shotgunjump2;
 	    
 	    image_index = 0;
-	    state = 76;
+	    state = states.freefallland;
 	    jumpAnim = 1;
 	    jumpstop = 0;
 	    
@@ -92,5 +92,16 @@ function scr_player_stupidrat_cheeseslam()
 	    combo = 0;
 	    bounce = 0;
 	    freefallstart = 0;
+	    
+	    with (instance_place(x, y, obj_snick))
+	    {
+	        if (object_index == obj_snick)
+	        {
+	            if (image_xscale > 0)
+	                image_xscale += 0.5;
+	            else
+	                image_xscale -= 0.5;
+	        }
+	    }
 	}
 }

@@ -17,7 +17,7 @@
   "soundFile": "sfx_kungfu3.wav",
   "duration": 0.942,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

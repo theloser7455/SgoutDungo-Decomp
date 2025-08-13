@@ -1,8 +1,10 @@
 scr_initinput();
 selected = 0;
-
-if (!audio_is_playing(mu_title))
-    scr_sound(mu_medieval);
-
 x1 = 0;
 y1 = 0;
+
+if (instance_exists(obj_option))
+{
+    x1 = obj_option.x1;
+    y1 = obj_option.y1;
+}

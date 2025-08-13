@@ -1,0 +1,11 @@
+attackin = 50;
+turns = 0;
+hp = 20;
+maxhp = 20;
+attack = "S";
+ball = 0;
+phase2transitionsound = sfx_pepperman_scared;
+spr_palette = spr_pepperman_palette;
+paletteselect = 1;
+trail = 1;
+xscale = -1;

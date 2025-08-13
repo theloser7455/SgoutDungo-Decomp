@@ -17,7 +17,7 @@
   "soundFile": "sfx_bombpep2",
   "duration": 5.8059998,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

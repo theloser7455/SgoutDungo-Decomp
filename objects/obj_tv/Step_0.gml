@@ -1,6 +1,9 @@
 if (room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen)
     alpha = 0;
 
+shakething = lerp(shakething, 0, 0.25);
+shakethingv = lerp(shakethingv, 0, 0.25);
+
 if (room == entrance_1)
 {
     global.srank = 5750;
@@ -44,7 +47,20 @@ if (room == dungeon_1 && global.snickchallenge == 0)
 if (showtext == 1)
 {
     xi = 500;
-    yi = Approach(yi, 475, 10);
+    v = 0;
+    
+    if (global.fontspritee == 1557)
+        v = 20;
+    else if (global.fontspritee == 1641)
+        v = 64;
+    
+    yi = Approach(yi, 475 - v, 10);
+    
+    with (obj_player)
+    {
+        if (place_meeting(x, y, obj_dresserforsgoutdungo))
+            other.yi = Approach(other.yi, 275 - other.v, 10);
+    }
 }
 
 if (showtext == 0)
@@ -53,7 +69,7 @@ if (showtext == 0)
     yi = Approach(yi, 690, 10);
 }
 
-if (!(obj_player.state == 23 && obj_player.state == 24 && obj_player.state == 17))
+if (!(obj_player.state == states.knightpep && obj_player.state == states.knightpepattack && obj_player.state == states.knightpepslopes))
     once = 0;
 
 if (obj_player.y < 200 && obj_player.x > (room_width - 200))
@@ -61,15 +77,7 @@ if (obj_player.y < 200 && obj_player.x > (room_width - 200))
 else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen))
     alpha = 1;
 
-if (instance_exists(obj_itspizzatime))
-{
-    image_speed = 0.25;
-    message = "GET TO THE EXIT!!";
-    alarm[0] = 200;
-    showtext = 1;
-    tvsprite = spr_tvexit;
-}
-else if (global.collect > global.arank && shownranka == 0 && obj_player.character == "")
+if (global.collect > global.arank && shownranka == 0 && obj_player.character == "")
 {
     image_speed = 0;
     message = "YOU GOT ENOUGH FOR RANK A";
@@ -104,7 +112,7 @@ else if (obj_player.sprite_index == spr_player_levelcomplete)
     tvsprite = spr_tvclap;
     once = 1;
 }
-else if (obj_player.state == 35)
+else if (obj_player.state == states.timesup)
 {
     alarm[0] = 50;
     image_speed = 0.1;
@@ -146,35 +154,9 @@ else if (room == Realtitlescreen)
     image_speed = 0.1;
     tvsprite = spr_tvbanana;
     alarm[0] = 2;
-    
-    if (obj_mainmenuselect.selected == 0)
-    {
-        if (obj_mainmenuselect.optionselected == 0)
-        {
-            showtext = 1;
-            message = "START GAME";
-        }
-        
-        if (obj_mainmenuselect.optionselected == 1)
-        {
-            showtext = 1;
-            message = "OPTION";
-        }
-        
-        if (obj_mainmenuselect.optionselected == 2)
-        {
-            showtext = 1;
-            message = "ERASE DATA";
-        }
-    }
-    else
-    {
-        showtext = 1;
-        message = "";
-    }
 }
 
-if (obj_player.state == 55)
+if (obj_player.state == states.keyget)
 {
     showtext = 1;
     message = "GOT THE KEY!";

@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_breakdancemusicc.wav",
-  "duration": 1.860567,
+  "duration": 1.86,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

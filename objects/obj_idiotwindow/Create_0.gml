@@ -1,0 +1,10 @@
+hsp = -10;
+vsp = 10;
+grav = 0;
+grounded = 0;
+chsp = 5;
+cvsp = 5;
+image_speed = 1;
+depth = obj_player.depth + 1;
+alarm[0] = 5;
+scr_soundeffect(sfx_errorsound);

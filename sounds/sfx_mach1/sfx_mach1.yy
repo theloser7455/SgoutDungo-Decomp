@@ -17,7 +17,7 @@
   "soundFile": "sfx_mach1",
   "duration": 1.9330001,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

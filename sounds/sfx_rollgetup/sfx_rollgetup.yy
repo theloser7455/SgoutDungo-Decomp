@@ -17,7 +17,7 @@
   "soundFile": "sfx_rollgetup",
   "duration": 0.754,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

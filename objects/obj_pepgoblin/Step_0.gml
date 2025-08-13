@@ -1,43 +1,43 @@
 switch (state)
 {
-    case 92:
+    case states.snickmachstart:
         scr_enemy_idle();
         break;
     
-    case 94:
+    case states.breakdanceattack:
         scr_enemy_charge();
         break;
     
-    case 96:
+    case states.stupidratstoproll:
         scr_enemy_turn();
         break;
     
-    case 100:
+    case states.uppercut:
         scr_enemy_walk();
         break;
     
-    case 102:
+    case states.enemyland:
         scr_enemy_land();
         break;
     
-    case 103:
+    case states.enemyhit:
         scr_enemy_hit();
         break;
     
-    case 104:
+    case states.enemystun:
         scr_enemy_stun();
         break;
     
-    case 95:
+    case states.stupidratroll:
         scr_pizzagoblin_throw();
         break;
     
-    case 107:
+    case states.enemygrabbed:
         scr_enemy_grabbed();
         break;
 }
 
-if (state == 104 && stunned > 100 && birdcreated == 0)
+if (state == states.enemystun && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1;
     
@@ -45,16 +45,16 @@ if (state == 104 && stunned > 100 && birdcreated == 0)
         ID = other.id;
 }
 
-if (state != 104)
+if (state != states.enemystun)
     birdcreated = 0;
 
 if (flash == 1 && alarm[2] <= 0)
     alarm[2] = 0.15 * room_speed;
 
-if (state != 107)
+if (state != states.enemygrabbed)
     depth = 0;
 
-if (state != 104)
+if (state != states.enemystun)
     thrown = 0;
 
 scr_enemy_scarescript();
@@ -62,38 +62,38 @@ scr_enemy_scarescript();
 if (bombreset > 0)
     bombreset--;
 
-if (x != obj_player1.x && state != 95 && obj_player.state != 1 && bombreset == 0 && grounded)
+if (x != obj_player1.x && state != states.stupidratroll && obj_player.state != states.tumble && bombreset == 0 && grounded)
 {
     if (obj_player1.x > (x - 80) && obj_player1.x < (x + 80) && y <= (obj_player1.y + 100) && y >= (obj_player1.y - 100))
     {
-        if (state == 100)
+        if (state == states.uppercut)
         {
             image_index = 0;
             sprite_index = spr_pepgoblin_kick;
             image_xscale = -sign(x - obj_player.x);
-            state = 95;
+            state = states.stupidratroll;
         }
     }
 }
 
 if (instance_exists(obj_player2))
 {
-    if (x != obj_player2.x && state != 95 && bombreset == 0 && grounded)
+    if (x != obj_player2.x && state != states.stupidratroll && bombreset == 0 && grounded)
     {
         if (obj_player2.x > (x - 100) && obj_player2.x < (x + 100) && y <= (obj_player2.y + 100) && y >= (obj_player2.y - 100))
         {
-            if (state == 100 || state == 92)
+            if (state == states.uppercut || state == states.snickmachstart)
             {
                 image_index = 0;
                 sprite_index = spr_pepgoblin_kick;
                 image_xscale = -sign(x - obj_player.x);
-                state = 95;
+                state = states.stupidratroll;
             }
         }
     }
 }
 
-if (grounded && state == 95 && floor(image_index) == 3)
+if (grounded && state == states.stupidratroll && floor(image_index) == 3)
     vsp = -5;
 
 if (boundbox == 0)

@@ -5,3 +5,4 @@ vsp = 0;
 grav = 0.23;
 movespeed = 12;
 panic = 0;
+phase2transitionsound = fartie;

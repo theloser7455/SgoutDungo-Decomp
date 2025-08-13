@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_difficultychanger",
   "spriteId": {
-    "name": "spr_difficultymeter",
-    "path": "sprites/spr_difficultymeter/spr_difficultymeter.yy",
+    "name": "spr_difficultychangerpart1",
+    "path": "sprites/spr_difficultychangerpart1/spr_difficultychangerpart1.yy",
   },
   "solid": false,
   "visible": true,

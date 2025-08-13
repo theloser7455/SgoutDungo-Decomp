@@ -17,3 +17,17 @@ grounded = 0;
 immunityframes = 3;
 alarm[2] = 5;
 shart = 1;
+spid = 0;
+howmuchtimesdidyoukickmyass = 0;
+depth = obj_player.depth + 1;
+
+if ((place_meeting(x, y, obj_doorblocked) && !global.snickchallenge) || object_index == obj_VERYFUCKINGSTRONGPIZZAFACE)
+{
+    sprite_index = spr_pizzaface_intro2;
+    
+    if (audio_is_playing(sfx_pizzafacelaugh))
+        audio_stop_sound(sfx_pizzafacelaugh);
+    
+    if (!audio_is_playing(sfx_pizzafacelaugh))
+        scr_soundeffect(sfx_pizzafacelaugh);
+}

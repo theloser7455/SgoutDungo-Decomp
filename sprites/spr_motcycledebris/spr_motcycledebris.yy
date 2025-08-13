@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4501090b-5338-4b1a-ad24-dcdcce71515a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14d495eb-2af7-47d9-ad63-ab42ec72df10",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b7a6b7f-d954-4f06-96d8-85c0dacfd7f4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d67d0b6f-b595-487d-ab3d-08a53b474e01",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0003b973-f0ca-44fa-b525-62604e76f60f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"334a8f92-ca25-48c5-81d9-a702c65e321e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"940f75d4-7bbe-4d94-90b6-d64ab86b816c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8fa9778-9686-47e3-acec-d6eb4be6d5a8",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"107a689d-ab53-4076-9a29-30204bf05c27","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4501090b-5338-4b1a-ad24-dcdcce71515a","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"bf50d344-2aae-40be-9772-6a1cc71b3512","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14d495eb-2af7-47d9-ad63-ab42ec72df10","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"67675bca-e54c-40a0-921b-a48a48118c1f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b7a6b7f-d954-4f06-96d8-85c0dacfd7f4","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"964147f1-ab9b-4ea0-babe-eb9e1de11d85","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d67d0b6f-b595-487d-ab3d-08a53b474e01","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"93c68b29-7866-4083-a391-feb0ee48ca0e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0003b973-f0ca-44fa-b525-62604e76f60f","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8f351bce-1ce7-4a84-a98f-4fba7a4147ef","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"334a8f92-ca25-48c5-81d9-a702c65e321e","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"02234346-6e13-4363-8bab-bcce873a85f3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"940f75d4-7bbe-4d94-90b6-d64ab86b816c","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"76784e24-5911-473d-9585-a657be658ebb","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8fa9778-9686-47e3-acec-d6eb4be6d5a8","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"03c7ea43-cba4-4437-8bc4-fad00799c9fc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1575ff7c-eee1-415d-87af-9d06f6eb47bc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

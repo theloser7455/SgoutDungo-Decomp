@@ -1,0 +1,13 @@
+scr_soundeffect(sfx_angelkin);
+attackin = 200;
+turns = 0;
+hp = 2;
+maxhp = 2;
+attack = "none";
+ball = 0;
+flame = 0;
+spr_thrown = spr_angelkin;
+spr_stunned = spr_angelkin;
+spr_idle = spr_angelkin;
+spr_die = spr_angelkin;
+hpicon = 1638;

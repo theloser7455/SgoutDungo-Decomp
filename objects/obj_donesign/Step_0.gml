@@ -1,4 +1,4 @@
-ini_open("saveData.ini");
+ini_open("SGOUTsaveData.ini");
 global.treasure1 = ini_read_real("Treasure", "t1", 0);
 global.treasure2 = ini_read_real("Treasure", "t2", 0);
 ini_close();

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_startgate",
   "spriteId": {
-    "name": "spr_medievalcomputer",
-    "path": "sprites/spr_medievalcomputer/spr_medievalcomputer.yy",
+    "name": "spr_peppermancomputer",
+    "path": "sprites/spr_peppermancomputer/spr_peppermancomputer.yy",
   },
   "solid": false,
   "visible": true,

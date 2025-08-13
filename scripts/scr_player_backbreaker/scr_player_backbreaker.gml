@@ -16,7 +16,7 @@ function scr_player_backbreaker()
 	
 	if (sprite_index == spr_player_machfreefall && place_meeting(x, y + 1, obj_solid))
 	{
-	    state = 70;
+	    state = states.machslide;
 	    sprite_index = spr_player_crouchslide;
 	}
 	

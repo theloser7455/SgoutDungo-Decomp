@@ -17,7 +17,7 @@
   "soundFile": "sfx_escaperumble",
   "duration": 21.564,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds/Sounds.yy",
+    "name": "Soundeffects (SFX)",
+    "path": "folders/Sounds/Soundeffects (SFX).yy",
   },
 }

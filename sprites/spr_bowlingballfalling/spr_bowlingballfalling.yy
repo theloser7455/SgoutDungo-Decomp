@@ -28,9 +28,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"633eae6e-2625-460e-ab60-bd61fcfd3504",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b1f19c2f-395f-4719-9879-bc20a67b8361",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da5de3fe-0686-41fd-a1bd-3b468f834c46",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26748f22-5bb8-48be-8d82-f0d59381a1c5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"755e3d4f-68fa-4db9-81ae-8e11f13d291e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"967172be-83b4-43dc-b24c-ac7d61d8331d",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"25c0b354-3e2b-4957-b478-79c50a5e76aa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"633eae6e-2625-460e-ab60-bd61fcfd3504","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"cf7a09d9-16a2-4c18-acf2-dd7d61e16ba8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b1f19c2f-395f-4719-9879-bc20a67b8361","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"474031b2-d8d2-4b0d-b43a-d6751136f303","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da5de3fe-0686-41fd-a1bd-3b468f834c46","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4976a7cb-7aa5-438c-adba-e7f924b5316b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26748f22-5bb8-48be-8d82-f0d59381a1c5","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5e5e41d7-54e3-4bf9-8af2-ca5b0a1ce7b2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"755e3d4f-68fa-4db9-81ae-8e11f13d291e","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c0bc976d-8e09-40e6-bf15-6d142f56c743","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"967172be-83b4-43dc-b24c-ac7d61d8331d","path":"sprites/spr_bowlingballfalling/spr_bowlingballfalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,11 +68,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"09f85368-8301-474c-a19a-6f11f17d2424","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4a9529a4-5ead-4e5a-8adc-ac44cb9ef0a8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

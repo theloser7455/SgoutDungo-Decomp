@@ -28,9 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43ef8f91-47d8-46f6-9f31-dc4169a81394",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b24e7961-8684-4654-9f6b-2b80710af7ed",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9bfd1c0f-6ffb-4dc2-9d9c-0f3112919688",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b0fa71a3-7eed-458d-90c9-89c9f4e25577",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"01ee4d7a-aa04-46ac-8a8b-551a6df7abb5",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -42,14 +41,13 @@
     "playbackSpeedType": 1,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cf7c8bdd-7c1b-4fa0-880e-d1d834b0abce","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43ef8f91-47d8-46f6-9f31-dc4169a81394","path":"sprites/spr_pizzafaceclock/spr_pizzafaceclock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8eacfff7-064c-4bc4-9e22-66dc30a220b6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b24e7961-8684-4654-9f6b-2b80710af7ed","path":"sprites/spr_pizzafaceclock/spr_pizzafaceclock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"729e8fa9-f5cd-4cff-bf5d-456371e58dd1","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9bfd1c0f-6ffb-4dc2-9d9c-0f3112919688","path":"sprites/spr_pizzafaceclock/spr_pizzafaceclock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"45cfaab1-4e49-430c-a727-f702e718303e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0fa71a3-7eed-458d-90c9-89c9f4e25577","path":"sprites/spr_pizzafaceclock/spr_pizzafaceclock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"52e1dfbf-7c7c-4023-ab30-e1f2e2a04fb9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01ee4d7a-aa04-46ac-8a8b-551a6df7abb5","path":"sprites/spr_pizzafaceclock/spr_pizzafaceclock.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,11 +66,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5445cd63-0fbe-4d16-b8b6-00795aad9f30","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"993a5f83-83bd-41bf-ab3f-b8ff4aeafdc9","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

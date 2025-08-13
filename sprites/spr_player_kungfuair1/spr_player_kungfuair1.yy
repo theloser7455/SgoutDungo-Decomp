@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f737558-e950-4887-9a0c-ac9f10f223e4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7045f28-81c8-48c6-b1e2-e9f32dc00d61",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"be505353-19ee-44db-a221-9b5a34056490",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d1829bba-8934-439d-94c8-a83bd6d9a70f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"689d188f-ae27-416c-9a10-a801c4db1c38",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff19f992-b1a8-4708-bc04-4bbbb8810893",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8e973d14-49e0-40a5-867b-97ff3d2011f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6062e66d-cdbe-4238-bc02-81119ec0dd1b",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1652e004-9038-443c-b811-8b63dfffa62b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f737558-e950-4887-9a0c-ac9f10f223e4","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1572168e-b2be-4dae-b7b1-63e64f9dd2be","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7045f28-81c8-48c6-b1e2-e9f32dc00d61","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7c812764-0d2a-4688-8880-d96a6bfacc82","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"be505353-19ee-44db-a221-9b5a34056490","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6c214bf3-21dd-4793-a13c-2bf814feb3f0","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d1829bba-8934-439d-94c8-a83bd6d9a70f","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5eb79a9c-80d2-47ea-ab01-ff0377d2a9c5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"689d188f-ae27-416c-9a10-a801c4db1c38","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0c17f05d-12ce-4783-9e09-e25a00b3361e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff19f992-b1a8-4708-bc04-4bbbb8810893","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e0e0590c-259c-4f53-8481-8b4a8e05bcea","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8e973d14-49e0-40a5-867b-97ff3d2011f9","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c1268403-49ed-47bb-aa06-6f9bfd6a3ae9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6062e66d-cdbe-4238-bc02-81119ec0dd1b","path":"sprites/spr_player_kungfuair1/spr_player_kungfuair1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,11 +70,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"cc600637-3004-4e44-9b2a-17a3548d8837","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6743b340-fdb4-41b1-845e-5d1eb4bac0ea","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

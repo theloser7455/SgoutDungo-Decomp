@@ -1,9 +1,9 @@
-if (state == 72)
+if (state == states.hurt)
 {
     state = 0;
     
     if (pepperplay)
-        state = 600;
+        state = states.playerpeppermanidle;
     
     movespeed = 0;
 }

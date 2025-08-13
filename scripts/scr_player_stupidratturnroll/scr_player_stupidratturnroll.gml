@@ -11,7 +11,7 @@ function scr_player_stupidratturnroll()
 	if (key_down2 && !grounded)
 	{
 	    image_index = 0;
-	    state = 98;
+	    state = states.stupidratcheeseslam;
 	    sprite_index = spr_bodyslamstart;
 	    scr_soundeffect(cheesefall);
 	    vsp = -10;
@@ -25,7 +25,7 @@ function scr_player_stupidratturnroll()
 	if (hsp == 0 && grounded)
 	{
 	    xscale *= -1;
-	    state = 95;
+	    state = states.stupidratroll;
 	}
 	
 	if (grounded && key_jump)

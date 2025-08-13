@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_windloop.wav",
-  "duration": 10.040363,
+  "duration": 10.04,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

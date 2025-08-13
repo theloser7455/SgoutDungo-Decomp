@@ -13,7 +13,7 @@ function scr_playerpepperman_groundpound()
 	    freefallsmash = 0;
 	    sprite_index = spr_Pslamland;
 	    image_index = 0;
-	    state = 76;
+	    state = states.freefallland;
 	    jumpAnim = 1;
 	    jumpstop = 0;
 	    

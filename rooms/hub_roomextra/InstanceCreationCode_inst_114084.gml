@@ -1,0 +1,1 @@
+levelsign = "boss_angelkin";

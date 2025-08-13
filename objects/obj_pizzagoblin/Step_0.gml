@@ -1,43 +1,43 @@
 switch (state)
 {
-    case 92:
+    case states.snickmachstart:
         scr_enemy_idle();
         break;
     
-    case 94:
+    case states.breakdanceattack:
         scr_enemy_charge();
         break;
     
-    case 96:
+    case states.stupidratstoproll:
         scr_enemy_turn();
         break;
     
-    case 100:
+    case states.uppercut:
         scr_enemy_walk();
         break;
     
-    case 102:
+    case states.enemyland:
         scr_enemy_land();
         break;
     
-    case 103:
+    case states.enemyhit:
         scr_enemy_hit();
         break;
     
-    case 104:
+    case states.enemystun:
         scr_enemy_stun();
         break;
     
-    case 95:
+    case states.stupidratroll:
         scr_pizzagoblin_throw();
         break;
     
-    case 107:
+    case states.enemygrabbed:
         scr_enemy_grabbed();
         break;
 }
 
-if (state == 104 && stunned > 100 && birdcreated == 0)
+if (state == states.enemystun && stunned > 100 && birdcreated == 0)
 {
     birdcreated = 1;
     
@@ -45,7 +45,7 @@ if (state == 104 && stunned > 100 && birdcreated == 0)
         ID = other.id;
 }
 
-if (state != 104)
+if (state != states.enemystun)
     birdcreated = 0;
 
 idlespr = spr_pizzagoblin_idle;
@@ -58,24 +58,24 @@ scr_enemy_scarescript();
 if (flash == 1 && alarm[2] <= 0)
     alarm[2] = 0.15 * room_speed;
 
-if (state != 107)
+if (state != states.enemygrabbed)
     depth = 0;
 
-if (state != 104)
+if (state != states.enemystun)
     thrown = 0;
 
 if (bombreset > 0)
     bombreset--;
 
-if (x != obj_player.x && obj_player.state != 26 && state != 95 && bombreset == 0 && grounded)
+if (x != obj_player.x && obj_player.state != states.bombpep && state != states.stupidratroll && bombreset == 0 && grounded)
 {
     if (obj_player.x > (x - 400) && obj_player.x < (x + 400) && y <= (obj_player.y + 20) && y >= (obj_player.y - 20))
     {
-        if (state == 100 || state == 92)
+        if (state == states.uppercut || state == states.snickmachstart)
         {
             image_index = 0;
             image_xscale = -sign(x - obj_player.x);
-            state = 95;
+            state = states.stupidratroll;
         }
     }
 }

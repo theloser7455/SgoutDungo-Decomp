@@ -1,2 +1,2 @@
-if (obj_player.state != 50)
+if (obj_player.state != states.backbreaker)
     instance_destroy();

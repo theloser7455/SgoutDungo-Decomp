@@ -12,3 +12,4 @@ with (instance_create(x, y, obj_bangeffect))
 thebeat = obj_player.thebeat;
 pitch = 1;
 scr_soundeffect(sfx_breakdancescratch);
+scr_soundeffect(sfx_poof);

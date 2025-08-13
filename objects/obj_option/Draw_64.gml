@@ -1,8 +1,8 @@
 draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0);
 draw_set_alpha(0.5);
-draw_sprite_tiled(spr_stupidahhfuckingbg, -1, x1, y1);
+draw_sprite_tiled(bg_pausemenubg, -1, x1, y1);
 draw_set_alpha(1);
-font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
+font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
 draw_set_font(font);
 draw_set_halign(fa_center);
 draw_set_color(c_white);

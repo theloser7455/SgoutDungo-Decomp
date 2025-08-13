@@ -13,6 +13,7 @@ if (place_meeting(x, y, obj_player))
         sprite_index = other.sprite_index;
         image_index = other.image_index;
         vspeed = -15;
+        palless = 1;
     }
     
     scr_soundeffect(sfx_secretfound);

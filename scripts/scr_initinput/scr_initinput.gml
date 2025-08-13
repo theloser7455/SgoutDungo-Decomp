@@ -1,6 +1,6 @@
 function scr_initinput()
 {
-	ini_open("saveData.ini");
+	ini_open("SGOUTsaveData.ini");
 	global.key_up = ini_read_string("ControlsKeys", "up", 38);
 	global.key_right = ini_read_string("ControlsKeys", "right", 39);
 	global.key_left = ini_read_string("ControlsKeys", "left", 37);
@@ -12,15 +12,18 @@ function scr_initinput()
 	global.key_attack = ini_read_string("ControlsKeys", "attack", 16);
 	global.key_start = ini_read_string("ControlsKeys", "start", 27);
 	global.key_punch = ini_read_string("ControlsKeys", "punch", 65);
-	global.key_upC = ini_read_string("ControllerButton", "up", 32781);
-	global.key_rightC = ini_read_string("ControllerButton", "right", 32784);
-	global.key_leftC = ini_read_string("ControllerButton", "left", 32783);
-	global.key_downC = ini_read_string("ControllerButton", "down", 32782);
-	global.key_jumpC = ini_read_string("ControllerButton", "jump", 32769);
-	global.key_slapC = ini_read_string("ControllerButton", "slap", 32771);
-	global.key_tauntC = ini_read_string("ControllerButton", "taunt", 32772);
-	global.key_shootC = ini_read_string("ControllerButton", "shoot", 32770);
-	global.key_attackC = ini_read_string("ControllerButton", "attack", 32774);
-	global.key_startC = ini_read_string("ControllerButton", "start", 32778);
+	global.key_punch2 = ini_read_string("ControlsKeys", "punch2", 83);
+	global.key_upC = ini_read_string("ControllerButton", "up", gp_padu);
+	global.key_rightC = ini_read_string("ControllerButton", "right", gp_padr);
+	global.key_leftC = ini_read_string("ControllerButton", "left", gp_padl);
+	global.key_downC = ini_read_string("ControllerButton", "down", gp_padd);
+	global.key_jumpC = ini_read_string("ControllerButton", "jump", gp_face1);
+	global.key_slapC = ini_read_string("ControllerButton", "slap", gp_face3);
+	global.key_tauntC = ini_read_string("ControllerButton", "taunt", gp_face4);
+	global.key_shootC = ini_read_string("ControllerButton", "shoot", gp_face2);
+	global.key_attackC = ini_read_string("ControllerButton", "attack", gp_shoulderr);
+	global.key_punchC = ini_read_string("ControllerButton", "punch", gp_shoulderrb);
+	global.key_punch2C = ini_read_string("ControllerButton", "punch2", gp_shoulderlb);
+	global.key_startC = ini_read_string("ControllerButton", "start", gp_start);
 	ini_close();
 }

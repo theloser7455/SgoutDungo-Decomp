@@ -11,3 +11,9 @@ if (obj_player.state == 26 && obj_player.sprite_index != obj_player.spr_bombpepe
         bombpeptimer = 0;
     }
 }
+
+if (object_index == obj_stupidratblock)
+{
+    if (bomb && distance_to_object(obj_player) <= 200)
+        instance_destroy();
+}

@@ -21,3 +21,6 @@ global.crank = 0;
 character = "PEPPINO";
 display_set_gui_size(960, 540);
 depth = -2000;
+v = 0;
+shakething = 5;
+shakethingv = 5;

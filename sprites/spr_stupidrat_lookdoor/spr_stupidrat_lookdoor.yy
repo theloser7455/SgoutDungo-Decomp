@@ -28,11 +28,11 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"50b6e616-ff2f-4a11-9170-44e66e369061",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8cf84177-4bed-4749-ae23-7f593b4ce0fd",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3705f114-d6b5-4269-ad3a-51f713b579e1",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5618e971-a197-44d8-b78c-892296a8be62",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47a98c80-7dc9-4f97-bbf2-86e127695916",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"724e915a-bf75-4bb0-852b-e1a0dc7d7740",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c0028eb0-73f3-4dd0-ae4c-8072079feee5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"88004751-8905-4acd-b1fd-a0e39e17d5ce",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cc175af9-a89a-43d6-97c8-2a8fc23b2e39",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"19a65a53-b12b-42bb-b606-a5aae38566f8",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -49,11 +49,11 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b7461191-a68f-4350-9eac-c5c0298fbd45","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"50b6e616-ff2f-4a11-9170-44e66e369061","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"331ab6fa-2c28-4c18-b9d8-892e2ba4da40","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cf84177-4bed-4749-ae23-7f593b4ce0fd","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c317c0dc-fdd1-412e-8d26-6f272f0eda0f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3705f114-d6b5-4269-ad3a-51f713b579e1","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9433604a-54a0-4104-bfa3-78edc6811c6a","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5618e971-a197-44d8-b78c-892296a8be62","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"4fcf04d3-0acd-46f4-b797-880625e0b739","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47a98c80-7dc9-4f97-bbf2-86e127695916","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"97877374-169c-4797-9372-8b92ab7b0796","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"724e915a-bf75-4bb0-852b-e1a0dc7d7740","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f93e756f-90d6-4c5a-88f3-f3955672faf2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c0028eb0-73f3-4dd0-ae4c-8072079feee5","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ffed9cbb-bf34-45f0-bed3-98b9ceb4b7b9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"88004751-8905-4acd-b1fd-a0e39e17d5ce","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3a3da656-962f-4df3-9153-db7664691f20","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc175af9-a89a-43d6-97c8-2a8fc23b2e39","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"35c1d4e6-1651-40c9-9d20-f663ecb5901e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"19a65a53-b12b-42bb-b606-a5aae38566f8","path":"sprites/spr_stupidrat_lookdoor/spr_stupidrat_lookdoor.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -72,11 +72,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"92204be3-1a6c-49c5-a8f7-be890eaed46e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bb5eac5a-8930-40d1-9ea5-45967396fb27","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Other",
-    "path": "folders/Sprites/Other.yy",
+    "name": "other",
+    "path": "folders/Sprites/other.yy",
   },
 }

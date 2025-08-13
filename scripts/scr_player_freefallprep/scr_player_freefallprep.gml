@@ -1,4 +1,4 @@
 function scr_player_freefallprep()
 {
-	state = 73;
+	state = states.freefall;
 }

@@ -11,7 +11,7 @@ function scr_player_stupidratjelly()
 	    sprite_index = spr_uppercut2;
 	
 	if (grounded && vsp >= 0)
-	    state = 0;
+	    state = states.normal;
 	
 	if (key_down)
 	    vsp += 1.5;

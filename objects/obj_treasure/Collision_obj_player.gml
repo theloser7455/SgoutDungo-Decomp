@@ -1,5 +1,8 @@
 with (obj_player)
 {
+    if (!global.treasure)
+        global.uniquecollects += 1;
+    
     treasure_x = x;
     treasure_y = y;
     treasure_room = room;
@@ -13,7 +16,7 @@ with (obj_player)
     
     if (other.sprite_index == other.spridle)
     {
-        state = 22;
+        state = states.gottreasure;
         scr_soundeffect(sfx_secretfound);
     }
     
