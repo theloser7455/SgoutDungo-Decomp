@@ -1,8 +1,7 @@
-<img width="340" height="360" alt="image" src="https://github.com/user-attachments/assets/5bf7340a-68ba-460f-8fb7-8d13a1f0ab97"/>
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/cd092606-5a13-4c1d-9040-89aff407bbca" />
 
-> temp image before switching to the newer one
 # Links & Requirements
-- [Play the Mod here!](https://matthemattern.itch.io/sgout-dungo-the-game-2005)<br/>
+- [Play the Mod here!](https://marthemariathemar.itch.io/demo-125-sgout-dungo-teh-game-2005-the-demo-125)<br/>
 > REQUIREMENTS
 - [Install Gamemaker LTS](https://gamemaker.io/en/download/windows/lts/GameMaker.exe)<br/>
 and open the project, Thats it.
