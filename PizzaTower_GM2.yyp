@@ -846,7 +846,7 @@
     {"id":{"name":"scr_levelrestartscript","path":"scripts/scr_levelrestartscript/scr_levelrestartscript.yy",},"order":12,},
     {"id":{"name":"scr_exitlevelscript","path":"scripts/scr_exitlevelscript/scr_exitlevelscript.yy",},"order":8,},
     {"id":{"name":"killyourself","path":"scripts/killyourself/killyourself.yy",},"order":0,},
-    {"id":{"name":"GlobInit","path":"scripts/GlobInit/GlobInit.yy",},"order":7,},
+    {"id":{"name":"GlobInit","path":"scripts/GlobInit/GlobInit.yy",},"order":0,},
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},"order":51,},
     {"id":{"name":"sfx_becomeknight","path":"sounds/sfx_becomeknight/sfx_becomeknight.yy",},"order":6,},
     {"id":{"name":"sfx_explosion","path":"sounds/sfx_explosion/sfx_explosion.yy",},"order":38,},
