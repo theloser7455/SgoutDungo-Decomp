@@ -3304,6 +3304,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"other","folderPath":"folders/Sprites/other.yy","order":2936,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tilesets","folderPath":"folders/Sprites/Tilesets.yy","order":1805,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Important (Globalinit)","folderPath":"folders/Scripts/Important (Globalinit).yy","order":8,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
