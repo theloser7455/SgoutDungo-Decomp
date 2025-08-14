@@ -355,7 +355,7 @@ if (obj_player.state != states.gameover)
         draw_text(combox - 50, 225, "X" + string(global.combo));
     }
     
-    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
     draw_set_font(font);
     var bullshit = string(round(minut)) + ":" + string(round(secund));
     

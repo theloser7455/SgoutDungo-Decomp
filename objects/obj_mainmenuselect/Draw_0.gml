@@ -1,4 +1,4 @@
-font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
 draw_set_alpha(0.5);
 draw_set_alpha(1);
 draw_set_font(font);

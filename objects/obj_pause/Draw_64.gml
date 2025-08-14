@@ -1,7 +1,7 @@
 if (pause == 1)
 {
     draw_rectangle_color(0, 0, 960, 540, c_black, c_black, c_black, c_black, 0);
-    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
     draw_set_alpha(0.5);
     draw_sprite_tiled(bg_pausemenubg, -1, x1, y1);
     draw_set_alpha(1);

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMWindowsOptions",
+  "resourceVersion": "1.1",
+  "name": "Windows",
   "option_windows_display_name": "Pizza Tower",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "0.0.0.1",
@@ -20,7 +23,7 @@
   "option_windows_scale": 0,
   "option_windows_copy_exe_to_dest": false,
   "option_windows_sleep_margin": 10,
-  "option_windows_texture_page": "2048x2048",
+  "option_windows_texture_page": "4096x4096",
   "option_windows_installer_finished": "${base_options_dir}/windows/installer/finished.bmp",
   "option_windows_installer_header": "${base_options_dir}/windows/installer/header.bmp",
   "option_windows_license": "${base_options_dir}/windows/installer/license.txt",
@@ -28,9 +31,4 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": false,
   "option_windows_steam_use_alternative_launcher": false,
-  "option_windows_use_x64": true,
-  "resourceVersion": "1.1",
-  "name": "Windows",
-  "tags": [],
-  "resourceType": "GMWindowsOptions"
 }

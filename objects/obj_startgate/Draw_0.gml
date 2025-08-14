@@ -17,7 +17,7 @@ if (global.difficulty == 1)
 
 var snicktime = ini_read_string("Ranks", "snickchallenge" + string(obj_player.character) + deth2, "");
 ini_close();
-font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
 draw_set_font(font);
 draw_set_halign(fa_center);
 draw_set_color(c_white);

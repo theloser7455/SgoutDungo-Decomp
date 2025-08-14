@@ -29,7 +29,7 @@ if (afterimage == "Nattack")
     q3 = 1;
 
 ini_open("SGOUTDATA new.ini");
-font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
 draw_set_font(font);
 draw_set_halign(fa_center);
 
@@ -72,7 +72,7 @@ else
         z = "TYPE SOMETHING...";
     
     draw_text_colour(480, 300, string(z), c_white, c_white, c_white, c_white, 1);
-    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, 1, 0);
+    font = font_add_sprite_ext(global.fontspritee, global.fontcharacterss, true, 0);
     draw_set_font(font);
     draw_text_colour(480, 400, "NAME YOUR FILE", c_white, c_white, c_white, c_white, 1);
 }
