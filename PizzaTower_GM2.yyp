@@ -1851,6 +1851,7 @@
     {"id":{"name":"spr_highjumpcloud1","path":"sprites/spr_highjumpcloud1/spr_highjumpcloud1.yy",},"order":289,},
     {"id":{"name":"spr_bombexplosion","path":"sprites/spr_bombexplosion/spr_bombexplosion.yy",},"order":70,},
     {"id":{"name":"spr_chargeeffect","path":"sprites/spr_chargeeffect/spr_chargeeffect.yy",},"order":106,},
+    {"id":{"name":"mu_placeholderpepperworld","path":"sounds/mu_placeholderpepperworld/mu_placeholderpepperworld.yy",},"order":61,},
     {"id":{"name":"spr_chainsaweffect","path":"sprites/spr_chainsaweffect/spr_chainsaweffect.yy",},"order":103,},
     {"id":{"name":"spr_pogoeffect","path":"sprites/spr_pogoeffect/spr_pogoeffect.yy",},"order":1185,},
     {"id":{"name":"spr_explosioneffect","path":"sprites/spr_explosioneffect/spr_explosioneffect.yy",},"order":204,},

@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_pepperworld_entrance.wav",
-  "duration": 29.176,
+  "duration": 29.176374,
   "parent": {
     "name": "Soundeffects (SFX)",
     "path": "folders/Sounds/Soundeffects (SFX).yy",

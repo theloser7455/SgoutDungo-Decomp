@@ -20,7 +20,16 @@ if (global.panic == 0 && global.snickchallenge == 0 && !global.deathmode)
             pausedmusic = mu_peppermanboss;
         }
     }
-    
+	
+    if (room == pw_1 || room == pw_2 || room == pw_3)
+    {
+        if (!audio_is_playing(mu_placeholderpepperworld))
+        {
+            audio_stop_sound(pausedmusic);
+            scr_sound(mu_placeholderpepperworld);
+            pausedmusic = mu_placeholderpepperworld;
+        }
+    }
     if (room == boss_devilkin)
     {
         if (!audio_is_playing(mu_devilkinfight))
