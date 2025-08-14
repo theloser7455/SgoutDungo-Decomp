@@ -15,9 +15,10 @@ draw_text_colour(480, creditY + 1500, "SLOP \nGAVE ME PERMISSION TO USE LEPPER",
 draw_text_colour(480, creditY + 1600, "GOOBER \nPLAYTESTER", c_white, c_white, c_white, c_white, 1);
 draw_text_colour(480, creditY + 1700, "AUN \nSPRITER!!!", c_white, c_white, c_white, c_white, 1);
 draw_text_colour(480, creditY + 1800, "ARTYOM \nSPRITER!!!", c_white, c_white, c_white, c_white, 1);
-draw_text_colour(480, creditY + 1900, "CRAZY DOE \nPLAYTESTER", c_white, c_yellow, c_white, c_yellow, 1);
+draw_text_colour(480, creditY + 1900, "RE-ANIMGUY \nPLAYTESTER", c_white, c_yellow, c_white, c_yellow, 1);
 draw_text_colour(480, creditY + 2000, "DOUG3P \nCOWWMPOSER!!", c_lime, c_lime, c_white, c_white, 1);
-draw_text_colour(480, creditY + 2200, "AND THANK YOU PLAYING THE DEMO!", c_white, c_white, c_white, c_white, 1);
+draw_text_colour(480, creditY + 2100, "THELOSER \nPLAYTESTER AND MAKES DECOMPS IDK", c_lime, c_lime, c_white, c_white, 1);
+draw_text_colour(480, creditY + 2300, "AND THANK YOU PLAYING THE DEMO!", c_white, c_white, c_white, c_white, 1);
 var gkgk = "...................................................................................................";
 draw_text_colour(480, creditY + 2400, "REFRENCED CONTENT CREDITS", c_white, c_white, c_white, c_white, 1);
 draw_text_colour(480, creditY + 2540, "FLAVOR FOLEY \nMADE STATIC AND BUTCHERS VANITY", c_white, c_white, c_white, c_white, 1);

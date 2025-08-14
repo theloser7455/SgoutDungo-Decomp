@@ -20,11 +20,12 @@ if (!global.coolsnick)
     switch (stater)
     {
         case "normal":
+        
             if (obj_player.state != states.comingoutdoor && obj_player.state != states.bombpep && obj_player.state != states.victory && obj_player.state != states.keyget && obj_player.state != states.door && !instance_exists(obj_treasure))
             {
                 x += lengthdir_x(mivespid, point_direction(x, y, obj_player1.x, obj_player1.y));
                 y += lengthdir_y(mivespid, point_direction(x, y, obj_player1.x, obj_player1.y));
-                mivespid = Approach(mivespid, 10, 0.125);
+                mivespid = Approach(mivespid, 8, 0.125);
             }
             else
             {
@@ -79,15 +80,16 @@ if (!global.coolsnick)
                         sprite_index = spr_genericpoofeffect;
                     
                     mivespid = 0;
-                    tpcooldown = 100;
+                    tpcooldown = 200;
                 }
             }
             
             break;
         
         case "dashstart":
-            var dihx = obj_player.x + (obj_player.hsp * 8);
-            var dihy = obj_player.y + (obj_player.vsp * 8);
+        
+            var dihx = obj_player.x + (obj_player.hsp * 14);
+            var dihy = obj_player.y + (obj_player.vsp * 14);
             
             if (x != obj_player.x)
                 image_xscale = -sign(x - obj_player.x);
@@ -126,6 +128,7 @@ if (!global.coolsnick)
             break;
         
         case "dash":
+        
             speed = lerp(speed, 0, 0.0625);
             
             if (x != obj_player.x)
@@ -232,18 +235,22 @@ else
         switch (previousattack)
         {
             case "idk":
+            
                 attack = choose("spikey", "dash", "beam");
                 break;
             
             case "spikey":
+            
                 attack = "dash";
                 break;
             
             case "dash":
+            
                 attack = "beam";
                 break;
             
             case "beam":
+            
                 attack = "spikey";
                 break;
         }

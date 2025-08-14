@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_snickexedashstart.wav",
-  "duration": 2.9689999,
+  "duration": 2.96966,
   "parent": {
     "name": "Soundeffects (SFX)",
     "path": "folders/Sounds/Soundeffects (SFX).yy",

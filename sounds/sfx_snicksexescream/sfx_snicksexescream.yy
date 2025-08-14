@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_snicksexescream.wav",
-  "duration": 3.639,
+  "duration": 3.639433,
   "parent": {
     "name": "Soundeffects (SFX)",
     "path": "folders/Sounds/Soundeffects (SFX).yy",

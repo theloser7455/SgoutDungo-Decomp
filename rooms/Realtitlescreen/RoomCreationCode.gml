@@ -1,4 +1,4 @@
-pal_swap_init_system(0);
+pal_swap_init_system(shd_pal_swapper);
 ini_open("SGOUTsaveData.ini");
 global.deserthighscore = ini_read_string("Highscore", "desert", 0);
 global.mansionhighscore = ini_read_string("Highscore", "mansion", 0);
@@ -43,4 +43,3 @@ global.medievaltoppin3 = ini_read_string("Toppin", "medieval3", 0);
 global.medievaltoppin4 = ini_read_string("Toppin", "medieval4", 0);
 global.medievaltoppin5 = ini_read_string("Toppin", "medieval5", 0);
 ini_close();
-global.evilevilsprite = sprite_add("spr_alexise_0.png", 0, false, true, 0, 0);

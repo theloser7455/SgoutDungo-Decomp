@@ -20,3 +20,5 @@ evilcharge = 0;
 beamshot = 0;
 previousattack = "beam";
 mivespid = 0;
+stater = "normal";
+speed = 0;

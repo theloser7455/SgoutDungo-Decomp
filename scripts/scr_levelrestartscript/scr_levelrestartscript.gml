@@ -3,10 +3,10 @@ function scr_levelrestartscript()
 	var roomname = room_get_name(room);
 	global.levelrestartamount += 1;
 	var RRR = 0;
-	
+
 	if (object_index == obj_gameoverrestart)
 	    RRR = 1;
-	
+
 	with (obj_pause)
 	{
 	    if (global.snickchallenge == 0)
@@ -18,7 +18,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -29,7 +29,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -40,7 +40,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -51,7 +51,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -62,7 +62,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -73,7 +73,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -84,7 +84,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -95,7 +95,7 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
@@ -106,13 +106,13 @@ function scr_levelrestartscript()
 	            scr_playerreset();
 	            pause = 0;
 	            obj_player1.targetDoor = "A";
-	            
+            
 	            if (!RRR)
 	                audio_stop_all();
 	        }
 	        else
 	        {
-	            scr_soundeffect(sfx_enemyprojectile);
+	            scr_soundeffect(8);
 	        }
 	    }
 	    else if (global.snickchallenge == 1)
@@ -125,23 +125,26 @@ function scr_levelrestartscript()
 	        global.minutes = 4;
 	        global.wave = 0;
 	        global.maxwave = ((global.minutes * 60) + global.seconds) * 60;
-	        
+        
 	        if (global.panicbg)
 	            scr_panicbg_init();
-	        
+        
 	        obj_player1.targetDoor = "A";
 	        global.snickchallenge = 1;
 	        pause = 0;
+        
+	        if (!RRR)
+	            audio_stop_all();
 	    }
-	    
+    
 	    if (!pause)
 	    {
 	        obj_camera.alarm[1] = 60;
-	        
+        
 	        with (obj_music)
 	        {
 	            var chancee = round(random_range(20, 0));
-	            
+            
 	            if (chancee == 20)
 	                obj_music.sonec = 1;
 	            else
@@ -149,7 +152,7 @@ function scr_levelrestartscript()
 	        }
 	    }
 	}
-	
+
 	if (global.difficulty == 1 && !instance_exists(obj_bosscontrol) && room != pw_1 && room != pw_2 && room != pw_3)
 	{
 	    global.deathmode = 1;

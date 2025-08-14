@@ -3291,6 +3291,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Custom","folderPath":"folders/Scripts/Custom.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy related","folderPath":"folders/Scripts/Enemy related.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss","folderPath":"folders/Scripts/Enemy related/Boss.yy","order":11,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Important (Globalinit)","folderPath":"folders/Scripts/Important (Globalinit).yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Other","folderPath":"folders/Scripts/Other.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pal Swap","folderPath":"folders/Scripts/Pal Swap.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player Related","folderPath":"folders/Scripts/Player Related.yy","order":5,},
@@ -3304,7 +3305,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"other","folderPath":"folders/Sprites/other.yy","order":2936,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tilesets","folderPath":"folders/Sprites/Tilesets.yy","order":1805,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Important (Globalinit)","folderPath":"folders/Scripts/Important (Globalinit).yy","order":8,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
