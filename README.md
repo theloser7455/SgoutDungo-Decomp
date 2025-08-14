@@ -1,4 +1,4 @@
-<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/cd092606-5a13-4c1d-9040-89aff407bbca" />
+<img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/91df4123-bc2e-4972-b68d-81f7b568c25d" />
 
 # Links & Requirements
 - [Play the Mod here!](https://marthemariathemar.itch.io/demo-125-sgout-dungo-teh-game-2005-the-demo-125)<br/>
