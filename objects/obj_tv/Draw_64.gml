@@ -27,9 +27,9 @@ if (tvsprite == spr_tvdefault)
     chose = 0;
     var dih = 0;
     
-    if (global.fontspritee == 1557)
+    if (global.fontspritee == spr_creditsfont)
         dih = -10;
-    else if (global.fontspritee == 1641)
+    else if (global.fontspritee == spr_fontimpact)
         dih = -16;
     
     if (room != boss_room1 && room != rank_room)

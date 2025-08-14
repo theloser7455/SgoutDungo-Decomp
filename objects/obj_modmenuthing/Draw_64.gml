@@ -169,19 +169,19 @@ if (global.climbstairss == 0)
 
 var b9b = "SAGE";
 
-if (global.fontspritee == 1557)
+if (global.fontspritee == spr_creditsfont)
     b9b = "MODERN";
 
-if (global.fontspritee == 1641)
+if (global.fontspritee == spr_fontimpact)
     b9b = "IMPACT";
 
-if (global.fontspritee == 1642)
+if (global.fontspritee == spr_papyrusfont)
     b9b = "PAPYRUS";
 
-if (global.fontspritee == 1643)
+if (global.fontspritee == spr_comicsansfont)
     b9b = "COMIC SANS";
 
-if (global.fontspritee == 1644)
+if (global.fontspritee == spr_calibrifont)
     b9b = "CALIBRI";
 
 var instantr = "FALSE";

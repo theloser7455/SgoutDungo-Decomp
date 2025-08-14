@@ -268,33 +268,39 @@ if (selected == 13)
     {
         switch (global.fontspritee)
         {
-            case 859:
-                global.fontspritee = 1557;
+            case spr_font:
+            
+                global.fontspritee = spr_creditsfont;
                 global.fontcharacterss = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz.:!¡0123456789?'\"ÁÄÃÀÂÉÈÊËÍÌÎÏÓÖÕÔÒÚÙÛÜáäãàâéèêëíìîïóöõôòúùûüÇç_-[]▼()&#风雨廊桥전태양*яиБжидГзвбнльœ«»+ß👀";
                 break;
             
-            case 1557:
-                global.fontspritee = 1641;
+            case spr_creditsfont:
+            
+                global.fontspritee = spr_fontimpact;
                 global.fontcharacterss = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,:1234567890👀";
                 break;
             
-            case 1641:
-                global.fontspritee = 1642;
+            case spr_fontimpact:
+            
+                global.fontspritee = spr_papyrusfont;
                 global.fontcharacterss = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,:1234567890👀";
                 break;
             
-            case 1642:
-                global.fontspritee = 1643;
+            case spr_papyrusfont:
+            
+                global.fontspritee = spr_comicsansfont;
                 global.fontcharacterss = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,:1234567890👀";
                 break;
             
-            case 1643:
-                global.fontspritee = 1644;
+            case spr_comicsansfont:
+            
+                global.fontspritee = spr_calibrifont;
                 global.fontcharacterss = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!?.,:1234567890👀";
                 break;
             
-            case 1644:
-                global.fontspritee = 859;
+            case spr_calibrifont:
+            
+                global.fontspritee = spr_font;
                 global.fontcharacterss = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:👀";
                 break;
         }

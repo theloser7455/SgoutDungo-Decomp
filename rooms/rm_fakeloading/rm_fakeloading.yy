@@ -25,7 +25,7 @@
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":false,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/rm_fakeloading/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_114920","path":"rooms/rm_fakeloading/rm_fakeloading.yy",},

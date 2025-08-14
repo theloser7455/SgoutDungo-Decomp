@@ -49,9 +49,9 @@ if (showtext == 1)
     xi = 500;
     v = 0;
     
-    if (global.fontspritee == 1557)
+    if (global.fontspritee == spr_creditsfont)
         v = 20;
-    else if (global.fontspritee == 1641)
+    else if (global.fontspritee == spr_fontimpact)
         v = 64;
     
     yi = Approach(yi, 475 - v, 10);

@@ -137,5 +137,6 @@ if (instance_exists(obj_player1) && obj_player1.state != states.timesup && obj_p
         var _newH = clamp(lerpH, 0, thingg);
         var _newW = _newH * 1.7777777777777777;
         camera_set_view_size(view_camera[0], _newW, _newH);
+        camera_set_view_angle(view_camera[0], 0);
     }
 }
