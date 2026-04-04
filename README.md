@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This is now outdated since the mod is now using a actual decomp instead. 
+
 <img width="640" height="360" alt="image" src="https://github.com/user-attachments/assets/91df4123-bc2e-4972-b68d-81f7b568c25d" />
 
 # Links & Requirements
