@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+> This is very outdated and discontinued since the mod is using a actual decomp now.
 # SGOUTDUNGO Decomp
 Basically a decomp of you know what.
 - [Original Mod](https://matthemattern.itch.io/sgout-dungo-the-game-2005)<br/>
