@@ -6,5 +6,5 @@
 # Links & Requirements
 - [Play the Mod here!](https://marthemariathemar.itch.io/demo-125-sgout-dungo-teh-game-2005-the-demo-125)<br/>
 > REQUIREMENTS
-- [Install Gamemaker LTS](https://gamemaker.io/en/download/windows/lts/GameMaker.exe)<br/>
+- [Install Gamemaker LTS 2022]([https://gamemaker.io/en/download/windows/lts/GameMaker.exe](https://gms.yoyogames.com/GameMaker-Installer-2022.0.3.85.exe))<br/>
 and open the project, Thats it.
